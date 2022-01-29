@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="276px" height="276px" viewBox="auto" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <defs>
+        <linearGradient x1="0%" y1="19.0098366%" x2="100%" y2="80.9901634%" id="linearGradient-1">
+            <stop stop-color="#5F6773" offset="0%"></stop>
+            <stop stop-color="#1B1D20" offset="69.128591%"></stop>
+            <stop stop-color="#28303C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="桌面端-HD" transform="translate(-10.000000, -10.000000)">
+            <g id="编组-2" transform="translate(10.000000, 10.000000)">
+                <rect id="矩形备份-3" x="0" y="0" width="276" height="276"></rect>
+                <path d="M274,1.42108547e-14 C275.104569,1.42108547e-14 276,0.8954305 276,2 C276,42.6666667 276,83.3333333 276,124 C276,160.289632 250.958463,184 214.615025,184 C178.271587,184 117.651026,184 86.8303117,184 C50.8976588,184 23.1156861,194.875378 3.48439375,216.626134 C2.74610434,217.447721 1.48147673,217.513361 0.660992779,216.773848 C0.240970257,216.395276 0,215.856598 0,215.291147 L0,124 L0,2 C0,0.8954305 0.8954305,1.42108547e-14 2,1.42108547e-14 L274,1.42108547e-14 Z" id="路径" fill="url(#linearGradient-1)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
