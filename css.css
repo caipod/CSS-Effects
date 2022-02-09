@@ -58,6 +58,18 @@ body{
 	border-radius: 2px;
 }
 
+.card6{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	background: #FFFFFF;
+	border-radius: 2px;
+}
+
+.p3{
+	width: 100px;
+}
+
 .logoarea{
 	position: relative;
 	display: contents;
