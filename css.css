@@ -1,3 +1,8 @@
+:root{
+	/*--card-height: minmax(280px,auto);*/
+
+}
+
 body{
 	box-sizing: border-box;
 	background: #DFE3EB;
@@ -5,8 +10,8 @@ body{
 }
 .cards{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	/*grid-template-rows: repeat(5, 1fr);*/
+	grid-template-columns: repeat(auto-fit, minmax(280px,auto));
+	grid-auto-rows: minmax(360px,auto);
 	grid-gap: 0.625em;
 }
 
@@ -18,7 +23,7 @@ body{
 	background-color: #6E7784;
 	border-radius: 2px;
 	position: relative;
-	height: 20em;
+	/*height: var(--card-height);*/
 }
 
 .card{
@@ -26,7 +31,7 @@ body{
 	justify-content: center;
 	background: #FFFFFF;
 	border-radius: 2px;
-	height: 20em;
+	/*height: var(--card-height);*/
 	position: relative;
 	background-image: url(bluricon.png);
 	background-repeat: no-repeat;
