@@ -6,7 +6,7 @@ body{
 }
 .cards{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px,auto));
+	grid-template-columns: repeat(auto-fit, minmax(300px,auto));
 	grid-auto-rows: minmax(360px,auto);
 	grid-gap: 0.625em;
 }
