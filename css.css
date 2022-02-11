@@ -26,7 +26,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	background-image: radial-gradient(circle at 0% 0%, #EFF5FF 0%, #C0C7D4 127%);
+	background-image: linear-gradient(135deg, #FFFFFF 0%, #C0C7D4 60%, #F1F6FF 100%);
 	border-radius: 2px;
 }
 .csseffects{
@@ -87,6 +87,18 @@ p{
 	background: #FFFFFF;
 	border-radius: 2px;
 }
+.card7{
+	background: #E4E8ED;
+	box-shadow: inset 0 0 20px 0 #C0C4CD;
+	border-radius: 2px;
+	font-size: 12px;
+	color: #878E9A;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
 
 .p3{
 	width: 100px;
@@ -128,7 +140,7 @@ p{
 	width: 100px;
 	height: 100px;
 	background-image: linear-gradient(270deg, #D1D5DF 0%, #A5AABB 100%);
-	border-radius: 2px;
+	border-radius: 50px;
 }
 .glass{
 	width: 100px;
@@ -207,6 +219,8 @@ p{
   	background-repeat: no-repeat;
   	background-position: center;
 }
+
+
 @media (prefers-color-scheme: dark) {
 	.card5{
 		background: #22252B;
