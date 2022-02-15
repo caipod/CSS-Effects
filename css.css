@@ -135,9 +135,16 @@ body{
 		box-shadow:var(--hovershadow);
 	}
 
+	.card5img{
+	width: 100%;
+	background-image: url(R/light.svg);
+  	background-repeat: no-repeat;
+  	background-position: center;
+	}
+
 
 .card6{
-	display: grid;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	background: #FFFFFF;
@@ -147,6 +154,10 @@ body{
 }
 	.card6:hover{
 		box-shadow:var(--hovershadow);
+	}
+	.gamutest{
+		width:75px;
+		height: 150px;
 	}
 
 .card7{
@@ -192,10 +203,6 @@ body{
 	.cardlink:hover{
 		color: var(--textlinkhover);
 	}
-
-.p3{
-	width: 100px;
-}
 
 .logoarea{
 	position: relative;
@@ -306,13 +313,6 @@ body{
 	font-size: 8px;
 	color: #1B1D1F;
 }
-.card5img{
-	width: 100%;
-	background-image: url(R/light.svg);
-  	background-repeat: no-repeat;
-  	background-position: center;
-}
-
 
 @media (prefers-color-scheme: dark) {
 	.card5{
