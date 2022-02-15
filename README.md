@@ -40,3 +40,11 @@ backdrop-filter:
 ```css
 background-clip:
 ```
+
+<hr>
+<br>
+
+谢谢你们提供的技术支持：
+- W_Pain
+- 家成
+- Alvin.Q
