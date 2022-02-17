@@ -282,6 +282,7 @@ body{
 	.card8:hover{
 		box-shadow:var(--hovershadow);
 	}
+
 .card6{
 	display: flex;
 	align-items: center;
@@ -309,12 +310,30 @@ body{
 		background: color(display-p3 0 1 0.039);
 	}
 	.cicle{
-		width: 60px;
-		height: 60px;
-		border-radius: 30px;
+		width: 70px;
+		height: 70px;
+		border-radius: 35px;
 		background: rgba(255, 255, 255, 1.0);
 		z-index: 1;
 		position: absolute;
+	}
+
+.card9{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #FFFFFF;
+	border-radius: var(--cardR);
+	border: var(--cardborder);
+	box-shadow: var(--cardboxshadow);
+}
+	.gtest{
+		height: 100px;
+		width: auto;
+	}
+	
+	.card9:hover{
+		box-shadow:var(--hovershadow);
 	}
 
 .cardnone{
