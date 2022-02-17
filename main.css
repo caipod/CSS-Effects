@@ -206,22 +206,6 @@ body{
 	}
 
 
-.card6{
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	background: #FFFFFF;
-	border-radius: var(--cardR);
-	border: var(--cardborder);
-	box-shadow: var(--cardboxshadow);
-}
-	.card6:hover{
-		box-shadow:var(--hovershadow);
-	}
-	.gamutest{
-		width:auto;
-		height: 100px;
-	}
 
 .card7{
 	background: #FFFFFF;
@@ -298,16 +282,40 @@ body{
 	.card8:hover{
 		box-shadow:var(--hovershadow);
 	}
-
-.card9{
-	background: #FAF1EB;
-	border: 1px solid #E0CFB8;
-	box-shadow: inset 0 0 43px 0 #E0B55F;
-	border-radius: 20px;
-	background-image: url(R/N.svg);
-	background-repeat: no-repeat;
-	background-position: center;
+.card6{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #FFFFFF;
+	border-radius: var(--cardR);
+	border: var(--cardborder);
+	box-shadow: var(--cardboxshadow);
 }
+	.card6:hover{
+		box-shadow:var(--hovershadow);
+	}
+
+	.left{
+		width: 50px;
+		height: 100px;
+		border-radius: 50px 0 0 50px;
+		background:rgba(0, 255, 10, 1);
+	}
+	.right{
+		width: 50px;
+		height: 100px;
+		border-radius: 0 50px 50px 0;
+		background: #DFE3EB;
+		background: color(display-p3 0 1 0.039);
+	}
+	.cicle{
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+		background: rgba(255, 255, 255, 1.0);
+		z-index: 1;
+		position: absolute;
+	}
 
 .cardnone{
 	background: none;
@@ -409,34 +417,6 @@ body{
 	
 }
 
-@media (light-level: dim){
-	.card9{
-		background: #A295AA;
-		border: 1px solid #85768E;
-		box-shadow: inset 0 0 43px 0 #513D5E;
-		border-radius: 20px;
-		background-image: url(R/D.svg);
-	}
-}
-
-@media (light-level: normal){
-	.card9{
-		background: #FAF1EB;
-		border: 1px solid #E0CFB8;
-		box-shadow: inset 0 0 43px 0 #E0B55F;
-		border-radius: 20px;
-	}
-}
-
-@media (light-level: washed){
-	.card9{
-		background: #FFFBFB;
-		border: 1px solid #FAEEDC;
-		box-shadow: inset 0 0 43px 0 #F1DEB9;
-		border-radius: 20px;
-		background-image: url(R/W.svg);
-	}
-}
 
 @media (prefers-color-scheme: dark){
 	.card5{
