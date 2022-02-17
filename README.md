@@ -41,6 +41,17 @@ backdrop-filter:
 background-clip:
 ```
 
+## 第八张卡片：
+测试浏览器是否支持sRGB、DCI P3 或 rec2020 色域，若支持，蓝灯亮起，反则不亮灯。
+```css
+@media (color-gamut: )
+```
+
+## 第张九卡片：
+测试浏览器是否支持环境光的媒介查询，该属性目前的兼容性未得到证实，期待后期的兼容与适配。
+```css
+@media (light-level: )
+```
 <hr>
 <br>
 
@@ -48,3 +59,6 @@ background-clip:
 - W_Pain
 - 家成
 - Alvin.Q
+
+引用资源：
+- SF符号
