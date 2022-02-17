@@ -94,9 +94,26 @@ body{
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
 }
-.card2:hover{
-	box-shadow:var(--hovershadow);
-}
+	.card2:hover{
+		box-shadow:var(--hovershadow);
+	}
+
+	.lorem14{
+		font-size: 14px;
+		color: #1B1D1F;
+	}
+	.lorem12{
+		font-size: 12px;
+		color: #1B1D1F;
+	}
+	.lorem10{
+		font-size: 10px;
+		color: #1B1D1F;
+	}
+	.lorem8{
+		font-size: 8px;
+		color: #1B1D1F;
+	}
 
 .card3{
 	display: grid;
@@ -110,6 +127,52 @@ body{
 	.card3:hover{
 	box-shadow:var(--hovershadow);
 	}
+	.fontweight9{
+	font-size: 16px;
+	color: #1B1D1F;
+	font-weight: 900;
+	}
+	.fontweight8{
+		font-size: 16px;
+		color: #1B1D1F;
+		font-weight: 800;
+	}
+	.fontweight7{
+		font-size: 16px;
+		color: #1B1D1F;
+		font-weight: 700;
+	}
+	.fontweight6{
+		font-size: 16px;
+		color: #1B1D1F;
+		font-weight: 600;
+	}
+	.fontweight5{
+		font-size: 16px;
+		color: #1B1D1F;
+		font-weight: 500;
+	}
+	.fontweight4{
+		font-size: 16px;
+		color: #1B1D1F;
+		font-weight: 400;
+	}
+	.fontweight3{
+		font-size: 16px;
+		color: #1B1D1F;
+		font-weight: 300;
+	}
+	.fontweight2{
+		font-size: 16px;
+		color: #1B1D1F;
+		font-weight: 200;
+	}
+	.fontweight1{
+		font-size: 16px;
+		color: #1B1D1F;
+		font-weight: 100;
+	}
+
 
 .card4{
 	display: grid;
@@ -236,6 +299,16 @@ body{
 		box-shadow:var(--hovershadow);
 	}
 
+.card9{
+	background: #FAF1EB;
+	border: 1px solid #E0CFB8;
+	box-shadow: inset 0 0 43px 0 #E0B55F;
+	border-radius: 20px;
+	background-image: url(R/N.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .cardnone{
 	background: none;
 	border-radius: var(--cardR);
@@ -304,67 +377,7 @@ body{
 	  	-webkit-backdrop-filter: saturate(180%) blur(20px);
 	}
 
-.fontweight9{
-	font-size: 16px;
-	color: #1B1D1F;
-	font-weight: 900;
-}
-.fontweight8{
-	font-size: 16px;
-	color: #1B1D1F;
-	font-weight: 800;
-}
-.fontweight7{
-	font-size: 16px;
-	color: #1B1D1F;
-	font-weight: 700;
-}
-.fontweight6{
-	font-size: 16px;
-	color: #1B1D1F;
-	font-weight: 600;
-}
-.fontweight5{
-	font-size: 16px;
-	color: #1B1D1F;
-	font-weight: 500;
-}
-.fontweight4{
-	font-size: 16px;
-	color: #1B1D1F;
-	font-weight: 400;
-}
-.fontweight3{
-	font-size: 16px;
-	color: #1B1D1F;
-	font-weight: 300;
-}
-.fontweight2{
-	font-size: 16px;
-	color: #1B1D1F;
-	font-weight: 200;
-}
-.fontweight1{
-	font-size: 16px;
-	color: #1B1D1F;
-	font-weight: 100;
-}
-.lorem14{
-	font-size: 14px;
-	color: #1B1D1F;
-}
-.lorem12{
-	font-size: 12px;
-	color: #1B1D1F;
-}
-.lorem10{
-	font-size: 10px;
-	color: #1B1D1F;
-}
-.lorem8{
-	font-size: 8px;
-	color: #1B1D1F;
-}
+
 
 @media (color-gamut: srgb) {
 	.srgb{
@@ -394,6 +407,35 @@ body{
 		color: #1C3250;
 	}
 	
+}
+
+@media (light-level: dim){
+	.card9{
+		background: #A295AA;
+		border: 1px solid #85768E;
+		box-shadow: inset 0 0 43px 0 #513D5E;
+		border-radius: 20px;
+		background-image: url(R/D.svg);
+	}
+}
+
+@media (light-level: normal){
+	.card9{
+		background: #FAF1EB;
+		border: 1px solid #E0CFB8;
+		box-shadow: inset 0 0 43px 0 #E0B55F;
+		border-radius: 20px;
+	}
+}
+
+@media (light-level: washed){
+	.card9{
+		background: #FFFBFB;
+		border: 1px solid #FAEEDC;
+		box-shadow: inset 0 0 43px 0 #F1DEB9;
+		border-radius: 20px;
+		background-image: url(R/W.svg);
+	}
 }
 
 @media (prefers-color-scheme: dark){
