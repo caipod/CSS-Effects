@@ -53,4 +53,5 @@ backdrop-filter:
 - Alvin.Q
 
 引用资源：
-- SF符号
+- SF 符号
+- Sans Forgetica 字体
