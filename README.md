@@ -34,6 +34,7 @@ backdrop-filter:
 
 ## 第六张卡片：
 测试设备是否支持 Display P3 色域的图片显示。若支持 Display P3 色域，左右两个半圆的颜色会有些许的不同，左侧的绿色比右侧更鲜艳，若不支持 Display P3 色域，左右两个半圆的颜色则一致。
+使用绿色作为对比是因为绿色的 sRGB 与 Display P3 色域范围差别最大。
 
 ## 第七张卡片：
 测试浏览器是否支持sRGB、Display P3 或 rec2020 色域，若支持，蓝灯亮起，反则不亮灯。
@@ -49,7 +50,7 @@ backdrop-filter:
 
 <hr>
 
-使用资源：
+**使用资源：**
 - [SF 符号](https://developer.apple.com/sf-symbols/)
 - [Sans Forgetica 字体](https://sansforgetica.rmit.edu.au/)
 - [Clip Path 制作工具](https://bennettfeely.com/clippy/)
