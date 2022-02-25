@@ -58,4 +58,4 @@ backdrop-filter:
 - [Sans Forgetica 字体](https://sansforgetica.rmit.edu.au/)
 - [Clip Path 制作工具](https://bennettfeely.com/clippy/)
 
-如果你的设备不能正确显示某些效果，不一定代表浏览器不支持，也可能是我没优化到位。
+如果你的设备不能正确显示某些效果，不一定代表浏览器不支持，也可能是我没优化到位。😃
