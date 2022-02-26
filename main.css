@@ -23,7 +23,7 @@ body{
 	grid-auto-rows: minmax(360px,auto);
 	grid-gap: 0.625em;
 }
-
+/*csseffects*/
 .cardlogo3{
 	position: relative;
 }
@@ -89,12 +89,11 @@ body{
 		width: 100%;
 		text-align: center;
 	}
-
+/*font-size*/
 .card2{
-	display: grid;
-	grid-gap: 0px;
+	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
 	background: #FFFFFF;
 	border-radius: var(--cardR);
 	border: var(--cardborder);
@@ -110,10 +109,7 @@ body{
 	}
 	.lorem10{
 		font-size: 10px;
-		background: var(--card2textbg);
-		background-clip: text;
-		-webkit-background-clip: text;
-		color: transparent;
+		color: var(--card2textcolor);
 	}
 	.lorem8{
 		font-size: 8px;
@@ -122,7 +118,7 @@ body{
 		-webkit-background-clip: text;
 		color: transparent;
 	}
-
+/*font-weight*/
 .card3{
 	display: flex;
 	justify-content: center;
@@ -141,7 +137,7 @@ body{
 	    justify-items: end;
 	}
 
-	.card3warp{
+	.cardTwarp{
 		display: flex;
 	    grid-gap: 10px;
 	    align-items: flex-end;
@@ -202,8 +198,7 @@ body{
 		color: #1B1D1F;
 		font-weight: 100;
 	}
-
-
+/*blur*/
 .card4{
 	display: grid;
 	justify-items: center;
@@ -216,7 +211,7 @@ body{
 	.card4:hover{
 		box-shadow:var(--hovershadow);
 	}
-
+/*light/dark switch*/
 .card5{
 	display: grid;
 	background: #FFFFFF;
@@ -235,30 +230,7 @@ body{
   	background-position: center;
 	}
 
-
-.card7{
-	background: #FFFFFF;
-	border-radius: var(--cardR);
-	border: var(--cardborder);
-	box-shadow: var(--cardboxshadow);
-	display:flex ;
-	justify-content: center;
-	align-items: center;
-}
-
-	.card7text{
-		background: linear-gradient(90deg, #3023AE 0%, #53A0FD 48%, #B4EC51 100%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		color: transparent;
-		font-size: 14px;
-		text-shadow: 0 2px 6px rgba(0,198,255,0.55);
-	}
-
-	.card7:hover{
-	box-shadow:var(--hovershadow);
-	}
-
+/*color-gamut-💊*/
 .card8{
 	display: flex;
 	grid-gap: 2px;
@@ -311,7 +283,7 @@ body{
 	.card8:hover{
 		box-shadow:var(--hovershadow);
 	}
-
+/*color-gamut-circle*/
 .card6{
 	display: flex;
 	align-items: center;
@@ -339,14 +311,14 @@ body{
 		background: color(display-p3 0 1 0.039);
 	}
 	.cicle{
-		width: 70px;
-		height: 70px;
-		border-radius: 35px;
+		width: 84px;
+		height: 84px;
+		border-radius: 42px;
 		background: rgba(255, 255, 255, 1.0);
 		z-index: 1;
 		position: absolute;
 	}
-
+/*color-gamut-pics*/
 .card9{
 	display: flex;
 	justify-content: center;
