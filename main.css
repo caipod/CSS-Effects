@@ -40,14 +40,14 @@ body{
 		width: 100%;
 		height: 100%;
 		border-radius: var(--cardR);
-		backdrop-filter: saturate(100%) blur(60px);
-	 	-webkit-backdrop-filter: saturate(100%) blur(60px);
+		backdrop-filter: saturate(100%) blur(80px);
+	 	-webkit-backdrop-filter: saturate(100%) blur(80px);
 	}
 	.pt1{
 		position: absolute;
 		background: #007AFF;
 		background: color(display-p3 0 0.394 1);
-		border-radius: var(--cardR);
+		border-radius: 20px 0px 0px 0px;
 		width: 50%;
 		height: 50%;
 	}
@@ -55,7 +55,7 @@ body{
 		position: absolute;
 		background: #5856D6;
 		background: color(display-p3 0.383 0 1);
-		border-radius: var(--cardR);
+		border-radius: 0px 20px 0px 0px;
 		width: 50%;
 		height: 50%;
 		right: 0;
@@ -64,7 +64,7 @@ body{
 		position: absolute;
 		background: #34C759;
 		background: color(display-p3 0.074 0.92 0.223);
-		border-radius: var(--cardR);
+		border-radius: 0px 0px 0px 20px;
 		width: 50%;
 		height: 50%;
 		left: 0;
@@ -74,7 +74,7 @@ body{
 		position: absolute;
 		background: #63E6E2;
 		background: color(display-p3 0.053 0.955 0.829);
-		border-radius: var(--cardR);
+		border-radius: 0px 0px 20px 0px;
 		width: 50%;
 		height: 50%;
 		right: 0;
