@@ -478,10 +478,10 @@ body{
 @keyframes opacity{
 	from{
 		opacity: 0%;
-		margin: 10px;
+		transform: translateY(30px);
 	}
 	to{
 		opacity: 100%;
-		margin: 0px;
+		transform: translateY(0px);
 	}
 }
