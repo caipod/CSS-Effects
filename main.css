@@ -22,6 +22,8 @@ body{
 	grid-template-columns: repeat(auto-fit, minmax(300px,auto));
 	grid-auto-rows: minmax(360px,auto);
 	grid-gap: 0.625em;
+	animation-name: opacity;
+	animation-duration: 1s
 }
 /*csseffects*/
 .cardlogo3{
@@ -368,14 +370,13 @@ body{
 		width: 100%;
 	    height: 100%;
 		background-image: radial-gradient(circle at 1e+02% 50%, #D8E4F8 0%, #FFFFFF 65%);
-	    clip-path: polygon(10% 5%, 44% 5%, 80% 50%, 44% 95%, 10% 95%);
+	    clip-path: polygon(10% 10%, 10% 90%, 70% 50%);
 	}
 	.ns-c-img{
 		z-index: 1;
 		position: absolute;
-		left: 120px;
+		left: 100px;
 		top: 170px;
-		transform: scale(1.2);
 	}
 	.cardclip:hover{
 		box-shadow:var(--hovershadow);
@@ -473,4 +474,14 @@ body{
 		background-image: url(R/dark.svg);
 	}
 
+}
+@keyframes opacity{
+	from{
+		opacity: 0%;
+		margin: 10px;
+	}
+	to{
+		opacity: 100%;
+		margin: 0px;
+	}
 }
