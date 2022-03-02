@@ -26,14 +26,14 @@ body{
 	animation-name: opacity;
 	animation-duration: 1s
 }
-/*csseffects*/
+/*网站封面图。我分别用 sRGB 和 P3 色域的代码写了这张卡片的背景，如果你用苹果设备与其他设备对比观看，会发现颜色的鲜艳程度不同。*/
 .cardlogo{
 	position: relative;
 	
 }
 
 	.csseffects2{
-		transition: all 0.5s;
+		transition: all 200ms;
 		position: absolute;
 		z-index: 1;
 		top: 50%;
@@ -41,7 +41,8 @@ body{
 		transform: translate(-50%, -50%);
 	}
 	.cardlogo:hover .csseffects2{
-		top: 45%;
+		top: 48%;
+		transform: translate(-50%, -50%) scale(1.2);
 
 	}
 
@@ -101,7 +102,7 @@ body{
 		width: 100%;
 		text-align: center;
 	}
-/*font-size*/
+/*测试浏览器是否支持显示 10px 与 8px 字号大小。若不支持这两种字号大小，浏览器会以 12px 字号来渲染。*/
 .card2{
 	display: flex;
 	justify-content: center;
@@ -143,7 +144,7 @@ body{
 	.lorem8:hover{
 		font-size: 30px;
 	}
-/*font-weight*/
+/*测试浏览器或操作系统是否支持显示多种字重。对于西文，我设置了 100～900 的字重。对于中文，我设置了 100～600 的字重显示。我将 Regular(400) 字重设为了蓝色，方便对比。*/
 .card3{
 	display: flex;
 	justify-content: center;
@@ -166,6 +167,7 @@ body{
 		display: flex;
 	    grid-gap: 10px;
 	    align-items: flex-end;
+	    padding: 20px;
 	}
 	
 	.fontweight9{
@@ -263,7 +265,7 @@ body{
 		font-size: 30px;
 	}
 
-/*blur*/
+/*测试浏览器是否支持背景高斯模糊效果。*/
 .card4{
 	display: grid;
 	justify-items: center;
@@ -276,7 +278,46 @@ body{
 	.card4:hover{
 		box-shadow:var(--hovershadow2);
 	}
-/*light/dark switch*/
+
+	.card4box{
+		transition: all 200ms;
+		position: relative;
+		transform: translate(-25%,-25%);
+	
+	}
+	.back{
+		transition: all 200ms;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100px;
+		height: 100px;
+		background-image: linear-gradient(270deg, #D1D5DF 0%, #A5AABB 100%);
+		border-radius: 50px;
+	}
+	.glass{
+		transition: all 200ms;
+		width: 100px;
+		height: 100px;
+		border-radius: 10px;
+		background: rgba(63,104,195,0.04);
+		border: 1px solid rgba(216,219,229,0.19);
+		backdrop-filter: saturate(180%) blur(20px);
+	  	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	}
+	
+	.card4box:hover .glass{
+		width: 140px;
+		height: 140px;
+		border-radius: 14px;
+	}
+	.card4box:hover .back{
+		width: 90px;
+		height: 90px;
+		border-radius: 45px;
+	}
+
+/*测试操作系统是否支持亮暗色切换。*/
 .card5{
 	display: grid;
 	background: #FFFFFF;
@@ -288,7 +329,7 @@ body{
 		box-shadow:var(--hovershadow2);
 	}
 	.card5img:hover{
-		transform: rotate(45deg);
+		transform: rotate(-90deg);
 	}
 
 	.card5img{
@@ -296,10 +337,10 @@ body{
 		background-image: url(R/light.svg);
 	  	background-repeat: no-repeat;
 	  	background-position: center;
-	  	transition: all 1s;
+	  	transition: all 500ms;
 	}
 
-/*color-gamut-💊*/
+/*测试浏览器是否支持sRGB、Display P3 或 rec2020 色域，若支持，蓝灯亮起，反则不亮灯。*/
 .card8{
 	transition: all 500ms;
 	display: flex;
@@ -355,9 +396,8 @@ body{
 
 	.card8:hover{
 		box-shadow:var(--hovershadow2);
-		grid-gap: 10px;
 	}
-/*color-gamut-circle*/
+/*测试设备是否支持 Display P3 色域的图片显示。若支持 Display P3 色域，左右两个半圆的颜色会有些许的不同，左侧的绿色比右侧更鲜艳，若不支持 Display P3 色域，左右两个半圆的颜色则一致。使用绿色作为对比是因为绿色的 sRGB 与 Display P3 色域范围差别最大。*/
 .card6{
 	display: flex;
 	align-items: center;
@@ -398,8 +438,9 @@ body{
 		transform: scale(0.7);
 	}
 	
-/*color-gamut-pics*/
+/*以图片格式测试浏览器对 Display P3 与sRGB 色域的兼容性，如果您的浏览器支持 Display P3色域，那么左右两侧的半圆颜色应该会有些许不同。*/
 .card9{
+	transition: all 200ms;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -408,15 +449,25 @@ body{
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
 }
-	.gtest{
+	.gtest-l, .gtest-r{
+		transition: all 200ms;
 		height: 100px;
 		width: auto;
 	}
-	
-	.card9:hover{
-		box-shadow:var(--hovershadow2);
+
+	.card9:hover .gtest-l{
+		transform: translateY(20px) ;
 	}
 
+	.card9:hover .gtest-r{
+		transform: translateY(-20px) ;
+	}
+
+	.card9:hover{
+		grid-gap: 5px;
+		box-shadow:var(--hovershadow2);
+	}
+/*字面意思。*/
 .cardnone{
 	background: none;
 	border-radius: var(--cardR);
@@ -436,7 +487,7 @@ body{
 	.cardlink:hover{
 		color: var(--textlinkhover);
 	}
-
+/*字面意思。*/
 .cardclip{
 	background: #FFFFFF;
 	border-radius: var(--cardR);
@@ -466,69 +517,6 @@ body{
 	}
 	.cardclip:hover{
 		box-shadow:var(--hovershadow2);
-	}
-
-.logoarea{
-	position: relative;
-	display: contents;
-}
-
-.svgbg{
-	z-index: 0;
-	width: 100%;
-
-}
-.svgtextlogo{
-	position: absolute;
-	left: 20px;
-	top: 20px;
-	z-index: 1;
-}
-
-
-.toolscount{
-	font-size: 14px;
-	color: #FFFFFF;
-	bottom: 20px;
-	left: 20px;
-	position: absolute;
-}
-.card4box{
-	transition: all 500ms;
-	position: relative;
-	transform: translate(-25%,-25%);
-	
-}
-	.back{
-		transition: all 500ms;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 100px;
-		height: 100px;
-		background-image: linear-gradient(270deg, #D1D5DF 0%, #A5AABB 100%);
-		border-radius: 50px;
-	}
-	.glass{
-		transition: all 500ms;
-		width: 100px;
-		height: 100px;
-		border-radius: 10px;
-		background: rgba(63,104,195,0.04);
-		border: 1px solid rgba(216,219,229,0.19);
-		backdrop-filter: saturate(180%) blur(20px);
-	  	-webkit-backdrop-filter: saturate(180%) blur(20px);
-	}
-	
-	.card4box:hover .glass{
-		width: 140px;
-		height: 140px;
-		border-radius: 14px;
-	}
-	.card4box:hover .back{
-		width: 90px;
-		height: 90px;
-		border-radius: 45px;
 	}
 
 
