@@ -464,7 +464,6 @@ body{
 	}
 
 	.card9:hover{
-		grid-gap: 5px;
 		box-shadow:var(--hovershadow2);
 	}
 /*字面意思。*/
