@@ -31,20 +31,38 @@ body{
 	position: relative;
 	
 }
+	.cardlogo:hover .cardlogotext{
+		opacity: 0.9;
+		top: 43%;
+	}
+
+	.cardlogo:hover .csseffects2{
+		top: 45%;
+		transform: translate(-50%, -50%) scale(0.5);
+		opacity: 0;
+	}
+
+	.cardlogotext{
+		transition: all 200ms;
+		position: absolute;
+		opacity: 0;
+		font-weight: 800;
+		font-size: 30px;
+		color: #FFFFFF;
+		top: 45%;
+		text-align: center;
+		width: 100%;
+
+	}
 
 	.csseffects2{
 		transition: all 200ms;
 		position: absolute;
-		z-index: 1;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-	.cardlogo:hover .csseffects2{
-		top: 48%;
-		transform: translate(-50%, -50%) scale(1.2);
-
-	}
+	
 
 	.cover{
 		position: absolute;
