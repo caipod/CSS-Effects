@@ -1,8 +1,5 @@
 # 网站功能说明
-# Website Instruction
 该网站可用来测试各平台设备浏览器对于 CSS 特性的兼容性。
-
-This website is used to test the of each platform’s browser
 
 从左至右（或从上往下）功能分别为：
 
