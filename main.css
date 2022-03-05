@@ -45,7 +45,7 @@ body{
 		transition: all 300ms;
 		position: absolute;
 		opacity: 0;
-		font-weight: 700;
+		font-weight: 900;
 		font-size: 30px;
 		color: #FFFFFF;
 		top: 45%;
@@ -562,9 +562,11 @@ body{
 	}
 	.cardclip:hover .clipath{
 		transform: translatex(30px) scaleX(1.2);
+		clip-path: polygon(10% 0%, 10% 100%, 70% 50%);
 	}
 	.cardclip:hover .ns-c-img{
-		display: none;
+		left: 150px;
+		opacity: 0;
 	}
 	.ns-c-img{
 		transition: all 200ms;
@@ -582,10 +584,8 @@ body{
 	    left: 25%;
 	    font-size: 30px;
 	    font-weight: 400;
-	    background: linear-gradient(90deg, #8cbaff 100%,#e9f5ff 0%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		color: transparent;
+	    font-style: italic;
+		color: #7da5e2;
 	    opacity: 0;
 	}
 
