@@ -1,5 +1,8 @@
 # 网站功能说明
+# Website Instruction
 该网站可用来测试各平台设备浏览器对于 CSS 特性的兼容性。
+
+This website is used to test the of each platform’s browser
 
 从左至右（或从上往下）功能分别为：
 
@@ -7,6 +10,8 @@
 网站封面图。
 
 我分别用 sRGB 和 P3 色域的代码写了这张卡片的背景，如果你用苹果设备与其他设备对比观看，会发现颜色的鲜艳程度不同。
+
+把鼠标悬浮在卡片上，会显示标题文字。
 ```css
 backdrop-filter:
 ```
@@ -53,6 +58,8 @@ backdrop-filter:
 
 ## 第八张卡片：
 以图片格式测试浏览器对 Display P3 与sRGB 色域的兼容性，如果您的浏览器支持 Display P3色域，那么左右两侧的半圆颜色应该会有些许不同。
+
+把鼠标放在卡片上，左右两个半圆会有错位的效果。
 
 ## 第九张卡片：
 字面意思。
