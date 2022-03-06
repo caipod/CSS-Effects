@@ -564,7 +564,7 @@ body{
 	
 	.ns-c-img{
 		/*nextstep的svg切图*/
-		transition: all 200ms;
+		transition: all 150ms;
 		z-index: 1;
 		position: absolute;
 		left: 100px;
@@ -579,9 +579,7 @@ body{
 	    top: 47%;
 	    font-size: 16px;
 	    font-weight: 500;
-	    /*font-style: italic;*/
-		color: #7da5e2;
-	    opacity: 0;
+		color: transparent;
 	}
 
 	.cardclip:hover{
@@ -687,13 +685,12 @@ body{
 
 @keyframes endingtext{
 	from{
-		opacity: 0%;
 		left: 39%;
 
 	}
 	to{
-		opacity: 100%;
 		left: 40%;
+		color: #7da5e2;
 	}
 }
 
@@ -732,13 +729,11 @@ body{
 
 @keyframes r-endingtext{
 	from{
-		opacity: 100%;
-		left: 30%;
+		left: 40%;
 
 	}
 	to{
-		opacity: 0%;
-		left: 25%;
+		left: 39%;
 	}
 }
 
