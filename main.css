@@ -455,7 +455,7 @@ body{
 		transition: all 0.2s;
 	}
 	.circle:hover{
-		transform: scale(0.7);
+		transform: scale(0.5);
 	}
 	
 /*以图片格式测试浏览器对 Display P3 与sRGB 色域的兼容性，如果您的浏览器支持 Display P3色域，那么左右两侧的半圆颜色应该会有些许不同。*/
@@ -470,14 +470,14 @@ body{
 	box-shadow: var(--cardboxshadow);
 }
 	.gtest-l, .gtest-r{
-		transition: all 250ms;
+		transition: all 300ms;
 		height: 100px;
 		width: auto;
 		z-index: 1;
 	}
 
 	.names{
-		transition: all 250ms;
+		transition: all 100ms;
 		display: flex;
 		position: absolute;
 		color: #1B1D1F;
@@ -554,21 +554,16 @@ body{
 	position: relative;
 }
 	.clipath{
+		/*三角形背景*/
 		width: 100%;
 	    height: 100%;
 		background-image: radial-gradient(circle at 1e+02% 50%, #D8E4F8 0%, #FFFFFF 65%);
 	    clip-path: polygon(10% 10%, 10% 90%, 70% 50%);
 		transition: all 400ms;
 	}
-	.cardclip:hover .clipath{
-		transform: translatex(30px) scaleX(1.2);
-		clip-path: polygon(10% 0%, 10% 100%, 70% 50%);
-	}
-	.cardclip:hover .ns-c-img{
-		left: 150px;
-		opacity: 0;
-	}
+	
 	.ns-c-img{
+		/*nextstep的svg切图*/
 		transition: all 200ms;
 		z-index: 1;
 		position: absolute;
@@ -577,25 +572,51 @@ body{
 	}
 
 	.endingtext{
+		/*nextstep文字*/
 		transition: all 250ms;
 	    position: absolute;
 	    z-index: 2;
-	    top: 44%;
-	    left: 25%;
-	    font-size: 30px;
-	    font-weight: 400;
-	    font-style: italic;
+	    top: 47%;
+	    font-size: 16px;
+	    font-weight: 500;
+	    /*font-style: italic;*/
 		color: #7da5e2;
 	    opacity: 0;
 	}
 
 	.cardclip:hover{
+		/*卡片背景*/
 		box-shadow:var(--hovershadow2);
 	}
-	.cardclip:hover .endingtext{
-		opacity: 100%;
-	    left: 30%;
+
+	/*鼠标悬浮动画*/
+
+	.cardclip:hover .ns-c-img{
+		animation: svgani 200ms forwards;
 	}
+
+	.cardclip:hover .endingtext{
+		animation: endingtext 250ms forwards;
+		animation-delay: 200ms;
+	}
+	.cardclip:hover .clipath{
+		animation: clipath 250ms forwards;
+	}
+
+	/*回退动画*/
+
+	.cardclip .clipath{
+		animation: r-clipath 250ms forwards;
+	}
+
+	.cardclip .ns-c-img{
+		animation: r-svgani 200ms forwards;
+	}
+
+	.cardclip .endingtext{
+		animation: r-endingtext 250ms forwards;
+	}
+
 
 
 
@@ -652,3 +673,89 @@ body{
 		transform: translateY(0px);
 	}
 }
+
+@keyframes svgani{
+	from{
+		left: 100px;
+	}
+
+	to{
+		left: 150px;
+		opacity: 0;
+	}
+}
+
+@keyframes endingtext{
+	from{
+		opacity: 0%;
+		left: 39%;
+
+	}
+	to{
+		opacity: 100%;
+		left: 40%;
+	}
+}
+
+@keyframes clipath{
+	from{
+		clip-path: polygon(10% 10%, 10% 90%, 70% 50%);
+
+	}
+	to{
+		transform: translatex(30px) scaleX(1.2);
+		clip-path: polygon(10% 0%, 10% 100%, 70% 50%);
+	}
+}
+
+@keyframes r-clipath{
+	from{
+		transform: translatex(30px) scaleX(1.2);
+		clip-path: polygon(10% 0%, 10% 100%, 70% 50%);
+
+	}
+	to{
+		clip-path: polygon(10% 10%, 10% 90%, 70% 50%);
+	}
+}
+
+@keyframes r-svgani{
+	from{
+		left: 150px;
+		opacity: 0;
+	}
+
+	to{
+		left: 100px;
+	}
+}
+
+@keyframes r-endingtext{
+	from{
+		opacity: 100%;
+		left: 30%;
+
+	}
+	to{
+		opacity: 0%;
+		left: 25%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
