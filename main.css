@@ -490,13 +490,13 @@ body{
 	.nameleft{
 		align-self: flex-start;
 		font-size: 12px;
-		transform: translateX(-20px);
+		transform: translateX(20px);
 	}
 
 	.nameright{
 		align-self: flex-end;
 		font-size: 12px;
-		transform: translateX(-8px);
+		transform: translateX(8px);
 	}
 
 	.card9:hover .nameleft{
