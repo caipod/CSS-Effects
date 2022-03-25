@@ -560,8 +560,8 @@ body{
 }
 	.bubble{
 		/*基础样式*/
-		width: 50%;
-		height: 50%;
+		width: 190px;
+		height: 190px;
 		border-radius: 50%;
 		background-image: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #FFFFFF 25%, #EBF5FF 50%);
 		border: 1px solid #F3F4FD;
@@ -608,30 +608,30 @@ body{
 
 	@keyframes showbubble{
 		from{
-			width: 50%;
-			height: 50%;
+			width: 190px;
+			height: 190px;
 			filter: blur(12px);
 		}
 		to{
-			width: 70%;
-			height: 70%;
+			width: 250px;
+			height: 250px;
 			filter: none;	
 		}
 	}
 	/*圆环回退动画*/
 	.nextstep .bubble{
-		animation: r-showbubble 300ms forwards;
+		animation: r-showbubble 200ms forwards;
 	}
 
 	@keyframes r-showbubble{
 		from{
-			width: 70%;
-			height: 70%;
+			width: 250px;
+			height: 250px;
 			filter: none;
 		}
 		to{
-			width: 50%;
-			height: 50%;
+			width: 190px;
+			height: 190px;
 			filter: blur(12px);	
 		}
 	}
@@ -712,77 +712,6 @@ body{
 		transform: translateY(0px);
 	}
 }
-
-@keyframes svgani{
-	from{
-		left: 100px;
-	}
-
-	to{
-		left: 150px;
-		opacity: 0;
-	}
-}
-
-@keyframes endingtext{
-	from{
-		left: 39%;
-
-	}
-	to{
-		left: 40%;
-		color: #7da5e2;
-	}
-}
-
-@keyframes clipath{
-	from{
-		clip-path: polygon(10% 10%, 10% 90%, 70% 50%);
-
-	}
-	to{
-		transform: translatex(30px) scaleX(1.2);
-		clip-path: polygon(10% 0%, 10% 100%, 70% 50%);
-	}
-}
-
-@keyframes r-clipath{
-	from{
-		transform: translatex(30px) scaleX(1.2);
-		clip-path: polygon(10% 0%, 10% 100%, 70% 50%);
-
-	}
-	to{
-		clip-path: polygon(10% 10%, 10% 90%, 70% 50%);
-	}
-}
-
-@keyframes r-svgani{
-	from{
-		left: 150px;
-		opacity: 0;
-	}
-
-	to{
-		left: 100px;
-	}
-}
-
-@keyframes r-endingtext{
-	from{
-		left: 40%;
-
-	}
-	to{
-		left: 39%;
-	}
-}
-
-
-
-
-
-
 
 
 
