@@ -137,19 +137,16 @@ body{
 	.lorem12{
 		transition: all 0.2s;
 		font-size: 12px;
-		line-height: 17px;
 		color: var(--card2textcolor);
 	}
 	.lorem10{
 		transition: all 0.2s;
 		font-size: 10px;
-		line-height: 17px;
 		color: var(--card2textcolor);
 	}
 	.lorem8{
 		transition: all 0.2s;
 		font-size: 8px;
-		line-height: 17px;
 		color: #00A7FF;
 		color: color(display-p3 0 0.394 1);
 		
