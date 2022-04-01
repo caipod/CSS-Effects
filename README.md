@@ -65,7 +65,6 @@ backdrop-filter:
 把鼠标放在卡片上，圆圈与副标题会渐渐浮现。
 
 <hr>
-
 目前发现网站对于 Firefox 浏览器兼容性不太好，很多特性都不支持，例如 z-index 与背景高斯模糊。
 
 整体显示效果最好的浏览器是Safari。
@@ -73,6 +72,8 @@ backdrop-filter:
 **使用资源：**
 - [SF 符号](https://developer.apple.com/sf-symbols/)
 - [Sans Forgetica 字体](https://sansforgetica.rmit.edu.au/)
+- [whichbrowser](https://github.com/WhichBrowser/WhichBrowser)
+- [What is my resolution?](https://whatismyresolution.com/)
 - [Clip Path 制作工具](https://bennettfeely.com/clippy/)
 
 如果你的设备不能正确显示某些效果，不一定代表浏览器不支持，也可能是我没优化到位。😃有问题请通过邮箱联系我。
