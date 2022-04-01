@@ -72,7 +72,6 @@ backdrop-filter:
 **使用资源：**
 - [SF 符号](https://developer.apple.com/sf-symbols/)
 - [Sans Forgetica 字体](https://sansforgetica.rmit.edu.au/)
-- [whichbrowser](https://github.com/WhichBrowser/WhichBrowser)
 - [What is my resolution?](https://whatismyresolution.com/)
 - [Clip Path 制作工具](https://bennettfeely.com/clippy/)
 
