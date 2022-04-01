@@ -23,7 +23,7 @@ body{
 	grid-auto-rows: minmax(360px,auto);
 	grid-gap: 0.625em;
 	animation-name: opacity;
-	animation-duration: 1s
+	animation-duration: 1s;
 }
 /*网站封面图。我分别用 sRGB 和 P3 色域的代码写了这张卡片的背景，如果你用苹果设备与其他设备对比观看，会发现颜色的鲜艳程度不同。*/
 .cardlogo{
@@ -657,6 +657,14 @@ body{
 		box-shadow:var(--hovershadow2);
 	}
 
+.siteinfo{
+	padding: 30px;
+	animation-name: opacity;
+	animation-duration: 2s;
+	text-align: center;
+	color: #c3cad6;
+	font-size: 12px;
+}
 
 @media (color-gamut: srgb) {
 	.srgb{

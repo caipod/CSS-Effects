@@ -6,6 +6,14 @@
 	<meta name="description" content="A responsive website demo for CSS effects">
 	<meta name="keywords" content="css,effects,html">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script>
+			(function(){var p=[],w=window,d=document,e=f=0;p.push('ua='+encodeURIComponent(navigator.userAgent));e|=w.ActiveXObject?1:0;e|=w.opera?2:0;e|=w.chrome?4:0;
+			e|='getBoxObjectFor' in d || 'mozInnerScreenX' in w?8:0;e|=('WebKitCSSMatrix' in w||'WebKitPoint' in w||'webkitStorageInfo' in w||'webkitURL' in w)?16:0;
+			e|=(e&16&&({}.toString).toString().indexOf("\n")===-1)?32:0;p.push('e='+e);f|='sandbox' in d.createElement('iframe')?1:0;f|='WebSocket' in w?2:0;
+			f|=w.Worker?4:0;f|=w.applicationCache?8:0;f|=w.history && history.pushState?16:0;f|=d.documentElement.webkitRequestFullScreen?32:0;f|='FileReader' in w?64:0;
+			p.push('f='+f);p.push('r='+Math.random().toString(36).substring(7));p.push('w='+screen.width);p.push('h='+screen.height);var s=d.createElement('script');
+			s.src='detect.js?' + p.join('&');d.getElementsByTagName('head')[0].appendChild(s);})();
+	</script>
 	<title>🧑🏻‍💻CSS Effects</title>
 </head>
 <body>
@@ -99,5 +107,43 @@
 			<!-- <a href="https://zengyili.wordpress.com/" class="cardlink" target="_blank">history</a> -->
 		</div>
 	</div>
+	<div class="siteinfo">
+			<script type="text/javascript">document.write(screen.width+'x'+screen.height);</script>
+			<main>
+				<div id='container'></div>
+			</main>
+
+			<script>
+
+				function waitForWhichBrowser(cb) {
+					var callback = cb;
+					
+					function wait() {
+						if (typeof WhichBrowser == 'undefined') 
+							window.setTimeout(wait, 100)
+						else 
+							callback();
+					}
+					
+					wait();
+				}
+
+
+				waitForWhichBrowser(function() {
+					var o = document.getElementById('container');
+		
+					try {
+						Browsers = new WhichBrowser({
+							useFeatures:		true,
+							detectCamouflage:	true
+						});
+					
+						o.innerHTML = 'You are using ' + Browsers + '<br><code>' + navigator.userAgent + '</code>';
+					} catch (e) {
+						o.innerHTML = 'Oops, something went wrong:<br> <small>' + e + '</small>';
+					}
+				});
+			</script>
+		</div>	
 </body>
 </html>
