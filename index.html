@@ -6,28 +6,7 @@
 	<meta name="description" content="A responsive website demo for CSS effects">
 	<meta name="keywords" content="css,effects,html">
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<script type="text/javascript">
-		var resratio = (screen.width/screen.height);
-		if (resratio >= 1.6) {
-			var widescreen_string = "Widescreen";
-		}
-		else {
-			var widescreen_string = "Not A Widescreen";
-		}
-		
-		if (1.32 < resratio && resratio < 1.34) {
-			var aspect_ratio_string = "4:3";
-		}
-		else if (1.77 < resratio && resratio < 1.79) {
-			var aspect_ratio_string = "16:9";
-		}
-		else if (1.59 < resratio && resratio < 1.61) {
-			var aspect_ratio_string = "16:10";
-		}
-		else {
-			var aspect_ratio_string = resratio.toFixed(2) + ":1";
-		}
-	</script>
+	<script type="text/javascript" src="main.js"></script>
 	<title>🧑🏻‍💻CSS Effects</title>
 </head>
 <body>
@@ -120,18 +99,19 @@
 		</div>
 	</div>
 	<div class="siteinfo">
-		<strong>✺</strong>
 		<script type="text/javascript">
 			document.write(screen.width+'*'+screen.height);
 		</script>
-		<strong>· ⇲</strong>
+		<strong> · </strong>
 		<script type="text/javascript">
 			document.write(aspect_ratio_string);
 		</script>
-		<strong>· ❊</strong>
+		<strong> · </strong>
 		<script type="text/javascript">
 			document.write(window.innerWidth+'*'+window.innerHeight);
 		</script>
+		<br>
+		A Github Pages Project
 	</div>	
 </body>
 </html>
