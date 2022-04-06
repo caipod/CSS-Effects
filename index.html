@@ -105,6 +105,12 @@
 		</script>
 		<strong> · </strong>
 		<script type="text/javascript">
+			document.write("@"+window.devicePixelRatio+"x");
+  			updateResolution();
+			window.setInterval(updateResolution, 200);
+		</script>
+		<strong> · </strong>
+		<script type="text/javascript">
 			document.write(aspect_ratio_string);
 		</script>
 		<strong> · </strong>
