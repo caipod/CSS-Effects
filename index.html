@@ -100,7 +100,7 @@
 		</div>
 	</div>
 	<div class="siteinfo">
-		<script type="text/javascript">
+		<script type="text/javascript" >
 			document.write(screen.width+'*'+screen.height);
 		</script>
 		<strong> · </strong>
@@ -111,11 +111,19 @@
 		</script>
 		<strong> · </strong>
 		<script type="text/javascript">
+			document.write(screen.colorDepth+"bit");
+		</script>
+		<strong> · </strong>
+		<script type="text/javascript">
 			document.write(aspect_ratio_string);
 		</script>
 		<strong> · </strong>
 		<script type="text/javascript">
 			document.write(window.innerWidth+'*'+window.innerHeight);
+		</script>
+		<br>
+		<script type="text/javascript">
+			document.write(navigator.userAgent);
 		</script>
 		<br>
 		A Github Pages Project
