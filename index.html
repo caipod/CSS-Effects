@@ -110,14 +110,14 @@
 		<strong> · </strong>
 		<span id="windowpoint"></span>
 		<div id="userAgent"></div>
-		<div>🌕🌖🌗🌘🌑🌒🌓🌔</div>
+		<div>🍑</div>
 	</div>
 	<script>
-		document.getElementById("screenpoint").innerHTML=screen.width+'*'+screen.height;
-		document.getElementById("scale").innerHTML="@"+window.devicePixelRatio+"x";
-		document.getElementById("colorDepth").innerHTML=screen.colorDepth+"bit";
-		document.getElementById("aspect").innerHTML=aspect_ratio_string;
-		document.getElementById("windowpoint").innerHTML=window.innerWidth+'*'+window.innerHeight;
+		document.getElementById("screenpoint").innerHTML='设备逻辑分辨率'+screen.width+'*'+screen.height;
+		document.getElementById("scale").innerHTML='缩放倍率'+"@"+window.devicePixelRatio+"x";
+		document.getElementById("colorDepth").innerHTML='屏幕色深'+screen.colorDepth+"bit";
+		document.getElementById("aspect").innerHTML='屏幕比例'+aspect_ratio_string;
+		document.getElementById("windowpoint").innerHTML='窗口逻辑分辨率'+window.innerWidth+'*'+window.innerHeight;
 		document.getElementById("userAgent").innerHTML=navigator.userAgent;
 	</script>
 </body>
