@@ -55,7 +55,7 @@ body{
 	}
 
 	.csseffects2{
-		transition: all 300ms;
+		transition: all 100ms;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -118,6 +118,7 @@ body{
 		bottom: 20px;
 		width: 100%;
 		text-align: center;
+		/*font-family: SansForgetica-Regular;*/
 	}
 /*测试浏览器是否支持显示 10px 与 8px 字号大小。若不支持这两种字号大小，浏览器会以 12px 字号来渲染。*/
 .card2{
@@ -672,8 +673,7 @@ body{
 		border: 1px solid #BAE3FF;
 		box-shadow: inset 0 0 5px 0 #9DD2F6;
 		color: #1C3250;
-	}
-	
+	}	
 }
 
 @media (color-gamut: p3) {
@@ -682,8 +682,7 @@ body{
 		border: 1px solid #BAE3FF;
 		box-shadow: inset 0 0 5px 0 #9DD2F6;
 		color: #1C3250;
-	}
-	
+	}	
 }
 
 @media (color-gamut: rec2020) {
@@ -719,3 +718,16 @@ body{
 		transform: translateY(0px);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
