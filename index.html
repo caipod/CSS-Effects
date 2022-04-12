@@ -104,6 +104,8 @@
 		<strong> · </strong>
 		<span id="scale"></span>
 		<strong> · </strong>
+		<span id="screenpixel"></span>
+		<strong> · </strong>
 		<span id="colorDepth"></span>
 		<strong> · </strong>
 		<span id="aspect"></span>
@@ -115,6 +117,7 @@
 	<script>
 		document.getElementById("screenpoint").innerHTML='设备逻辑分辨率'+screen.width+'*'+screen.height;
 		document.getElementById("scale").innerHTML='缩放倍率'+"@"+window.devicePixelRatio+"x";
+		document.getElementById('screenpixel').innerHTML='渲染分辨率'+screen.width * window.devicePixelRatio + '*'+screen.height*window.devicePixelRatio;
 		document.getElementById("colorDepth").innerHTML='浏览器色深'+screen.colorDepth+"bit";
 		document.getElementById("aspect").innerHTML='屏幕比例'+aspect_ratio_string;
 		document.getElementById("windowpoint").innerHTML='窗口逻辑分辨率'+window.innerWidth+'*'+window.innerHeight;
