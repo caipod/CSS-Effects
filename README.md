@@ -82,7 +82,7 @@ backdrop-filter:
 - [SF 符号](https://developer.apple.com/sf-symbols/)
 - [Sans Forgetica 字体](https://sansforgetica.rmit.edu.au/)
 - [What is my resolution?](https://whatismyresolution.com/)
-- [Resolution Inspector](http://dev.jeffersonscher.com/resolution.html)ba
+- [Resolution Inspector](http://dev.jeffersonscher.com/resolution.html)
 - [Clip Path 制作工具](https://bennettfeely.com/clippy/)
 
 如果你的设备不能正确显示某些效果，不一定代表浏览器不支持，也可能是我没优化到位。😃有问题请通过邮箱联系我。
