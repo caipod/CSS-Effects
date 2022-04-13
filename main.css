@@ -452,11 +452,13 @@ body{
 		height: 80px;
 		border-radius: 50%;
 		background: rgba(255, 255, 255, 1.0);
+		/*background-image: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #FFFFFF 50%);*/
 		position: absolute;
 		transition: all 0.2s;
 	}
 	.circle:hover{
 		transform: scale(0.5);
+		/*background-image: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.27) 0%, rgba(255,255,255,0.70) 50%);*/
 	}
 	
 /*以图片格式测试浏览器对 Display P3 与sRGB 色域的兼容性，如果您的浏览器支持 Display P3色域，那么左右两侧的半圆颜色应该会有些许不同。*/
@@ -656,6 +658,49 @@ body{
 	/*卡片本体鼠标悬浮效果*/
 	.nextstep:hover{
 		box-shadow:var(--hovershadow2);
+	}
+
+.siteinfocard{
+	/*卡片样式*/
+	background: #FFFFFF;
+	border-radius: var(--cardR);
+	border: var(--cardborder);
+	box-shadow: var(--cardboxshadow);
+	/*组内定位*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 4px;
+	/*动画*/
+	transition: all 300ms;
+}
+	.siteinfocard:hover{
+		box-shadow:var(--hovershadow2);
+	}
+
+	.siteinfocardwarp{
+		transition: all 200ms;
+		display: flex;
+		flex-direction: column;
+		grid-gap: 10px;
+	}
+
+	.infogroup{
+		transition: all 200ms;
+		color: #878E9A;
+		font-size: 12px;
+		display: flex;
+		grid-gap: 6px;
+	}
+	
+	.detailwarp{
+		transition: all 200ms;
+		display: none;
+		/*display: grid;*/
+		color: #C0C7D4;
+		font-size: 12px;
+		grid-gap: 8px;
+		justify-items: end;
 	}
 
 .siteinfo{
