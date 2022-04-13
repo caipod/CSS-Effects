@@ -59,6 +59,16 @@ backdrop-filter:
 把鼠标放在卡片上，左右两个半圆会有错位的效果，并指示出两个半圆的颜色配置。
 
 ## 第九张卡片：
+通过Javascript来查看当前的设备参数。
+从上至下分别为：
+- 设备逻辑分辨率
+- 缩放倍率
+- 渲染分辨率
+- 窗口逻辑分辨率
+- 屏幕比例
+- 浏览器色深
+
+## 第十张卡片：
 字面意思。
 
 把鼠标放在卡片上，圆圈与副标题会渐渐浮现。
@@ -72,7 +82,7 @@ backdrop-filter:
 - [SF 符号](https://developer.apple.com/sf-symbols/)
 - [Sans Forgetica 字体](https://sansforgetica.rmit.edu.au/)
 - [What is my resolution?](https://whatismyresolution.com/)
-- [Resolution Inspector](http://dev.jeffersonscher.com/resolution.html)
+- [Resolution Inspector](http://dev.jeffersonscher.com/resolution.html)ba
 - [Clip Path 制作工具](https://bennettfeely.com/clippy/)
 
 如果你的设备不能正确显示某些效果，不一定代表浏览器不支持，也可能是我没优化到位。😃有问题请通过邮箱联系我。
