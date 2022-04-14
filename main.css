@@ -527,26 +527,17 @@ body{
 		box-shadow:var(--hovershadow2);
 	}
 /*字面意思。*/
-.cardnone{
-	background: none;
-	border-radius: var(--cardR);
-	border: 1px solid #878E9A;
-	border-style:dashed;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+
+.cardlink{
+	text-decoration: none;
+	padding: 10px;
+	color: #878E9A;
+	font-size: 14px;
 }
-	.cardlink{
-		text-decoration: none;
-		padding: 5px;
-		color: #878E9A;
-		font-size: 14px;
-	}
-	
-	.cardlink:hover{
-		color: var(--textlinkhover);
-	}
+
+.cardlink:hover{
+	color: var(--textlinkhover);
+}
 
 .nextstep{
 	/*卡片样式*/
@@ -843,6 +834,9 @@ body{
 	color: #c3cad6;
 	font-size: 12px;
 }
+	.mylinks{
+		padding-bottom: 10px;
+	}
 
 @media (color-gamut: srgb) {
 	.srgb{
