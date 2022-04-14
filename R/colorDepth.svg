@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>colorDepth</title>
-    <g id="colorDepth" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="矩形备份-24" fill="#0039FF" transform="translate(7.000000, 4.000000) rotate(-270.000000) translate(-7.000000, -4.000000) " x="5" y="-3" width="4" height="14" rx="1"></rect>
-        <rect id="矩形备份-25" fill="#00A7FF" transform="translate(7.000000, 9.000000) rotate(-270.000000) translate(-7.000000, -9.000000) " x="6" y="2" width="2" height="14"></rect>
-        <rect id="矩形备份-26" fill="#00A7FF" transform="translate(7.000000, 11.500000) rotate(-270.000000) translate(-7.000000, -11.500000) " x="6.5" y="4.5" width="1" height="14"></rect>
-    </g>
-</svg>
