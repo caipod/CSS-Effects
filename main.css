@@ -692,16 +692,148 @@ body{
 		display: flex;
 		grid-gap: 6px;
 	}
-	
-	.detailwarp{
-		transition: all 200ms;
-		display: none;
-		/*display: grid;*/
-		color: #C0C7D4;
-		font-size: 12px;
-		grid-gap: 8px;
-		justify-items: end;
+	/*图标区*/
+	/*基础设置*/
+	.screenpoint,.scale,.screenpixel,.windowpoint,.aspect,.colorDepth{
+		position: relative;
+		width: 14px;
+		height: 14px;
+		background: transparent;
 	}
+
+	/*逻辑分辨率图标*/
+	
+	.top,.bottom{
+		position: absolute;
+		width: 7px;
+		height: 7px;
+		border-radius: 1px;
+	}
+	.top{
+		top: 0;
+		right: 0;
+		background: #0039FF;
+	}
+	.bottom{
+		bottom: 0;
+		left: 0;
+		background: #00A7FF;
+	}
+
+	/*缩放倍率图标*/
+	
+	.arrowhead,.arrowline{
+		position: absolute;
+	}
+	.arrowhead{
+		z-index: 1;
+		width: 12px;
+		height: 12px;
+		clip-path: polygon(100% 0, 88% 74%, 68% 37%, 26% 16%);
+		background: #0039FF;
+	}
+	.arrowline{
+		width: 10px;
+		height: 10px;
+		clip-path: polygon(66% 28%, 20% 100%, 100% 54%);
+		background: #00A7FF;
+	}
+	/*渲染分辨率图标*/
+	.topsmall,.bottomsmall{
+		position: absolute;
+		opacity: 0.3;
+		width: 5px;
+		height: 5px;
+		border-radius: 1px;
+	}
+	.topsmall{
+		top: 1px;
+		left: 1px;
+		background: #0039FF;
+	}
+	.bottomsmall{
+		bottom: 1px;
+		right: 1px;
+		background: #00A7FF;
+	}
+	/*窗口分辨率图标*/
+	.topline,.bottomline,.upcover{
+		position: absolute;
+	}
+	.topline,.bottomline{
+		width: 7px;
+		height: 7px;
+	}
+	.topline{
+		right: 0;
+		top: 0;
+		background: #0039FF;
+		border-radius:0 2px 0 0 ;
+	}
+	.bottomline{
+		bottom: 0;
+		left: 0;
+		background: #00A7FF;
+		border-radius: 0 0 0 2px;
+	}
+	.upcover{
+		z-index: 1;
+		width: 10px;
+		height: 10px;
+		border-radius: 0.5px;
+		background: white;
+		left: 2px;
+		top: 2px;
+	}
+	/*窗口比例图标*/
+	.longline{
+		position: absolute;
+		height: 2px;
+		width: 16px;
+		background: #0039FF;
+		transform: rotate(-45deg);
+		top: 6px;
+		left: -1px;
+	}
+	.shortup,.shortdown{
+		position: absolute;
+		z-index: 1;
+		width: 2px;
+		height: 8px;
+		background: #00A7FF;
+	}
+	.shortup{
+		top: 0;
+		right: 0;
+	}
+	.shortdown{
+		left: 0;
+		bottom: 0;
+	}
+	/*色深图标*/
+	.mainblock,.secondblock,.thirdblock{
+		position: absolute;
+		width: 14px;
+	}
+	.mainblock{
+		top: 2px;
+		height: 4px;
+		background: #0039FF;
+		border-radius: 1px;
+	}
+	.secondblock,.thirdblock{
+		background: #00A7FF;
+	}
+	.secondblock{
+		height: 2px;
+		bottom: 4px;
+	}
+	.thirdblock{
+		height: 1px;
+		bottom: 2px;
+	}
+
+
 
 .siteinfo{
 	padding: 30px;
