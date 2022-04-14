@@ -789,7 +789,7 @@ body{
 	.longline{
 		position: absolute;
 		height: 2px;
-		width: 16px;
+		width: 16.5px;
 		background: #0039FF;
 		transform: rotate(-45deg);
 		top: 6px;
