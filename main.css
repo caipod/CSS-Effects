@@ -717,16 +717,20 @@ body{
 		position: absolute;
 	}
 	.arrowhead{
+		top: 0;
+		right: 0;
 		z-index: 1;
-		width: 12px;
-		height: 12px;
+		width: 16px;
+		height: 16px;
 		clip-path: polygon(100% 0, 88% 74%, 68% 37%, 26% 16%);
 		background: #0039FF;
 	}
 	.arrowline{
-		width: 10px;
-		height: 10px;
-		clip-path: polygon(66% 28%, 20% 100%, 100% 54%);
+		bottom: 0;
+		left: 0;
+		width: 14px;
+		height: 14px;
+		clip-path: polygon(59% 12%, 0% 100%, 90% 44%);
 		background: #00A7FF;
 	}
 	/*渲染分辨率图标*/
@@ -738,13 +742,13 @@ body{
 		border-radius: 1px;
 	}
 	.topsmall{
-		top: 1px;
-		left: 1px;
+		top: 0px;
+		left: 0px;
 		background: #0039FF;
 	}
 	.bottomsmall{
-		bottom: 1px;
-		right: 1px;
+		bottom: 0px;
+		right: 0px;
 		background: #00A7FF;
 	}
 	/*窗口分辨率图标*/
