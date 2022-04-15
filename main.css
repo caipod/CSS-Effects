@@ -129,10 +129,20 @@ body{
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
+	transition: all 0.2s;
 	
 }
 	.card2:hover{
 		box-shadow: var(--hovershadow2);
+	}
+
+	.card2warp{
+		display: flex;
+		grid-gap: 10px;
+		align-items: flex-end;
+	}
+	.zhongwen{
+		text-align: right;
 	}
 
 	.lorem12{
@@ -171,24 +181,39 @@ body{
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
+	transition: all 0.2s;
 }
 	.card3:hover{
 		box-shadow: var(--hovershadow2);
 	}
 
-
+	.maintext{
+		grid-gap: 10px;
+		display: flex;
+		align-items: flex-end;
+	}
+	.boldtext{
+		display: flex;
+		grid-gap: 10px;
+	}
 	.chinese{
 	    display: grid;
 	    justify-items: end;
 	}
 
 	.cardTwarp{
-		display: flex;
+		display: grid;
 	    grid-gap: 10px;
-	    align-items: flex-end;
-	    padding: 20px;
+	    justify-items: end;
 	}
-	
+	.fontweightbold{
+		transition: all 0.2s;
+		line-height: initial;
+		font-size: 12px;
+		color: #1B1D1F;
+		font-weight: bold;
+	}
+
 	.fontweight9{
 		transition: all 0.2s;
 		line-height: initial;
@@ -256,6 +281,9 @@ body{
 		font-weight: 100;
 	}
 
+	.fontweightbold:hover{
+		font-size: 20px;
+	}
 	.fontweight9:hover{
 		font-size: 20px;
 	}
@@ -295,6 +323,7 @@ body{
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
+	transition: all 0.2s;
 }
 	.card4:hover{
 		box-shadow:var(--hovershadow2);
@@ -345,6 +374,7 @@ body{
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
+	transition: all 0.2s;
 }
 	.card5:hover{
 		box-shadow:var(--hovershadow2);
@@ -427,6 +457,7 @@ body{
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
+	transition: all 0.2s;
 }
 	.card6:hover{
 		box-shadow:var(--hovershadow2);
@@ -670,19 +701,18 @@ body{
 	}
 
 	.siteinfocardwarp{
-		transition: all 200ms;
 		display: flex;
 		flex-direction: column;
 		grid-gap: 10px;
 	}
 
 	.infogroup{
-		transition: all 200ms;
 		color: #878E9A;
 		font-size: 12px;
 		display: flex;
 		grid-gap: 6px;
 	}
+
 	/*图标区*/
 	/*基础设置*/
 	.screenpoint,.scale,.screenpixel,.windowpoint,.aspect,.colorDepth{
