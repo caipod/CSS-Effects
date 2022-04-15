@@ -187,25 +187,23 @@ body{
 		box-shadow: var(--hovershadow2);
 	}
 
-	.maintext{
-		grid-gap: 10px;
+	.cardTwarp{
 		display: flex;
 		align-items: flex-end;
-	}
-	.boldtext{
-		display: flex;
 		grid-gap: 10px;
 	}
-	.chinese{
-	    display: grid;
-	    justify-items: end;
+	.textgroupleft,.textgroupright{
+		display: grid;
+		grid-gap: 10px;
+	}
+	.textgroupleft{
+		text-align: right;
+	}
+	.textgroupright{
+		text-align: left;
 	}
 
-	.cardTwarp{
-		display: grid;
-	    grid-gap: 10px;
-	    justify-items: end;
-	}
+
 	.fontweightbold{
 		transition: all 0.2s;
 		line-height: initial;
@@ -923,16 +921,3 @@ body{
 		transform: translateY(0px);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
