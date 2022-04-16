@@ -61,7 +61,6 @@ body{
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-	
 
 	.cover{
 		position: absolute;
@@ -70,6 +69,23 @@ body{
 		border-radius: var(--cardR);
 		backdrop-filter: saturate(100%) blur(80px);
 	 	-webkit-backdrop-filter: saturate(100%) blur(80px);
+	}
+
+	.flash{
+		transition: all 550ms;
+		width: 95%;
+		height: 80%;
+		border-radius: var(--cardR);
+		clip-path: polygon(0 0, 0% 100%, 100% 0);
+		background-image: linear-gradient(182deg, rgba(255,255,255,0.30) 0%, rgba(255,255,255,0.00) 75%);
+		opacity: 0;
+		filter: blur(50px);
+	}
+	.cardlogo:hover .flash{
+		width: 100%;
+		height: 100%;
+		opacity: 0.2;
+		filter: blur(0px);
 	}
 
 	.pt1{
@@ -921,3 +937,16 @@ body{
 		transform: translateY(0px);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
