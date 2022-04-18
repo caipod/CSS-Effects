@@ -18,7 +18,7 @@ body{
 	background: #DFE3EB;
 	font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
-
+/*卡片基础设置*/
 .cards{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px,auto));
@@ -27,7 +27,7 @@ body{
 	animation-name: opacity;
 	animation-duration: 1s;
 }
-/*网站封面图。我分别用 sRGB 和 P3 色域的代码写了这张卡片的背景，如果你用苹果设备与其他设备对比观看，会发现颜色的鲜艳程度不同。*/
+/*网站封面图*/
 .cardlogo{
 	position: relative;
 	
@@ -35,6 +35,7 @@ body{
 	.cardlogo:hover .cardlogotext{
 		opacity: 0.9;
 		top: 43%;
+		filter: blur(0);
 	}
 
 	.cardlogo:hover .csseffects2{
@@ -53,6 +54,7 @@ body{
 		top: 45%;
 		text-align: center;
 		width: 100%;
+		filter: blur(10px);
 
 	}
 
@@ -138,7 +140,7 @@ body{
 		text-align: center;
 		/*font-family: SansForgetica-Regular;*/
 	}
-/*测试浏览器是否支持显示 10px 与 8px 字号大小。若不支持这两种字号大小，浏览器会以 12px 字号来渲染。*/
+/*小字号测试*/
 .card2{
 	display: flex;
 	justify-content: center;
@@ -190,7 +192,7 @@ body{
 	.lorem8:hover{
 		font-size: 20px;
 	}
-/*测试浏览器或操作系统是否支持显示多种字重。对于西文，我设置了 100～900 的字重。对于中文，我设置了 100～600 的字重显示。我将 Regular(400) 字重设为了蓝色，方便对比。*/
+/*字重测试*/
 .card3{
 	display: flex;
 	justify-content: center;
@@ -328,7 +330,6 @@ body{
 		font-size: 20px;
 	}
 
-	/*.fontweight1,.fontweight2,.fontweight3,.fontweight4,.fontweight5,.fontweight6,.fontweight7,.fontweight8,.fontweight9:*/
 
 /*测试浏览器是否支持背景高斯模糊效果。*/
 .card4{
