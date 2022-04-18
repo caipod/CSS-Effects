@@ -8,7 +8,6 @@
 	<meta name="keywords" content="css,effects,html">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="shortcut icon" type="image/ico" href="R/favicon.ico" />
-	<script src="main.js"></script>
 	<title>🧑🏻‍💻CSS Effects</title>
 </head>
 
@@ -172,15 +171,8 @@
 		</div>
 		<div id="userAgent"></div>
 	</div>
-	<script>
-		document.getElementById("screenpoint").innerHTML = screen.width + '*' + screen.height;
-		document.getElementById("scale").innerHTML = "@" + window.devicePixelRatio + "x";
-		document.getElementById('screenpixel').innerHTML = +screen.width * window.devicePixelRatio + '*' + screen.height * window.devicePixelRatio;
-		document.getElementById("colorDepth").innerHTML = +screen.colorDepth + "bit";
-		document.getElementById("aspect").innerHTML = aspect_ratio_string;
-		document.getElementById("windowpoint").innerHTML = window.innerWidth + '*' + window.innerHeight;
-		document.getElementById("userAgent").innerHTML = navigator.userAgent;
-	</script>
+	<script src="main.js"></script>
+	<script src="mydevice.js"></script>
 </body>
 
 </html>
