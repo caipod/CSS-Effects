@@ -145,7 +145,7 @@ body{
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
-	transition: all 0.2s;
+	transition: all 600ms;
 	
 }
 	.card2:hover{
@@ -197,7 +197,7 @@ body{
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
-	transition: all 0.2s;
+	transition: all 600ms;
 }
 	.card3:hover{
 		box-shadow: var(--hovershadow2);
@@ -337,7 +337,7 @@ body{
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
-	transition: all 0.2s;
+	transition: all 600ms;
 }
 	.card4:hover{
 		box-shadow:var(--hovershadow2);
@@ -383,31 +383,88 @@ body{
 
 /*测试操作系统是否支持亮暗色切换。*/
 .card5{
-	display: grid;
 	background: #FFFFFF;
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
-	transition: all 0.2s;
+	display: grid;
+    align-items: center;
+    justify-items: center;
+	position: relative;
 }
 	.card5:hover{
 		box-shadow:var(--hovershadow2);
 	}
-	.card5img:hover{
-		transform: rotate(-90deg);
+	.card5:hover .sun{
+		transform: rotate(45deg);
 	}
 
-	.card5img{
-		width: 100%;
-		background-image: url(R/light.svg);
-	  	background-repeat: no-repeat;
-	  	background-position: center;
-	  	transition: all 300ms;
+	.moon{
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		box-shadow: inset 20px -20px 0 0 ;
+		color: #9083F3;
+		color: color(display-p3 0.449 0.385 1);
+		z-index: 10;
+		opacity: 0;
+		position: absolute;
+		/*background: black;*/
+	}
+	.sun{
+		transition: all 500ms;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		/*background: gray;*/
+	}
+	.core{
+		width: 50px;
+		height: 50px;
+		background: #FBC02E;
+		background: color(display-p3 1 0.788 0.285);
+		border-radius: 50%;
+		z-index: 2;
+		position: absolute;
+    	top: 25px;
+    	left: 25px;
+	}
+
+	.lights1,.lights2{
+		width: 4px;
+		height: 15px;
+		background: #FBC02E;
+		background: color(display-p3 1 0.788 0.285);
+		border-radius: 2px;	
+	}
+	.lights1{
+		margin-bottom: 70px;
+	}
+
+	.ray{
+		position: absolute;
+	}
+	.ray2{
+		position: absolute;
+		transform: rotate(45deg);
+	}	
+	.ray3{
+		position: absolute;
+		transform: rotate(90deg);
+	}
+	.ray4{
+		position: absolute;
+		transform: rotate(135deg);
+	}
+	.theray{
+		top: 0;
+		left: 48px;
+		position: absolute;
 	}
 
 /*测试浏览器是否支持sRGB、Display P3 或 rec2020 色域，若支持，蓝灯亮起，反则不亮灯。*/
 .card8{
-	transition: all 500ms;
+	transition: all 600ms;
 	display: flex;
 	grid-gap: 2px;
 	justify-content: center;
@@ -471,7 +528,7 @@ body{
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
-	transition: all 0.2s;
+	transition: all 600ms;
 }
 	.card6:hover{
 		box-shadow:var(--hovershadow2);
@@ -508,7 +565,7 @@ body{
 	
 /*以图片格式测试浏览器对 Display P3 与sRGB 色域的兼容性，如果您的浏览器支持 Display P3色域，那么左右两侧的半圆颜色应该会有些许不同。*/
 .card9{
-	transition: all 200ms;
+	transition: all 600ms;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -590,6 +647,7 @@ body{
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
+	transition: all 600ms;
 	/*组内对齐*/
     display: grid;
     align-content: center;
@@ -921,9 +979,15 @@ body{
 		border: var(--cardborder-Dark);
 		box-shadow: var(--cardboxshadow-Dark);
 	}
-
-	.card5img{
-		background-image: url(R/dark.svg);
+	.sun{
+		display: none;
+	}
+	.moon{
+		transition: all 600ms;
+		opacity: 1.0;
+	}
+	.card5:hover .moon{
+		transform: rotate(-90deg);
 	}
 
 }
