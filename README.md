@@ -119,3 +119,4 @@ backdrop-filter:
 **特别致谢：**
 - 4老师：网站的最初灵感来源于你的[博客](https://frankseptillion.com)的[测试页面](https://frankseptillion.com/test/)。
 
+使用Sketch设计，Sublime Text与Github Web Editor编码。
