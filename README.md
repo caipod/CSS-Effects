@@ -1,17 +1,19 @@
 # 背后故事
 # Behind the effects
 
-该网站可用来测试各平台设备浏览器对于 CSS 特性的兼容性。
+该网站可用来测试各个操作系统的网页浏览器对于 CSS 特性的兼容性，网站的最初灵感来源于爱否4老师的[博客](https://frankseptillion.com)的[测试页面](https://frankseptillion.com/test/)。
 
 从左至右（或从上往下）功能分别为：
 
 ## 第一张卡片：
 
-封面卡片。
+设计：这张卡片的背景颜色设计的比较鲜艳是为了突出头部主体，因为别的卡片都是以白色为主，所以需要用重色压一压。这样会抑扬顿挫。也代表了网站的整体样式是蓝绿色的冷色系。用蓝绿色是因为我喜欢蓝色，既然是自己的网站，就要用自己喜欢的颜色。
 
-我分别用 sRGB 和 P3 色域的代码写了这张卡片的背景，如果你用苹果设备与其他设备对比观看，会发现颜色的鲜艳程度不同。
+功能：
 
-把鼠标悬浮在卡片上，会以系统字体显示标题文字，并且卡片会浮现45度炫光效果。
+- 我分别用 sRGB 和 P3 色域的代码写了这张卡片的背景，如果你用苹果设备与其他设备对比观看，会发现颜色的鲜艳程度不同。
+
+- 把鼠标悬浮在卡片上，会以系统字体显示标题文字，并且卡片会浮现45度炫光效果。
 
 ```css
 backdrop-filter:
@@ -115,8 +117,3 @@ backdrop-filter:
 - [What is my resolution?](https://whatismyresolution.com/)
 - [Resolution Inspector](http://dev.jeffersonscher.com/resolution.html)
 - [Clip Path 制作工具](https://bennettfeely.com/clippy/)
-
-**特别致谢：**
-- 4老师：网站的最初灵感来源于你的[博客](https://frankseptillion.com)的[测试页面](https://frankseptillion.com/test/)。
-
-使用Sketch设计，其中色域测试的图片为Ps制作导出，Sublime Text与Github Web Editor编码。
