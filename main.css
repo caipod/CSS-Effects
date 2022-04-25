@@ -19,6 +19,7 @@
 	--card2a3textcolor: #1B1D1F;
 	/*动画部分*/
 	--cardmainani: all 600ms;
+	/*command+shift+c color picker*/
 }
 
 body{
@@ -28,6 +29,7 @@ body{
 	background: color(display-p3 0.8774 0.8897 0.9185);
 	font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
+
 /*卡片基础设置*/
 .cards{
 	display: grid;
@@ -37,6 +39,7 @@ body{
 	animation-name: opacity;
 	animation-duration: 1s;
 }
+
 /*网站封面图*/
 .cardlogo{
 	position: relative;
@@ -69,7 +72,7 @@ body{
 	}
 
 	.csseffects2{
-		transition: all 100ms;
+		transition: all 350ms;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -109,8 +112,8 @@ body{
 	}
 
 	.pt1{
-		background: #007AFF;
 		background: color(display-p3 0 0.394 1);
+		background: #00A7FF;
 		border-radius: 20px 0px 0px 0px;
 	}
 
@@ -996,14 +999,14 @@ body{
 		box-shadow: var(--cardboxshadow-Dark);
 	}
 	.sun{
-		transition: all 100ms;
+		transition: all 500ms;
 		transform: scale(0);
 		opacity: 0;
 		filter: blur(10px);
 	}
 	.moon{
 		box-shadow: inset 20px -20px 0 0 ;
-		transition: all 600ms;
+		transition: all 500ms;
 		opacity: 1.0;
 		transform: scale(1.0);
 		filter: blur(0);
