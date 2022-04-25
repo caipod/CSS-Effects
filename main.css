@@ -1,15 +1,22 @@
 /* 通用设置 */
 
 :root{
-	--hovershadow: 0 2px 10px 0 rgba(0,0,0,0.08);
+	/*鼠标悬浮在卡片上的样式，亮色界面*/
 	--hovershadow2: none;
+	/*网格卡片圆角*/
 	--cardR: 20px;
+	/*卡片描边*/
 	--cardborder: 1px solid rgba(188,196,223,0.50);
+	/*卡片常规样式内阴影*/
 	--cardboxshadow:inset 0 0 20px 0 #E2EAFA;
+	/*暗色模式下的卡片边框*/
 	--cardborder-Dark:1px solid rgba(103,109,128,0.50) ;
+	/*暗色模式下的卡片内阴影*/
 	--cardboxshadow-Dark: inset 0 0 20px 0 #61656E;
+	/*最底部链接鼠标悬浮颜色*/
 	--textlinkhover: #464C59;
-	--card2textcolor: #1B1D1F;
+	/*字重与字号卡片的文字常规文字颜色*/
+	--card2a3textcolor: #1B1D1F;
 	/*动画部分*/
 	--cardmainani: all 600ms;
 }
@@ -169,7 +176,7 @@ body{
 	}
 
 	.lorem12,.lorem10{
-		color: var(--card2textcolor) ;
+		color: var(--card2a3textcolor) ;
 	}
 
 	.lorem12{
@@ -223,79 +230,66 @@ body{
 		text-align: left;
 	}
 
+	.fontweightbold,
+	.fontweight9,
+	.fontweight8,
+	.fontweight7,
+	.fontweight6,
+	.fontweight5,
+	.fontweight3,
+	.fontweight2,
+	.fontweight1{
+		color: var(--card2a3textcolor);
+	}
 
-	.fontweightbold{
+	.fontweightbold,
+	.fontweight9,
+	.fontweight8,
+	.fontweight7,
+	.fontweight6,
+	.fontweight5,
+	.fontweight4,
+	.fontweight3,
+	.fontweight2,
+	.fontweight1{
 		transition: all 0.2s;
 		line-height: initial;
 		font-size: 12px;
-		color: #1B1D1F;
+	}
+
+	.fontweightbold{
 		font-weight: bold;
 	}
 
 	.fontweight9{
-		transition: all 0.2s;
-		line-height: initial;
-		font-size: 12px;
-		color: #1B1D1F;
 		font-weight: 900;
 	}
 
 	.fontweight8{
-		transition: all 0.2s;
-		line-height: initial;
-		font-size: 12px;
-		color: #1B1D1F;
 		font-weight: 800;
 	}
 
 	.fontweight7{
-		transition: all 0.2s;
-		line-height: initial;
-		font-size: 12px;
-		color: #1B1D1F;
 		font-weight: 700;
 	}
 	.fontweight6{
-		transition: all 0.2s;
-		line-height: initial;
-		font-size: 12px;
-		color: #1B1D1F;
 		font-weight: 600;
 	}
 	.fontweight5{
-		transition: all 0.2s;
-		line-height: initial;
-		font-size: 12px;
-		color: #1B1D1F;
 		font-weight: 500;
 	}
 	.fontweight4{
-		transition: all 0.2s;
-		line-height: initial;
-		font-size: 12px;
 		color: #00A7FF;
 		color: color(display-p3 0 0.394 1);
 		font-weight: 400;
 	}
 	.fontweight3{
-		transition: all 0.2s;
-		line-height: initial;
-		font-size: 12px;
-		color: #1B1D1F;
 		font-weight: 300;
 	}
 	.fontweight2{
-		transition: all 0.2s;
-		line-height: initial;
-		font-size: 12px;
-		color: #1B1D1F;
 		font-weight: 200;
 	}
 	.fontweight1{
-		transition: all 0.2s;
-		line-height: initial;
-		font-size: 12px;
-		color: #1B1D1F;
 		font-weight: 100;
 	}
 
@@ -571,7 +565,7 @@ body{
 		/*background-image: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.27) 0%, rgba(255,255,255,0.70) 50%);*/
 	}
 	
-/*以图片格式测试浏览器对 Display P3 与sRGB 色域的兼容性，如果您的浏览器支持 Display P3色域，那么左右两侧的半圆颜色应该会有些许不同。*/
+/*以图片格式测试浏览器对 Display P3 与sRGB 色域的兼容性*/
 .card9{
 	transition: var(--cardmainani);
 	display: flex;
