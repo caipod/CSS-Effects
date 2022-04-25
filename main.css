@@ -16,6 +16,7 @@ body{
 	box-sizing: border-box;
 	font-size: 16px;
 	background: #DFE3EB;
+	background: color(display-p3 0.8774 0.8897 0.9185);
 	font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 /*卡片基础设置*/
@@ -92,41 +93,35 @@ body{
 		filter: blur(0px);
 	}
 
-	.pt1{
+	.pt1,.pt2,.pt3,.pt4 {
 		position: absolute;
-		background: #007AFF;
-		background: color(display-p3 0 0.394 1);
-		border-radius: 20px 0px 0px 0px;
 		width: 50%;
 		height: 50%;
 	}
 
+	.pt1{
+		background: #007AFF;
+		background: color(display-p3 0 0.394 1);
+		border-radius: 20px 0px 0px 0px;
+	}
+
 	.pt2{
-		position: absolute;
 		background: #5856D6;
 		background: color(display-p3 0.383 0 1);
 		border-radius: 0px 20px 0px 0px;
-		width: 50%;
-		height: 50%;
 		right: 0;
 	}
 	.pt3{
-		position: absolute;
 		background: #34C759;
 		background: color(display-p3 0.074 0.92 0.223);
 		border-radius: 0px 0px 0px 20px;
-		width: 50%;
-		height: 50%;
 		left: 0;
 		bottom: 0;
 	}
 	.pt4{
-		position: absolute;
 		background: #63E6E2;
 		background: color(display-p3 0.053 0.955 0.829);
 		border-radius: 0px 0px 20px 0px;
-		width: 50%;
-		height: 50%;
 		right: 0;
 		bottom: 0;
 	}
@@ -167,26 +162,27 @@ body{
 		text-align: right;
 	}
 
-	.lorem12{
+	.lorem12,.lorem10,.lorem8{
 		transition: all 0.2s;
+	}
+
+	.lorem12,.lorem10{
+		color: var(--card2textcolor) ;
+	}
+
+	.lorem12{
 		font-size: 12px;
-		color: var(--card2textcolor);
 	}
 	.lorem10{
-		transition: all 0.2s;
 		font-size: 10px;
-		color: var(--card2textcolor);
 	}
 	.lorem8{
-		transition: all 0.2s;
 		font-size: 8px;
 		color: #00A7FF;
 		color: color(display-p3 0 0.394 1);
-		
 	}
 	.lorem12:hover{
 		font-size: 20px;
-
 	}
 	.lorem10:hover{
 		font-size: 20px;
@@ -370,6 +366,7 @@ body{
 		height: 100px;
 		border-radius: 10px;
 		background: rgba(63,104,195,0.04);
+		background: color(display-p3 0.119 0.34 0.95 / 0.04);
 		border: 1px solid rgba(216,219,229,0.19);
 		backdrop-filter: saturate(180%) blur(20px);
 	  	-webkit-backdrop-filter: saturate(180%) blur(20px);
