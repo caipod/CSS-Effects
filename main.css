@@ -17,9 +17,10 @@
 	--textlinkhover: #464C59;
 	/*字重与字号卡片的文字常规文字颜色*/
 	--card2a3textcolor: #1B1D1F;
+	/*鼠标悬浮在卡片上出现的提示文字的颜色*/
+	--hintextcolor: #c3cad6;
 	/*动画部分*/
 	--cardmainani: all 600ms;
-	/*command+shift+c color picker*/
 }
 
 body{
@@ -68,7 +69,6 @@ body{
 		text-align: center;
 		width: 100%;
 		filter: blur(10px);
-
 	}
 
 	.csseffects2{
@@ -91,7 +91,7 @@ body{
 	.flash{
 		transition: all 550ms;
 		width: 95%;
-		height: 80%;
+		height: 95%;
 		border-radius: var(--cardR);
 		clip-path: polygon(0 0, 0% 100%, 100% 0);
 		background-image: linear-gradient(182deg, rgba(255,255,255,0.30) 0%, rgba(255,255,255,0.00) 75%);
@@ -159,6 +159,7 @@ body{
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
 	transition: var(--cardmainani);
+	position: relative;
 	
 }
 	.card2:hover{
@@ -196,14 +197,85 @@ body{
 	.lorem12:hover{
 		font-size: 20px;
 	}
+	
 	.lorem10:hover{
 		font-size: 20px;
 	}
 	.lorem8:hover{
 		font-size: 20px;
 	}
+
+	.zhongwen .lorem12:hover:after{
+		content: "font-size: 12px;";
+		width: 100%;
+		bottom: 20px;
+		left: 0;
+		position: absolute;
+		color: var(--hintextcolor);
+		font-size: 12px;
+		text-align: center;
+		
+	}
+
+	.zhongwen .lorem10:hover:after{
+		content: "font-size: 10px;";
+		width: 100%;
+		bottom: 20px;
+		left: 0;
+		position: absolute;
+		color: var(--hintextcolor);
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.zhongwen .lorem8:hover:after{
+		content: "font-size: 8px;";
+		width: 100%;
+		bottom: 20px;
+		left: 0;
+		position: absolute;
+		color: var(--hintextcolor);
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.yingwen .lorem12:hover:after{
+		content: "font-size: 12px;";
+		width: 100%;
+		bottom: 20px;
+		left: 0;
+		position: absolute;
+		color: var(--hintextcolor);
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.yingwen .lorem10:hover:after{
+		content: "font-size: 10px;";
+		width: 100%;
+		bottom: 20px;
+		left: 0;
+		position: absolute;
+		color: var(--hintextcolor);
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.yingwen .lorem8:hover:after{
+		content: "font-size: 8px;";
+		width: 100%;
+		bottom: 20px;
+		left: 0;
+		position: absolute;
+		color: var(--hintextcolor);
+		font-size: 12px;
+		text-align: center;
+	}
+
+
 /*字重测试*/
 .card3{
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -296,35 +368,68 @@ body{
 		font-weight: 100;
 	}
 
-	.fontweightbold:hover{
-		font-size: 20px;
-	}
-	.fontweight9:hover{
-		font-size: 20px;
-	}
-	.fontweight8:hover{
-		font-size: 20px;
-	}
-	.fontweight7:hover{
-		font-size: 20px;
-	}
-	.fontweight6:hover{
-		font-size: 20px;
-	}
-	.fontweight5:hover{
-		font-size: 20px;
-	}
-	.fontweight4:hover{
-		font-size: 20px;
-	}
-	.fontweight3:hover{
-		font-size: 20px;
-	}
-	.fontweight2:hover{
-		font-size: 20px;
-	}
+	.fontweightbold:hover,
+	.fontweight9:hover,
+	.fontweight8:hover,
+	.fontweight7:hover,
+	.fontweight6:hover,
+	.fontweight5:hover,
+	.fontweight4:hover,
+	.fontweight3:hover,
+	.fontweight2:hover,
 	.fontweight1:hover{
 		font-size: 20px;
+	}
+	
+	.fontweightbold:hover:after,
+	.fontweight9:hover:after,
+	.fontweight8:hover:after,
+	.fontweight7:hover:after,
+	.fontweight6:hover:after,
+	.fontweight5:hover:after,
+	.fontweight4:hover:after,
+	.fontweight3:hover:after,
+	.fontweight2:hover:after,
+	.fontweight1:hover:after{
+		width: 100%;
+		bottom: 20px;
+		left: 0;
+		position: absolute;
+		color: var(--hintextcolor);
+		font-size: 12px;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	.fontweightbold:hover:after{
+		content: "font-weight: Bold;";
+	}
+	.fontweight9:hover:after{
+		content: "font-weight: 900;";
+	}
+	.fontweight8:hover:after{
+		content: "font-weight: 800;";
+	}
+	.fontweight7:hover:after{
+		content: "font-weight: 700;";
+	}
+	.fontweight6:hover:after{
+		content: "font-weight: 600;";
+	}
+	.fontweight5:hover:after{
+		content: "font-weight: 500;";
+	}
+	.fontweight4:hover:after{
+		content: "font-weight: 400;";
+	}
+	.fontweight3:hover:after{
+		content: "font-weight: 300;";
+	}
+	.fontweight2:hover:after{
+		content: "font-weight: 200;";
+	}
+	.fontweight1:hover:after{
+		content: "font-weight: 100;";
 	}
 
 
@@ -439,7 +544,7 @@ body{
 		height: 15px;
 		background: rgb(255, 215, 110);
 		background: color(display-p3 1 0.85 0.495);
-		border-radius: 2px;	
+		border-radius: 1px;	
 		box-shadow: 0 0 10px 0 #FFD263;
 	}
 	.lights1{
@@ -526,47 +631,47 @@ body{
 	}
 /*测试设备是否支持 Display P3 色域的图片显示。若支持 Display P3 色域，左右两个半圆的颜色会有些许的不同，左侧的绿色比右侧更鲜艳，若不支持 Display P3 色域，左右两个半圆的颜色则一致。使用绿色作为对比是因为绿色的 sRGB 与 Display P3 色域范围差别最大。*/
 .card6{
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	background: #FFFFFF;
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
 	transition: var(--cardmainani);
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 	.card6:hover{
 		box-shadow:var(--hovershadow2);
 	}
 
-	.left{
-		width: 50px;
-		height: 100px;
-		border-radius: 50px 0 0 50px;
-		background:rgba(0, 255, 10, 1);
+	.pie-chart {
+  		background: radial-gradient(
+	       circle closest-side,
+	       white 0,
+	       white 86%,
+	       transparent 86%,
+	       transparent 100%,
+	       white 0
+     	),
+     	conic-gradient(
+	       #00a7ff 0,
+	       #00d7ff 16%,
+	       #0400ff 0,
+	       #8800ff 34%,
+	       #00ff5d 0,
+	       #62ff00 50%,
+	       #DFE3EB 0,
+	       #DFE3EB 66%,
+	       #DFE3EB 0,
+	       #DFE3EB 84%,
+	       #DFE3EB 0,
+	       #DFE3EB 100%
+     	);
+		  width: 100px;
+		  height: 100px;
+		  border-radius: 50%;
 	}
 
-	.right{
-		width: 50px;
-		height: 100px;
-		border-radius: 0 50px 50px 0;
-		background: #DFE3EB;
-		background: color(display-p3 0 1 0.039);
-	}
-
-	.circle{
-		width: 80px;
-		height: 80px;
-		border-radius: 50%;
-		background: rgba(255, 255, 255, 1.0);
-		/*background-image: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #FFFFFF 50%);*/
-		position: absolute;
-		transition: all 0.2s;
-	}
-	.circle:hover{
-		transform: scale(0.5);
-		/*background-image: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.27) 0%, rgba(255,255,255,0.70) 50%);*/
-	}
 	
 /*以图片格式测试浏览器对 Display P3 与sRGB 色域的兼容性*/
 .card9{
@@ -766,6 +871,7 @@ body{
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
 	/*组内定位*/
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -791,16 +897,75 @@ body{
 	}
 
 	/*图标区*/
+
 	/*基础设置*/
 	.screenpoint,.scale,.screenpixel,.windowpoint,.aspect,.colorDepth{
+		transition: all 100ms;
 		position: relative;
 		width: 14px;
 		height: 14px;
 		background: transparent;
 	}
 
+	#screenpoint::after,
+	#scale::after,
+	#screenpixel::after,
+	#windowpoint::after,
+	#aspect::after,
+	#colorDepth::after
+	{
+		transition: all 100ms;
+		width: 100%;
+		bottom: 20px;
+		left: 0;
+		position: absolute;
+		color: var(--hintextcolor);
+		font-size: 12px;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	#screenpoint::after{
+		content: "设备逻辑分辨率";
+		opacity: 0;
+	}
+	#scale::after{
+		content: "缩放倍率";
+		opacity: 0;
+	}
+	#screenpixel::after{
+		content: "渲染分辨率";
+		opacity: 0;
+	}
+	#windowpoint::after{
+		content: "窗口逻辑分辨率";
+		opacity: 0;
+	}
+	#aspect::after{
+		content: "屏幕比例";
+		opacity: 0;
+	}
+	#colorDepth::after{
+		content: "浏览器色深";
+		opacity: 0;
+	}
+
+	#screenpoint:hover:after,
+	#scale:hover:after,
+	#screenpixel:hover:after,
+	#windowpoint:hover:after,
+	#aspect:hover:after,
+	#colorDepth:hover:after{
+		opacity: 1.0;
+	}
+
+
+	/*=========================================================
+	用代码画icon
+	=========================================================*/
+
 	/*逻辑分辨率图标*/
-	
+
 	.top{
 		position: absolute;
 		width: 7px;
@@ -950,6 +1115,10 @@ body{
 		bottom: -3px;
 	}
 
+	/*=========================================================
+	用代码画icon
+	=========================================================*/
+
 
 
 .siteinfo{
@@ -974,12 +1143,37 @@ body{
 }
 
 @media (color-gamut: p3) {
+
 	.p3{
 		background: #D7EFFF;
 		border: 1px solid #BAE3FF;
 		box-shadow: inset 0 0 5px 0 #9DD2F6;
 		color: #1C3250;
-	}	
+	}
+
+	.pie-chart {
+  		background: radial-gradient(
+	       circle closest-side,
+	       white 0,
+	       white 86%,
+	       transparent 86%,
+	       transparent 100%,
+	       white 0
+     	),
+     	conic-gradient(
+	       #00a7ff 0,
+	       #00d7ff 16%,
+	       #0400ff 0,
+	       #8800ff 34%,
+	       #00ff5d 0,
+	       #62ff00 50%,
+	       color(display-p3 0 0.517 1) 0,
+	       color(display-p3 0 0.752 1) 66%,
+	       color(display-p3 0.012 0 1) 0,
+	       color(display-p3 0.457 0 1) 84%,
+	       color(display-p3 0.015 1 0) 0,
+	       color(display-p3 0.383 1 0) 100%
+     	);	
 }
 
 @media (color-gamut: rec2020) {
@@ -999,14 +1193,14 @@ body{
 		box-shadow: var(--cardboxshadow-Dark);
 	}
 	.sun{
-		transition: all 500ms;
+		transition: all 600ms;
 		transform: scale(0);
 		opacity: 0;
 		filter: blur(10px);
 	}
 	.moon{
 		box-shadow: inset 20px -20px 0 0 ;
-		transition: all 500ms;
+		transition: all 600ms;
 		opacity: 1.0;
 		transform: scale(1.0);
 		filter: blur(0);
@@ -1026,4 +1220,6 @@ body{
 		transform: translateY(0px);
 	}
 }
+
+
 
