@@ -19,6 +19,8 @@
 	--hintextcolor: #c3cad6;
 	/*动画部分*/
 	--cardmainani: all 600ms;
+	/*代码字体*/
+	--codefont: SFMono-Regular, Consolas, 'Courier New', Monospace;
 }
 /*==================================*/
 body {
@@ -222,6 +224,7 @@ p {
 }
 
 .zhongwen .lorem12:hover:after {
+	font-family: var(--codefont);
 	content: "font-size: 12px;";
 	width: 100%;
 	bottom: 20px;
@@ -234,6 +237,7 @@ p {
 }
 
 .zhongwen .lorem10:hover:after {
+	font-family: var(--codefont);
 	content: "font-size: 10px;";
 	width: 100%;
 	bottom: 20px;
@@ -245,6 +249,7 @@ p {
 }
 
 .zhongwen .lorem8:hover:after {
+	font-family: var(--codefont);
 	content: "font-size: 8px;";
 	width: 100%;
 	bottom: 20px;
@@ -256,6 +261,7 @@ p {
 }
 
 .yingwen .lorem12:hover:after {
+	font-family: var(--codefont);
 	content: "font-size: 12px;";
 	width: 100%;
 	bottom: 20px;
@@ -267,6 +273,7 @@ p {
 }
 
 .yingwen .lorem10:hover:after {
+	font-family: var(--codefont);
 	content: "font-size: 10px;";
 	width: 100%;
 	bottom: 20px;
@@ -278,6 +285,7 @@ p {
 }
 
 .yingwen .lorem8:hover:after {
+	font-family: var(--codefont);
 	content: "font-size: 8px;";
 	width: 100%;
 	bottom: 20px;
@@ -426,6 +434,7 @@ p {
 	font-size: 12px;
 	font-weight: 400;
 	text-align: center;
+	font-family: var(--codefont);
 }
 
 .fontweightbold:hover:after {
@@ -641,6 +650,7 @@ p {
 .srgb:hover:after,
 .p3:hover:after,
 .rec2020:hover:after{
+	font-family: var(--codefont);
 	width: 100%;
 	bottom: 20px;
 	left: 0;
@@ -1385,8 +1395,8 @@ p {
 
 .siteinfo {
 	padding: 30px;
-	animation-name: opacity;
-	animation-duration: 1s;
+	animation-name: websitemainanimation;
+	animation-duration: 1500ms;
 	text-align: center;
 	color: #c3cad6;
 	font-size: 12px;
@@ -1453,7 +1463,7 @@ p {
 	}
 
 }
-
+/*====================================*/
 @keyframes websitemainanimation {
 	from {
 		grid-gap: 0;
@@ -1467,7 +1477,7 @@ p {
 		filter: blur(0);
 	}
 }
-
+/*================================*/
 @keyframes bodycolorchange{
 	from{
 		background: #ffffff;
@@ -1476,3 +1486,4 @@ p {
 		background: #DFE3EB;
 	}
 }
+/*====================================*/
