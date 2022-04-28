@@ -634,11 +634,32 @@ p {
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
+	position: relative;
 
 }
-
+/*----------------------------------------*/
+.srgb:hover:after,
+.p3:hover:after,
+.rec2020:hover:after{
+	width: 100%;
+	bottom: 20px;
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	color: var(--hintextcolor);
+	font-size: 12px;
+	text-align: center;
+	text-shadow: none;
+}
+/*----------------------------------------*/
+.srgb::after,
+.p3::after,
+.rec2020::after{
+	opacity: 0;
+	transition: all 100ms;
+}
+/*----------------------------------------*/
 .srgb {
-	transition: all 500ms;
 	background: #F2F5F7;
 	border: 1px solid #F8FCFF;
 	box-shadow: inset 0 0 5px 0 #DAE4EA;
@@ -650,7 +671,10 @@ p {
 	height: 22px;
 	line-height: 22px;
 }
-
+.srgb:hover:after{
+	content: "@media (color-gamut: srgb) ";
+}
+/*----------------------------------------*/
 .p3 {
 	transition: all 500ms;
 	background: #F2F5F7;
@@ -664,7 +688,10 @@ p {
 	height: 22px;
 	line-height: 22px;
 }
-
+.p3:hover:after{
+	content: "@media (color-gamut: p3) ";
+}
+/*----------------------------------------*/
 .rec2020 {
 	transition: all 500ms;
 	background: #F2F5F7;
@@ -678,7 +705,10 @@ p {
 	height: 22px;
 	line-height: 22px;
 }
-
+.rec2020:hover:after{
+	content: "@media (color-gamut: rec2020) ";
+}
+/*----------------------------------------*/
 .card8:hover {
 	box-shadow: var(--hovershadow2);
 }
@@ -1131,32 +1161,32 @@ p {
 	text-align: center;
 }
 
-#screenpoint::after {
+#screenpoint:hover:after {
 	content: "设备逻辑分辨率";
 	opacity: 0;
 }
 
-#scale::after {
+#scale:hover:after {
 	content: "缩放倍率";
 	opacity: 0;
 }
 
-#screenpixel::after {
+#screenpixel:hover:after {
 	content: "渲染分辨率";
 	opacity: 0;
 }
 
-#windowpoint::after {
+#windowpoint:hover:after {
 	content: "窗口逻辑分辨率";
 	opacity: 0;
 }
 
-#aspect::after {
+#aspect:hover:after {
 	content: "屏幕比例";
 	opacity: 0;
 }
 
-#colorDepth::after {
+#colorDepth:hover:after {
 	content: "浏览器色深";
 	opacity: 0;
 }
@@ -1384,26 +1414,6 @@ p {
 		color: #1C3250;
 	}
 
-	.pie-chart {
-		background: radial-gradient(circle closest-side,
-				white 0,
-				white 86%,
-				transparent 86%,
-				transparent 100%,
-				white 0),
-			conic-gradient(#00a7ff 0,
-				#00d7ff 16%,
-				#0400ff 0,
-				#8800ff 34%,
-				#00ff5d 0,
-				#62ff00 50%,
-				color(display-p3 0 0.517 1) 0,
-				color(display-p3 0 0.752 1) 66%,
-				color(display-p3 0.012 0 1) 0,
-				color(display-p3 0.457 0 1) 84%,
-				color(display-p3 0.015 1 0) 0,
-				color(display-p3 0.383 1 0) 100%);
-	}
 }
 
 @media (color-gamut: rec2020) {
