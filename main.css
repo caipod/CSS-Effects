@@ -1,5 +1,3 @@
-/* 通用设置 */
-
 :root {
 	/*鼠标悬浮在卡片上的样式，亮色界面*/
 	--hovershadow2: none;
@@ -22,25 +20,27 @@
 	/*动画部分*/
 	--cardmainani: all 600ms;
 }
-
+/*==================================*/
 body {
 	box-sizing: border-box;
 	font-size: 16px;
 	background: #DFE3EB;
-	background: color(display-p3 0.8774 0.8897 0.9185);
+	/*background: color(display-p3 0.8774 0.8897 0.9185);*/
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	animation-name: bodycolorchange;
+	animation-duration: 800ms;
 }
-
+/*==================================*/
 /*卡片基础设置*/
 .cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 	grid-auto-rows: minmax(360px, auto);
 	grid-gap: 0.625em;
-	animation-name: opacity;
-	animation-duration: 1s;
+	animation-name: websitemainanimation;
+	animation-duration: 1000ms;
 }
-
+/*==================================*/
 /*网站封面图*/
 .cardlogo {
 	position: relative;
@@ -1454,14 +1454,25 @@ p {
 
 }
 
-@keyframes opacity {
+@keyframes websitemainanimation {
 	from {
+		grid-gap: 0;
 		opacity: 0%;
-		transform: translateY(30px);
+		filter: blur(20px);
 	}
 
 	to {
+		grid-gap: 0.625em;
 		opacity: 100%;
-		transform: translateY(0px);
+		filter: blur(0);
+	}
+}
+
+@keyframes bodycolorchange{
+	from{
+		background: #ffffff;
+	}
+	to{
+		background: #DFE3EB;
 	}
 }
