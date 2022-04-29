@@ -45,17 +45,17 @@ body {
 }
 /*========================================================================================================================================*/
 /*网站封面图*/
-.cardlogo {
+.card1-logo {
 	position: relative;
 }
 
-.cardlogo:hover .cardlogotext {
+.card1-logo:hover .cardlogotext {
 	opacity: 0.9;
 	top: 43%;
 	filter: blur(0);
 }
 
-.cardlogo:hover .csseffects2 {
+.card1-logo:hover .csseffects2 {
 	top: 48%;
 	transform: translate(-50%, -50%) scale(0.8);
 	opacity: 0;
@@ -102,7 +102,7 @@ body {
 	filter: blur(50px);
 }
 
-.cardlogo:hover .flash {
+.card1-logo:hover .flash {
 	width: 100%;
 	height: 100%;
 	opacity: 0.2;
@@ -147,7 +147,7 @@ body {
 	bottom: 0;
 }
 
-.cardlogo p {
+.card1-logo p {
 	font-size: 12px;
 	color: rgba(255, 255, 255, 0.67);
 	position: absolute;
@@ -585,7 +585,7 @@ body {
 }
 /*========================================================================================================================================*/
 /*测试浏览器是否支持sRGB、Display P3 或 rec2020 色域，若支持，蓝灯亮起，反则不亮灯。*/
-.card8 {
+.card7 {
 	transition: var(--cardmainani);
 	display: flex;
 	grid-gap: 2px;
@@ -597,81 +597,39 @@ body {
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
 	position: relative;
-
 }
 /*----------------------------------------*/
-.srgb:hover:after,
-.p3:hover:after,
-.rec2020:hover:after
-{
-	opacity: 1;
-}
-/*----------------------------------------*/
-.srgb::after,
-.p3::after,
-.rec2020::after
-{
-	opacity: 0;
-	width: 100%;
-	bottom: 20px;
-	left: 0;
-	position: absolute;
-	color: var(--hintextcolor);
-	font-size: 12px;
-	text-align: center;
-	text-shadow: none;
-	font-family: var(--codefont);
-}
-/*----------------------------------------*/
-.srgb {
+.srgb,
+.p3,
+.rec2020{
 	background: #F2F5F7;
 	border: 1px solid #F8FCFF;
 	box-shadow: inset 0 0 5px 0 #DAE4EA;
+	font-size: 12px;
+	color: #5C6B74;
+	text-shadow: 0 2px 3px #BDC4C8;
+	width: 70px;
+	height: 22px;
+	line-height: 22px;
+	display: block;
+}
+/*----------------------------------------*/
+.srgb
+{
 	border-radius: 11px 2px 2px 11px;
-	font-size: 12px;
-	color: #5C6B74;
-	text-shadow: 0 2px 3px #BDC4C8;
-	width: 70px;
-	height: 22px;
-	line-height: 22px;
-}
-.srgb::after{
-	content: "@media (color-gamut: srgb) ";
 }
 /*----------------------------------------*/
-.p3 {
-	background: #F2F5F7;
-	border: 1px solid #F8FCFF;
-	box-shadow: inset 0 0 5px 0 #DAE4EA;
+.p3 
+{
 	border-radius: 2px;
-	font-size: 12px;
-	color: #5C6B74;
-	text-shadow: 0 2px 3px #BDC4C8;
-	width: 70px;
-	height: 22px;
-	line-height: 22px;
-}
-.p3::after{
-	content: "@media (color-gamut: p3) ";
 }
 /*----------------------------------------*/
-.rec2020 {
-	background: #F2F5F7;
-	border: 1px solid #F8FCFF;
-	box-shadow: inset 0 0 5px 0 #DAE4EA;
+.rec2020
+{
 	border-radius: 2px 11px 11px 2px;
-	font-size: 12px;
-	color: #5C6B74;
-	text-shadow: 0 2px 3px #BDC4C8;
-	width: 70px;
-	height: 22px;
-	line-height: 22px;
-}
-.rec2020::after{
-	content: "@media (color-gamut: rec2020) ";
 }
 /*----------------------------------------*/
-.card8:hover {
+.card7:hover {
 	box-shadow: var(--hovershadow2);
 }
 /*========================================================================================================================================*/
@@ -856,7 +814,7 @@ body {
 }
 /*===================================================*/
 /*以图片格式测试浏览器对 Display P3 与sRGB 色域的兼容性*/
-.card9 {
+.card8 {
 	transition: var(--cardmainani);
 	display: flex;
 	justify-content: center;
@@ -899,28 +857,28 @@ body {
 	transform: translateX(18px);
 }
 
-.card9:hover .nameleft {
+.card8:hover .nameleft {
 	align-self: flex-start;
 }
 
-.card9:hover .nameright {
+.card8:hover .nameright {
 	align-self: flex-end;
 }
 
-.card9:hover .names {
+.card8:hover .names {
 	opacity: 1;
 	filter: blur(0);
 }
 
-.card9:hover .gtest-l {
+.card8:hover .gtest-l {
 	transform: translateY(20px);
 }
 
-.card9:hover .gtest-r {
+.card8:hover .gtest-r {
 	transform: translateY(-20px);
 }
 
-.card9:hover {
+.card8:hover {
 	box-shadow: var(--hovershadow2);
 }
 /*========================================================================================================================================*/
@@ -937,7 +895,7 @@ body {
 	color: var(--textlinkhover);
 }
 
-.nextstep {
+.card10-nextstep {
 	/*卡片样式*/
 	background: #FFFFFF;
 	border-radius: var(--cardR);
@@ -996,7 +954,7 @@ body {
 	filter: blur(6px);
 }
 /*圆环动画*/
-.nextstep:hover .bubble {
+.card10-nextstep:hover .bubble {
 	animation: showbubble 500ms forwards;
 }
 
@@ -1015,7 +973,7 @@ body {
 }
 
 /*圆环回退动画*/
-.nextstep .bubble {
+.card10-nextstep .bubble {
 	animation: r-showbubble 200ms forwards;
 }
 
@@ -1034,17 +992,17 @@ body {
 }
 
 /*编组动画*/
-.nextstep:hover .nextstep-warp {
+.card10-nextstep:hover .nextstep-warp {
 	grid-gap: 10px;
 }
 
 /*文字动画*/
-.nextstep:hover .ns-c-img {
+.card10-nextstep:hover .ns-c-img {
 	transform: scale(1.6);
 }
 
 /*SVG动画*/
-.nextstep:hover .solgan {
+.card10-nextstep:hover .solgan {
 	background-image: radial-gradient(circle at 50% 50%, #7991CF 0%, #FFFFFF 80%);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -1053,11 +1011,11 @@ body {
 }
 
 /*卡片本体鼠标悬浮效果*/
-.nextstep:hover {
+.card10-nextstep:hover {
 	box-shadow: var(--hovershadow2);
 }
 /*========================================================================================================================================*/
-.siteinfocard {
+.card9-deviceinfo {
 	/*卡片样式*/
 	background: #FFFFFF;
 	border-radius: var(--cardR);
@@ -1073,7 +1031,7 @@ body {
 	transition: var(--cardmainani);
 }
 
-.siteinfocard:hover {
+.card9-deviceinfo:hover {
 	box-shadow: var(--hovershadow2);
 }
 
