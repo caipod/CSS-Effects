@@ -20,7 +20,7 @@
 	/*动画部分*/
 	--cardmainani: all 600ms;
 	/*代码字体*/
-	--codefont: SF Mono,SFMono-Regular,ui-monospace,Menlo,monospace;
+	--codefont: SF Mono,SFMono-Regular,ui-monospace,Menlo,Consolas,monospace;
 }
 /*==================================*/
 body {
