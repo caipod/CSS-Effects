@@ -29,8 +29,8 @@ body {
 	background: #DFE3EB;
 	/*background: color(display-p3 0.8774 0.8897 0.9185);*/
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-	animation-name: bodycolorchange;
-	animation-duration: 800ms;
+	/*animation-name: bodycolorchange;*/
+	/*animation-duration: 500ms;*/
 }
 /*==================================*/
 /*卡片基础设置*/
@@ -1465,13 +1465,11 @@ p {
 /*====================================*/
 @keyframes websitemainanimation {
 	0% {
-		opacity: 0%;
-		filter: blur(20px) grayscale(100%) saturate(0);
+		filter: opacity(0) blur(20px) grayscale(100%);
 	}
 
 	100% {
-		opacity: 100%;
-		filter: blur(0) grayscale(0) saturate(100%);
+		filter: opacity(100%) blur(0) grayscale(0);
 	}
 }
 /*================================*/
