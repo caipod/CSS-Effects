@@ -161,6 +161,8 @@ body {
 /*小字号测试*/
 .card2 {
 	display: flex;
+	flex-direction: column;
+	grid-gap: 10px;
 	justify-content: center;
 	align-items: center;
 	background: #FFFFFF;
@@ -175,24 +177,66 @@ body {
 	box-shadow: var(--hovershadow2);
 }
 
-.card2warp {
+.card2warp,
+.card2warp-pt2,
+.card2warp-pt3
+{
 	display: flex;
 	grid-gap: 10px;
 	align-items: flex-end;
 }
 
+.l12x8,
+.l12x10
+{
+	font-size: 12px;
+	display: block;
+	color: var(--card2a3textcolor);
+}
+
+.zhongwen > .l12x8{
+
+	transform: scale(0.667) translateX(19%) translateY(20%);
+	line-height: 11px;
+}
+
+.zhongwen > .l12x10{
+
+	transform: scale(0.833) translateX(5%) translateY(7%);
+	line-height: 14px;
+}
+
+.yingwen > .l12x8{
+
+	transform: scale(0.667) translateX(-28%) translateY(15%);
+	line-height: 11px;
+}
+
+.yingwen > .l12x10{
+
+	transform: scale(0.833) translateX(-13%) translateY(10%);
+	line-height: 14px;
+}
+
 .zhongwen {
 	text-align: right;
+}
+.yingwen{
+	text-align: left;
 }
 
 .lorem12,
 .lorem10,
-.lorem8 {
-	transition: all 0.2s;
+.lorem8,
+.l12x10,
+.l12x8
+{
+	transition: all 200ms;
 }
 
 .lorem12,
 .lorem10 {
+
 	color: var(--card2a3textcolor);
 }
 
@@ -234,6 +278,14 @@ body {
 {
 	content: "font-size: 8px;";
 }
+
+.l12x8:hover,
+.l12x10:hover{
+
+	transform: scale(1.0);
+}
+
+
 .zhongwen .lorem12:hover:after,
 .yingwen .lorem12:hover:after,
 .zhongwen .lorem10:hover:after,
