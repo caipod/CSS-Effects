@@ -194,35 +194,43 @@ body {
 	color: var(--card2a3textcolor);
 }
 
-.zhongwen > .l12x8{
-
-	transform: scale(0.667) translateX(19%) translateY(20%);
-	line-height: 11px;
-}
-
-.zhongwen > .l12x10{
-
-	transform: scale(0.833) translateX(5%) translateY(7%);
-	line-height: 14px;
-}
-
-.yingwen > .l12x8{
-
-	transform: scale(0.667) translateX(-28%) translateY(15%);
-	line-height: 11px;
-}
-
-.yingwen > .l12x10{
-
-	transform: scale(0.833) translateX(-13%) translateY(10%);
-	line-height: 14px;
-}
-
 .zhongwen {
 	text-align: right;
 }
 .yingwen{
 	text-align: left;
+}
+
+.zhongwen > .l12x8,
+.yingwen > .l12x8
+{
+	line-height: 11px;
+}
+
+.zhongwen > .l12x10,
+.yingwen > .l12x10
+{
+	line-height: 14px;
+}
+
+.zhongwen > .l12x8{
+
+	transform: scale(0.667) translateX(19%) translateY(20%);
+}
+
+.zhongwen > .l12x10{
+
+	transform: scale(0.833) translateX(5%) translateY(7%);
+}
+
+.yingwen > .l12x8{
+
+	transform: scale(0.667) translateX(-28%) translateY(15%);
+}
+
+.yingwen > .l12x10{
+
+	transform: scale(0.833) translateX(-13%) translateY(10%);
 }
 
 .lorem12,
@@ -285,7 +293,6 @@ body {
 	transform: scale(1.0);
 }
 
-
 .zhongwen .lorem12:hover:after,
 .yingwen .lorem12:hover:after,
 .zhongwen .lorem10:hover:after,
@@ -302,6 +309,7 @@ body {
 	text-align: center;	
 	font-size: 12px;
 }
+
 /*========================================================================================================================================*/
 /*字重测试*/
 .card3 {
@@ -660,10 +668,10 @@ body {
 	font-size: 12px;
 	color: #5C6B74;
 	text-shadow: 0 2px 3px #BDC4C8;
-	width: 70px;
+	min-width: 70px;
+	/*上面这一行代码会导致网页在macOS Safari显示有问题，暂时不知道为什么*/
 	height: 22px;
 	line-height: 22px;
-	display: block;
 }
 /*----------------------------------------*/
 .srgb
@@ -683,6 +691,39 @@ body {
 /*----------------------------------------*/
 .card7:hover {
 	box-shadow: var(--hovershadow2);
+}
+/*-----------------------------------------*/
+.srgb:hover::after,
+.p3:hover::after,
+.rec2020:hover::after
+{
+	display: block;
+	position: absolute;
+	/*-----------------*/
+	width: 100%;
+	bottom: 20px;
+	left: 0;
+	/*---------------*/
+	font-family: var(--codefont);
+	color: var(--hintextcolor);
+	text-align: center;	
+	font-size: 12px;
+	text-shadow: none;
+}
+/*-----------------------------------------*/
+.card7 .srgb:hover::after
+{
+	content: "@media\00a0(color⎼gamut:\00a0srgb) ";
+}
+/*-----------------------------------------*/
+.card7 .p3:hover::after
+{
+	content: "@media\00a0(color⎼gamut:\00a0p3) ";
+}
+/*-----------------------------------------*/
+.card7 .rec2020:hover::after
+{
+	content: "@media\00a0(color⎼gamut:\00a0rec2020) ";
 }
 /*========================================================================================================================================*/
 /*测试设备是否支持 Display P3 色域的代码显示。*/
