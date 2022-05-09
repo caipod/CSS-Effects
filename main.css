@@ -3,7 +3,7 @@
 	--hovershadow2: none;
 	/*------------------------------------------------------*/
 	/*网格卡片圆角*/
-	--cardR: 20px;
+	--cardR: 16px;
 	/*卡片描边*/
 	--cardborder: 1px solid rgba(188, 196, 223, 0.50);
 	/*卡片常规样式内阴影*/
@@ -28,7 +28,6 @@ body {
 	box-sizing: border-box;
 	font-size: 16px;
 	background: #DFE3EB;
-	/*background: color(display-p3 0.8774 0.8897 0.9185);*/
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 /*========================================================================================================================================*/
