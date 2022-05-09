@@ -43,7 +43,7 @@
 
 7⃣️**第七张卡片：**
 
-测试浏览器是否支持sRGB、Display P3 或 rec2020 色域，若支持，蓝灯亮起，反则不亮灯。
+测试浏览器是否支持sRGB、Display P3 或 rec2020 色域，若支持，蓝灯亮起，反则不亮灯。把鼠标放在蓝色药丸里，蓝色会变亮。
 
 8⃣️**第八张卡片：**
 
@@ -76,3 +76,4 @@
 - [Resolution Inspector](http://dev.jeffersonscher.com/resolution.html)
 - [Clip Path 制作工具](https://bennettfeely.com/clippy/)
 - [SF 符号](https://developer.apple.com/sf-symbols/)（曾在旧版本使用过。）
+
