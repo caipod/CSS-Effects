@@ -14,8 +14,6 @@
 	/*暗色模式下的卡片内阴影*/
 	--cardboxshadow-Dark: inset 0 0 20px 0 #61656E;
 	/*------------------------------------------------------*/
-	/*最底部链接鼠标悬浮颜色*/
-	--textlinkhover: #464C59;
 	/*字重与字号卡片的文字常规文字颜色*/
 	--card2a3textcolor: #1B1D1F;
 	/*鼠标悬浮在卡片上出现的提示文字的颜色*/
@@ -53,6 +51,7 @@ body {
 	opacity: 0.9;
 	top: 43%;
 	filter: blur(0);
+	transform: scale(1.0);
 }
 
 .card1-logo:hover .csseffects2 {
@@ -71,7 +70,8 @@ body {
 	top: 45%;
 	text-align: center;
 	width: 100%;
-	filter: blur(10px);
+	filter: blur(5px);
+	transform: scale(0.9);
 }
 
 .csseffects2 {
@@ -159,7 +159,7 @@ body {
 /*========================================================================================================================================*/
 
 /*小字号测试*/
-.card2 {
+.card2-fontsize {
 	display: flex;
 	flex-direction: column;
 	grid-gap: 10px;
@@ -173,7 +173,7 @@ body {
 	position: relative;
 }
 
-.card2:hover {
+.card2-fontsize:hover {
 	box-shadow: var(--hovershadow2);
 }
 
@@ -312,7 +312,7 @@ body {
 
 /*========================================================================================================================================*/
 /*字重测试*/
-.card3 {
+.card3-fontweight {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -324,7 +324,7 @@ body {
 	transition: var(--cardmainani);
 }
 
-.card3:hover {
+.card3-fontweight:hover {
 	box-shadow: var(--hovershadow2);
 }
 
@@ -493,7 +493,7 @@ body {
 /*========================================================================================================================================*/
 
 /*测试浏览器是否支持背景高斯模糊效果。*/
-.card4 {
+.card4-blur {
 	display: grid;
 	justify-items: center;
 	align-content: center;
@@ -504,7 +504,7 @@ body {
 	transition: var(--cardmainani);
 }
 
-.card4:hover {
+.card4-blur:hover {
 	box-shadow: var(--hovershadow2);
 }
 
@@ -550,7 +550,7 @@ body {
 }
 /*========================================================================================================================================*/
 /*测试操作系统是否支持亮暗色切换。*/
-.card5 {
+.card5-colorscheme {
 	background: #FFFFFF;
 	border-radius: var(--cardR);
 	border: var(--cardborder);
@@ -561,11 +561,11 @@ body {
 	position: relative;
 }
 
-.card5:hover {
+.card5-colorscheme:hover {
 	box-shadow: var(--hovershadow2);
 }
 
-.card5:hover .sun {
+.card5-colorscheme:hover .sun {
 	transform: rotate(45deg);
 }
 
@@ -645,7 +645,7 @@ body {
 }
 /*========================================================================================================================================*/
 /*测试浏览器是否支持sRGB、Display P3 或 rec2020 色域，若支持，蓝灯亮起，反则不亮灯。*/
-.card7 {
+.card7-gamutcheck {
 	transition: var(--cardmainani);
 	display: flex;
 	grid-gap: 2px;
@@ -689,7 +689,7 @@ body {
 	border-radius: 2px 11px 11px 2px;
 }
 /*----------------------------------------*/
-.card7:hover {
+.card7-gamutcheck:hover {
 	box-shadow: var(--hovershadow2);
 }
 /*-----------------------------------------*/
@@ -711,23 +711,23 @@ body {
 	text-shadow: none;
 }
 /*-----------------------------------------*/
-.card7 .srgb:hover::after
+.card7-gamutcheck .srgb:hover::after
 {
 	content: "@media\00a0(color⎼gamut:\00a0srgb) ";
 }
 /*-----------------------------------------*/
-.card7 .p3:hover::after
+.card7-gamutcheck .p3:hover::after
 {
 	content: "@media\00a0(color⎼gamut:\00a0p3) ";
 }
 /*-----------------------------------------*/
-.card7 .rec2020:hover::after
+.card7-gamutcheck .rec2020:hover::after
 {
 	content: "@media\00a0(color⎼gamut:\00a0rec2020) ";
 }
 /*========================================================================================================================================*/
 /*测试设备是否支持 Display P3 色域的代码显示。*/
-.card6 {
+.card6-colorgamut {
 	background: #FFFFFF;
 	border-radius: var(--cardR);
 	border: var(--cardborder);
@@ -739,7 +739,7 @@ body {
 	grid-gap: 10px;
 }
 /*------------------------------------------------*/
-.card6:hover {
+.card6-colorgamut:hover {
 	box-shadow: var(--hovershadow2);
 }
 /*------------------------------------------------*/
@@ -907,7 +907,7 @@ body {
 }
 /*===================================================*/
 /*以图片格式测试浏览器对 Display P3 与sRGB 色域的兼容性*/
-.card8 {
+.card8-picompare {
 	transition: var(--cardmainani);
 	display: flex;
 	justify-content: center;
@@ -950,28 +950,28 @@ body {
 	transform: translateX(18px);
 }
 
-.card8:hover .nameleft {
+.card8-picompare:hover .nameleft {
 	align-self: flex-start;
 }
 
-.card8:hover .nameright {
+.card8-picompare:hover .nameright {
 	align-self: flex-end;
 }
 
-.card8:hover .names {
+.card8-picompare:hover .names {
 	opacity: 1;
 	filter: blur(0);
 }
 
-.card8:hover .gtest-l {
+.card8-picompare:hover .gtest-l {
 	transform: translateY(20px);
 }
 
-.card8:hover .gtest-r {
+.card8-picompare:hover .gtest-r {
 	transform: translateY(-20px);
 }
 
-.card8:hover {
+.card8-picompare:hover {
 	box-shadow: var(--hovershadow2);
 }
 /*========================================================================================================================================*/
@@ -981,11 +981,11 @@ body {
 	text-decoration: none;
 	padding: 10px;
 	color: #878E9A;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .cardlink:hover {
-	color: var(--textlinkhover);
+	color: #5f646d;
 }
 
 .card10-nextstep {
@@ -1395,7 +1395,6 @@ body {
 	=========================================================*/
 
 /*========================================================================================================================================*/
-
 .siteinfo {
 	padding: 30px;
 	animation-name: websitemainanimation;
@@ -1415,6 +1414,14 @@ body {
 		border: 1px solid #BAE3FF;
 		box-shadow: inset 0 0 5px 0 #9DD2F6;
 		color: #1C3250;
+		transition: all 150ms;
+	}
+	.srgb:hover{
+		background: #79C8FF;
+		border: 1px solid #5AACE3;
+		box-shadow: inset 0 0 5px 0 #33A5F2;
+		color: white;
+		text-shadow: none;
 	}
 }
 
@@ -1425,8 +1432,15 @@ body {
 		border: 1px solid #BAE3FF;
 		box-shadow: inset 0 0 5px 0 #9DD2F6;
 		color: #1C3250;
+		transition: all 150ms;
 	}
-
+	.p3:hover{
+		background: #79C8FF;
+		border: 1px solid #5AACE3;
+		box-shadow: inset 0 0 5px 0 #33A5F2;
+		color: white;
+		text-shadow: none;
+	}
 }
 
 @media (color-gamut: rec2020) {
@@ -1435,12 +1449,19 @@ body {
 		border: 1px solid #BAE3FF;
 		box-shadow: inset 0 0 5px 0 #9DD2F6;
 		color: #1C3250;
+		transition: all 150ms;
+	}
+	.rec2020:hover{
+		background: #79C8FF;
+		border: 1px solid #5AACE3;
+		box-shadow: inset 0 0 5px 0 #33A5F2;
+		color: white;
+		text-shadow: none;
 	}
 }
-
-
+/*===========================================================================*/
 @media (prefers-color-scheme: dark) {
-	.card5 {
+	.card5-colorscheme {
 		background: #22252B;
 		border: var(--cardborder-Dark);
 		box-shadow: var(--cardboxshadow-Dark);
@@ -1461,10 +1482,9 @@ body {
 		filter: blur(0);
 	}
 
-	.card5:hover .moon {
+	.card5-colorscheme:hover .moon {
 		box-shadow: inset 40px -20px 0 0;
 	}
-
 }
 /*====================================*/
 @keyframes websitemainanimation {
