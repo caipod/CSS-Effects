@@ -547,6 +547,7 @@ body {
 	height: 90px;
 	border-radius: 45px;
 }
+
 /*========================================================================================================================================*/
 /*测试操作系统是否支持亮暗色切换。*/
 .card5-colorscheme {
@@ -934,7 +935,7 @@ body {
 	height: 130px;
 	align-items: center;
 	opacity: 0;
-	filter: blur(10px);
+	transform: scale(0);
 }
 
 .nameleft {
@@ -959,7 +960,7 @@ body {
 
 .card8-picompare:hover .names {
 	opacity: 1;
-	filter: blur(0);
+	transform: scale(1);
 }
 
 .card8-picompare:hover .gtest-l {
