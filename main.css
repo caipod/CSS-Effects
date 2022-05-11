@@ -547,7 +547,45 @@ body {
 	height: 90px;
 	border-radius: 45px;
 }
-
+/*===============================================================*/
+.card4-blur-op2{
+	background: #FFFFFF;
+	border-radius: var(--cardR);
+	border: var(--cardborder);
+	box-shadow: var(--cardboxshadow);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.card4text{
+	z-index: 1;
+	font-weight: bold;
+	font-weight: 700;
+	font-size: 20px;
+	color: #1B1D1F;
+	text-align: center;
+}
+.ball{
+	position: absolute;
+	transition: all 350ms;
+	z-index: 2;
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	background-image: radial-gradient(circle at 17% 14%, rgba(229,236,252,0.58) 0%, rgba(255,255,255,0.33) 22%, rgba(155,164,185,0.39) 58%, rgba(127,142,174,0.28) 78%, rgba(177,181,197,0.29) 98%);
+	box-shadow: 32px 19px 31px 0 rgba(96,101,120,0.32);
+	border-radius: 50px;
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+}
+.ball:hover{
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	backdrop-filter: blur(1px);
+	-webkit-backdrop-filter: blur(1px);
+}
 /*========================================================================================================================================*/
 /*测试操作系统是否支持亮暗色切换。*/
 .card5-colorscheme {
