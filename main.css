@@ -1024,8 +1024,12 @@ body {
 .ns-text{
 	transition: all 300ms;
 	font-size: 20px;
+	/*这两行代码是为了保证文字完整显示而不被处clip属性切割*/
+	width: 100%;
+	text-align: center;
+	/*---------------------------*/
 	font-family: sfr;
-	background-image: radial-gradient(circle at 50% 50%, #95B5E4 0%, #D2E2F9 110%);
+	background-image: radial-gradient(circle at 50% 50%, #95B5E4 0%, #D2E2F9 30%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
