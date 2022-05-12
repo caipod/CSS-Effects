@@ -1,26 +1,25 @@
 :root {
-	/*鼠标悬浮在卡片上的样式，亮色界面*/
+	/*亮色，默认，鼠标悬浮在卡片上的样式*/
 	--hovershadow2: none;
-	/*------------------------------------------------------*/
-	/*网格卡片圆角*/
+	/*默认，卡片圆角*/
 	--cardR: 16px;
-	/*卡片描边*/
+	/*默认，卡片描边*/
 	--cardborder: 1px solid rgba(188, 196, 223, 0.50);
-	/*卡片常规样式内阴影*/
+	/*默认，卡片内阴影*/
 	--cardboxshadow: inset 0 0 20px 0 #E2EAFA;
 	/*------------------------------------------------------*/
-	/*暗色模式下的卡片边框*/
+	/*暗色，卡片描边*/
 	--cardborder-Dark: 1px solid rgba(103, 109, 128, 0.50);
-	/*暗色模式下的卡片内阴影*/
+	/*暗色，卡片内阴影*/
 	--cardboxshadow-Dark: inset 0 0 20px 0 #61656E;
 	/*------------------------------------------------------*/
-	/*字重与字号卡片的文字常规文字颜色*/
+	/*C2与C3卡片的文字常规文字颜色*/
 	--card2a3textcolor: #1B1D1F;
-	/*鼠标悬浮在卡片上出现的提示文字的颜色*/
+	/*鼠标悬浮在卡片上底部出现的提示文字的颜色*/
 	--hintextcolor: #c3cad6;
-	/*基础动画部分*/
+	/*卡片基础动画*/
 	--cardmainani: all 600ms;
-	/*鼠标悬浮在卡片上的代码字体*/
+	/*底部出现的提示性代码字体*/
 	--codefont: SF Mono,SFMono-Regular,ui-monospace,Menlo,Consolas,monospace;
 }
 /*========================================================================================================================================*/
@@ -45,22 +44,28 @@ body {
 .card1-logo {
 	position: relative;
 }
-
-.card1-logo:hover .cardlogotext {
+/*---------------------------------*/
+.cardlogosfr{
+	transition: all 500ms;
+	position: absolute;
 	opacity: 0.9;
-	top: 43%;
+	font-size: 30px;
+	color: #FFFFFF;
+	top: 45%;
+	text-align: center;
+	width: 100%;
 	filter: blur(0);
-	transform: scale(1.0);
+	transform: scale(1);
+	font-family: sfr;
 }
-
-.card1-logo:hover .csseffects2 {
-	top: 48%;
-	transform: translate(-50%, -50%) scale(0.8);
+.card1-logo:hover .cardlogosfr {
+	/*top: 46%;*/
+	filter: blur(5px);
 	opacity: 0;
 }
-
+/*---------------------------------*/
 .cardlogotext {
-	transition: all 300ms;
+	transition: all 500ms;
 	position: absolute;
 	opacity: 0;
 	font-weight: 900;
@@ -72,15 +77,13 @@ body {
 	filter: blur(5px);
 	transform: scale(0.9);
 }
-
-.csseffects2 {
-	transition: all 350ms;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.card1-logo:hover .cardlogotext {
+	opacity: 0.9;
+	/*top: 46%;*/
+	filter: blur(0);
+	transform: scale(1.0);
 }
-
+/*---------------------------------*/
 .cover {
 	position: absolute;
 	width: 100%;
@@ -514,6 +517,7 @@ body {
 	font-size: 20px;
 	color: #1B1D1F;
 	text-align: center;
+	font-family: sfr;
 }
 
 .ball{
@@ -995,7 +999,7 @@ body {
 	width: 190px;
 	height: 190px;
 	border-radius: 50%;
-	background-image: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #FFFFFF 25%, #EBF5FF 50%);
+	background-image: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #F6FCFF 35%, #EBF5FF 50%);
 	border: 1px solid #F3F4FD;
 	filter: blur(12px);
 	/*组内定位*/
@@ -1014,20 +1018,20 @@ body {
 	flex-direction: column;
 	align-items: center;
 	z-index: 1;
-	/*组外定位*/
-	padding-top: 15px;
 
 }
 
-.ns-c-img {
+.ns-text{
 	transition: all 300ms;
-	display: block;
-	width: initial;
-	height: auto;
+	font-size: 20px;
+	font-family: sfr;
+	background-image: radial-gradient(circle at 50% 50%, #95B5E4 0%, #D2E2F9 110%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 .solgan {
-	transition: all 900ms;
 	width: 100%;
 	text-align: center;
 	font-size: 12px;
@@ -1074,21 +1078,56 @@ body {
 
 /*编组动画*/
 .card10-nextstep:hover .nextstep-warp {
-	grid-gap: 10px;
+	grid-gap: 1px;
 }
 
-/*文字动画*/
-.card10-nextstep:hover .ns-c-img {
-	transform: scale(1.6);
+/*主文字动画*/
+.card10-nextstep:hover .ns-text {
+	font-size: 30px;
 }
 
-/*SVG动画*/
+/*slogan动画*/
 .card10-nextstep:hover .solgan {
-	background-image: radial-gradient(circle at 50% 50%, #7991CF 0%, #FFFFFF 80%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-	filter: none;
+	animation: showtext forwards;
+	animation-duration: 800ms;
+}
+
+@keyframes showtext{
+	from{
+		background-image: radial-gradient(circle at 50% 50%, #7991CF 0%, #FFFFFF 0%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		filter: blur(20px);
+	}
+	to{
+		background-image: radial-gradient(circle at 50% 50%, #7991CF 0%, #FFFFFF 80%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		filter: blur(0);
+	}
+}
+
+.card10-nextstep .solgan {
+	animation: hidetext 200ms forwards;
+}
+
+@keyframes hidetext{
+	from{
+		background-image: radial-gradient(circle at 50% 50%, #7991CF 0%, #FFFFFF 80%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		filter: blur(0);
+	}
+	to{
+		background-image: radial-gradient(circle at 50% 50%, #7991CF 0%, #FFFFFF 0%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		filter: blur(20px);
+	}
 }
 
 /*卡片本体鼠标悬浮效果*/
@@ -1485,3 +1524,7 @@ body {
 	}
 }
 /*================================*/
+@font-face{
+	font-family: sfr;
+	src: url(r/SansForgetica-Regular.otf);
+}
