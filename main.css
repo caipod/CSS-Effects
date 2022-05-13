@@ -19,7 +19,7 @@
 	/*鼠标悬浮在卡片上底部出现的提示文字的颜色*/
 	--hintextcolor: #c3cad6;
 	/*卡片基础动画*/
-	--cardmainani: all 600ms;
+	--cardmainani: all 800ms;
 	/*-----------------------------------------------*/
 	/*底部出现的提示性代码字体*/
 	--codefont: SF Mono,SFMono-Regular,ui-monospace,Menlo,Consolas,monospace;
@@ -119,6 +119,7 @@ body {
 .pt2,
 .pt3,
 .pt4 {
+	/*filter: grayscale(100%);*/
 	position: absolute;
 	width: 50%;
 	height: 50%;
@@ -160,7 +161,7 @@ body {
 	bottom: 20px;
 	width: 100%;
 	text-align: center;
-	/*font-family: SansForgetica-Regular;*/
+	/*font-family: var(--SFRFontFamily);*/
 }
 /*========================================================================================================================================*/
 
