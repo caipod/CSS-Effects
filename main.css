@@ -1,4 +1,5 @@
-:root {
+:root
+{
 	/*亮色，默认，鼠标悬浮在卡片上的样式*/
 	--hovershadow2: none;
 	/*默认，卡片圆角*/
@@ -19,8 +20,11 @@
 	--hintextcolor: #c3cad6;
 	/*卡片基础动画*/
 	--cardmainani: all 600ms;
+	/*-----------------------------------------------*/
 	/*底部出现的提示性代码字体*/
 	--codefont: SF Mono,SFMono-Regular,ui-monospace,Menlo,Consolas,monospace;
+	/*使用SansForgetica字体*/
+	--SFRFontFamily: sfr, system-ui;
 }
 /*========================================================================================================================================*/
 body {
@@ -56,7 +60,7 @@ body {
 	width: 100%;
 	filter: blur(0);
 	transform: scale(1);
-	font-family: sfr;
+	font-family: var(--SFRFontFamily);
 }
 .card1-logo:hover .cardlogosfr {
 	/*top: 46%;*/
@@ -517,7 +521,7 @@ body {
 	font-size: 20px;
 	color: #1B1D1F;
 	text-align: center;
-	font-family: sfr;
+	font-family: var(--SFRFontFamily);
 }
 
 .ball{
@@ -1024,15 +1028,17 @@ body {
 .ns-text{
 	transition: all 300ms;
 	font-size: 20px;
-	/*这两行代码是为了保证文字完整显示而不被处clip属性切割*/
+	font-family: var(--SFRFontFamily);
+	/*这两行代码是为了保证文字完整显示而不被bg-clip属性切割*/
 	width: 100%;
 	text-align: center;
 	/*---------------------------*/
-	font-family: sfr;
+	/*文字的渐变效果*/
 	background-image: radial-gradient(circle at 50% 50%, #95B5E4 0%, #D2E2F9 30%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
+	/*--------------------------------*/
 }
 
 .solgan {
