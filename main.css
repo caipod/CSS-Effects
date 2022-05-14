@@ -47,45 +47,45 @@ body {
 /*网站封面图*/
 .card1-logo {
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.c1bg{
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 /*---------------------------------*/
 .cardlogosfr{
-	transition: all 500ms;
-	position: absolute;
-	opacity: 0.9;
-	font-size: 30px;
-	color: #FFFFFF;
-	top: 45%;
-	text-align: center;
-	width: 100%;
-	filter: blur(0);
+	opacity: 0.95;
+	z-index: 2;
 	transform: scale(1);
+	transition: all 1000ms;
+	font-size: 30px;
+	position: absolute;
+	color: #FFFFFF;
 	font-family: var(--SFRFontFamily);
 }
 .card1-logo:hover .cardlogosfr {
-	/*top: 46%;*/
-	filter: blur(5px);
 	opacity: 0;
+	transform: translate3d(5px, -5px, 0px);
+	filter: blur(5px);
 }
 /*---------------------------------*/
 .cardlogotext {
-	transition: all 500ms;
-	position: absolute;
 	opacity: 0;
+	z-index: 3;
 	font-weight: 900;
 	font-size: 30px;
-	color: #FFFFFF;
-	top: 45%;
-	text-align: center;
 	width: 100%;
-	filter: blur(5px);
-	transform: scale(0.9);
+	transition: all 500ms;
+	position: absolute;
+	color: #FFFFFF;
+	text-align: center;
 }
 .card1-logo:hover .cardlogotext {
-	opacity: 0.9;
-	/*top: 46%;*/
-	filter: blur(0);
-	transform: scale(1.0);
+	opacity: 0.95;
 }
 /*---------------------------------*/
 .cover {
@@ -98,9 +98,10 @@ body {
 }
 
 .flash {
+	z-index: 1;
 	transition: all 550ms;
-	width: 95%;
-	height: 95%;
+	width: 90%;
+	height: 90%;
 	border-radius: var(--cardR);
 	clip-path: polygon(0 0, 0% 100%, 100% 0);
 	background-image: linear-gradient(182deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 75%);
@@ -108,7 +109,8 @@ body {
 	filter: blur(50px);
 }
 
-.card1-logo:hover .flash {
+.card1-logo:hover .c1bg > .flash
+{
 	width: 100%;
 	height: 100%;
 	opacity: 0.2;
@@ -159,8 +161,6 @@ body {
 	color: rgba(255, 255, 255, 0.67);
 	position: absolute;
 	bottom: 20px;
-	width: 100%;
-	text-align: center;
 	/*font-family: var(--SFRFontFamily);*/
 }
 /*========================================================================================================================================*/
