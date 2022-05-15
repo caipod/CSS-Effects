@@ -68,7 +68,7 @@ body {
 }
 
 .card1-logo:hover .cardlogosfr {
-	animation: card1sfrmaintitle 350ms forwards;
+	animation: card1sfrmaintitle 300ms forwards;
 }
 
 @keyframes card1sfrmaintitle {
@@ -78,14 +78,14 @@ body {
 	}
 	100%{
 		opacity: 0;
-		transform: scale3d(1, 0.5, 1.0);
+		transform: scale3d(0.9, 0.5, 0.9);
 	}
 }
 
 @keyframes card1sfrmaintitle_back {
 	from{
 		opacity: 0;
-		transform: scale3d(0.9, 0.5, 1.0);
+		transform: scale3d(0.9, 0.5, 0.9);
 	}
 	to{
 		opacity: 0.95;
@@ -565,7 +565,6 @@ body {
 	text-align: center;
 	font-family: var(--SFRFontFamily);
 }
-
 .ball{
 	position: absolute;
 	transition: all 350ms;
