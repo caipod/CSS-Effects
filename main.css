@@ -58,19 +58,39 @@ body {
 }
 /*---------------------------------*/
 .cardlogosfr{
-	opacity: 0.95;
 	z-index: 2;
-	transform: scale(1);
-	transition: all 1000ms;
 	font-size: 30px;
-	position: absolute;
 	color: #FFFFFF;
+	position: absolute;
 	font-family: var(--SFRFontFamily);
+	animation-name: card1sfrmaintitle_back;
+	animation-duration: 300ms;
 }
+
 .card1-logo:hover .cardlogosfr {
-	opacity: 0;
-	transform: translate3d(5px, -5px, 0px);
-	filter: blur(5px);
+	animation: card1sfrmaintitle 350ms forwards;
+}
+
+@keyframes card1sfrmaintitle {
+	0%{
+		opacity: 0.95;
+		transform: scale3d(1.0, 1.0, 1.0);
+	}
+	100%{
+		opacity: 0;
+		transform: scale3d(1, 0.5, 1.0);
+	}
+}
+
+@keyframes card1sfrmaintitle_back {
+	from{
+		opacity: 0;
+		transform: scale3d(0.9, 0.5, 1.0);
+	}
+	to{
+		opacity: 0.95;
+		transform: scale3d(1.0, 1.0, 1.0);
+	}
 }
 /*---------------------------------*/
 .cardlogotext {
@@ -79,13 +99,36 @@ body {
 	font-weight: 900;
 	font-size: 30px;
 	width: 100%;
-	transition: all 500ms;
 	position: absolute;
 	color: #FFFFFF;
 	text-align: center;
+	animation: card1textmaintitle_back 250ms;
 }
+
 .card1-logo:hover .cardlogotext {
-	opacity: 0.95;
+	animation: card1textmaintitle 250ms forwards;
+	animation-delay: 200ms;
+}
+
+@keyframes card1textmaintitle{
+	from{
+		opacity: 0;
+		transform: scale3d(1.0, 0, 1.0);
+	}
+	to{
+		opacity: 0.95;
+		transform: scale3d(1.0, 1.0, 1.0);
+	}
+}
+@keyframes card1textmaintitle_back {
+	from{
+		opacity: 0.95;
+		transform: scale3d(1.0, 1.0, 1.0);
+	}
+	to{
+		opacity: 0;
+		transform: scale3d(1.0, 0, 1.0);
+	}
 }
 /*---------------------------------*/
 .cover {
