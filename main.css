@@ -44,20 +44,23 @@ body {
 	animation-duration: 1000ms;
 }
 /*========================================================================================================================================*/
-/*网站封面图*/
-.card1-logo {
+/*Website Main Theme*/
+.card1-logo 
+{
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.c1bg{
+.c1bg
+{
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
 /*---------------------------------*/
-.cardlogosfr{
+.cardlogosfr
+{
 	z-index: 2;
 	font-size: 30px;
 	color: #FFFFFF;
@@ -67,36 +70,11 @@ body {
 	animation-duration: 300ms;
 }
 
-.card1-logo:hover .cardlogosfr {
-	animation: card1sfrmaintitle 300ms forwards;
-}
-
-@keyframes card1sfrmaintitle {
-	0%{
-		opacity: 0.95;
-		transform: scale3d(1.0, 1.0, 1.0);
-	}
-	100%{
-		opacity: 0;
-		transform: scale3d(0.9, 0.5, 0.9);
-	}
-}
-
-@keyframes card1sfrmaintitle_back {
-	from{
-		opacity: 0;
-		transform: scale3d(0.9, 0.5, 0.9);
-	}
-	to{
-		opacity: 0.95;
-		transform: scale3d(1.0, 1.0, 1.0);
-	}
-}
-/*---------------------------------*/
-.cardlogotext {
+.cardlogotext
+{
 	opacity: 0;
 	z-index: 3;
-	font-weight: 900;
+	font-weight: 800;
 	font-size: 30px;
 	width: 100%;
 	position: absolute;
@@ -104,23 +82,53 @@ body {
 	text-align: center;
 	animation: card1textmaintitle_back 250ms;
 }
-
-.card1-logo:hover .cardlogotext {
-	animation: card1textmaintitle 250ms forwards;
-	animation-delay: 200ms;
+/*------------------------------------*/
+.card1-logo:hover .cardlogosfr {
+	animation: card1sfrmaintitle 500ms forwards;
 }
 
-@keyframes card1textmaintitle{
+.card1-logo:hover .cardlogotext {
+	animation: card1textmaintitle 500ms forwards;
+	animation-delay: 200ms;
+}
+/*--------------------------*/
+@keyframes card1sfrmaintitle
+{
+	0%{
+		opacity: 0.95;
+		transform: scale3d(1.0, 1.0, 1.0);
+	}
+	100%{
+		opacity: 0;
+		transform: scale3d(1.0, 0.7, 0.9);
+	}
+}
+
+@keyframes card1sfrmaintitle_back
+{
 	from{
 		opacity: 0;
-		transform: scale3d(1.0, 0, 1.0);
+		transform: scale3d(0.9, 0.7, 0.9);
 	}
 	to{
 		opacity: 0.95;
 		transform: scale3d(1.0, 1.0, 1.0);
 	}
 }
-@keyframes card1textmaintitle_back {
+/*---------------------------------*/
+@keyframes card1textmaintitle
+{
+	from{
+		opacity: 0;
+		transform: scale3d(1.0, 0.7, 0.9);
+	}
+	to{
+		opacity: 0.95;
+		transform: scale3d(1.0, 1.0, 1.0);
+	}
+}
+@keyframes card1textmaintitle_back
+{
 	from{
 		opacity: 0.95;
 		transform: scale3d(1.0, 1.0, 1.0);
@@ -773,7 +781,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	grid-gap: 10px;
+	grid-gap: 12px;
 }
 /*------------------------------------------------*/
 .card6-colorgamut:hover {
@@ -786,23 +794,23 @@ body {
 /*------------------------------------------------*/
 .purplesrgb,.bluesrgb,.yellowsrgb,.redsrgb{
 	transition: all 200ms;
-	width: 6px;
-	height: 12px;
-	border-radius: 6px 0 0 6px;
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
 }
 .purplep3,.bluep3,.yellowp3,.redp3{
 	transition: all 200ms;
 	transform: scaleX(-1);
-	width: 6px;
-	height: 12px;
-	border-radius: 6px 0 0 6px;
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
 }
 /*------------------------------------------------*/
 .greensrgb,.greenp3{
 	transition: all 250ms;
-	width: 30px;
-	height: 22px;
-	border-radius: 11px 0 0 11px;
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
 }
 .greenp3{
 	transform: scaleX(-1);
@@ -848,98 +856,98 @@ body {
 }
 /*------------------------------------------------*/
 .purple:hover .purplesrgb{
-	width: 30px;
-	height: 22px;
-	border-radius: 11px 0 0 11px;
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
 }
 .purple:hover .purplep3{
 	background: #DDD6FF;
 	background: color(display-p3 0.153 0 1);
-	width: 30px;
-	height: 22px;
-	border-radius: 11px 0 0 11px;
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
 }
 .purple:hover ~ .green > .greensrgb {
-	width: 6px;
-	height: 12px;
-	border-radius: 6px 0 0 6px;
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
 }
 .purple:hover ~ .green > .greenp3 {
-	width: 6px;
-	height: 12px;
-	border-radius: 6px 0 0 6px;
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
 	background: #00FF05;
 }
 /*------------------------------------------------*/
 .blue:hover .bluesrgb{
-	width: 30px;
-	height: 22px;
-	border-radius: 11px 0 0 11px;
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
 }
 .blue:hover .bluep3{
 	background: #CDF1FF;
 	background: color(display-p3 0 0.602 1);
-	width: 30px;
-	height: 22px;
-	border-radius: 11px 0 0 11px;
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
 }
 .blue:hover ~ .green > .greensrgb {
-	width: 6px;
-	height: 12px;
-	border-radius: 6px 0 0 6px;
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
 }
 .blue:hover ~ .green > .greenp3 {
-	width: 6px;
-	height: 12px;
-	border-radius: 6px 0 0 6px;
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
 	background: #00FF05;
 }
 /*------------------------------------------------*/
 .yellow:hover .yellowsrgb{
-	width: 30px;
-	height: 22px;
-	border-radius: 11px 0 0 11px;
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
 }
 .yellow:hover .yellowp3{
 	background: #FFF0C9;
 	background: color(display-p3 1 0.694 0);
-	width: 30px;
-	height: 22px;
-	border-radius: 11px 0 0 11px;
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
 }
 .yellow:hover ~ .green > .greensrgb {
-	width: 6px;
-	height: 12px;
-	border-radius: 6px 0 0 6px;
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
 }
 .yellow:hover ~ .green > .greenp3 {
-	width: 6px;
-	height: 12px;
-	border-radius: 6px 0 0 6px;
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
 	background: #00FF05;
 }
 /*------------------------------------------------*/
 .red:hover .redsrgb{
-	width: 30px;
-	height: 22px;
-	border-radius: 11px 0 0 11px;
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
 }
 .red:hover .redp3{
 	background: #FFD1D7;
 	background: color(display-p3 1 0.011 0);
-	width: 30px;
-	height: 22px;
-	border-radius: 11px 0 0 11px;
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
 }
 .red:hover ~ .green > .greensrgb {
-	width: 6px;
-	height: 12px;
-	border-radius: 6px 0 0 6px;
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
 }
 .red:hover ~ .green > .greenp3 {
-	width: 6px;
-	height: 12px;
-	border-radius: 6px 0 0 6px;
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
 	background: #00FF05;
 }
 /*===================================================*/
@@ -1253,32 +1261,32 @@ body {
 }
 
 #screenpoint:hover:after {
-	content: "设备逻辑分辨率";
+	content: "Device Resolution · 设备逻辑分辨率";
 	opacity: 0;
 }
 
 #scale:hover:after {
-	content: "缩放倍率";
+	content: "Pixel Ratio · 缩放倍率";
 	opacity: 0;
 }
 
 #screenpixel:hover:after {
-	content: "渲染分辨率";
+	content: "Rendered at · 渲染分辨率";
 	opacity: 0;
 }
 
 #windowpoint:hover:after {
-	content: "窗口逻辑分辨率";
+	content: "Window Resolution · 窗口逻辑分辨率";
 	opacity: 0;
 }
 
 #aspect:hover:after {
-	content: "屏幕比例";
+	content: "Aspect Ratio · 屏幕比例";
 	opacity: 0;
 }
 
 #colorDepth:hover:after {
-	content: "浏览器色深";
+	content: "Browser Color Depth · 浏览器色深";
 	opacity: 0;
 }
 
