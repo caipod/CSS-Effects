@@ -189,14 +189,14 @@ body {
 }
 
 .pt2 {
-	background: #5856D6;
+	background: #3d3aff;
 	background: color(display-p3 0.383 0 1);
 	border-radius: 0px 20px 0px 0px;
 	right: 0;
 }
 
 .pt3 {
-	background: #34C759;
+	background: #00c732;
 	background: color(display-p3 0.074 0.92 0.223);
 	border-radius: 0px 0px 0px 20px;
 	left: 0;
@@ -204,7 +204,7 @@ body {
 }
 
 .pt4 {
-	background: #63E6E2;
+	background: #00e2db;
 	background: color(display-p3 0.053 0.955 0.829);
 	border-radius: 0px 0px 20px 0px;
 	right: 0;
@@ -219,7 +219,29 @@ body {
 	/*font-family: var(--SFRFontFamily);*/
 }
 /*========================================================================================================================================*/
-
+/*.hidden{
+	border-radius: var(--cardR);
+	background-image: conic-gradient(
+    from 1.5708rad at 50% 50%,
+    #00acd2 12%,
+    #0feac2 12%,
+    #009db6 25%,
+    #00ff8f 25%,
+    #59e303 38%,
+    #009e40 38%,
+    #31d200 50%,
+    #007aff 50%,
+    #0019ff 63%,
+    #004dff 63%,
+    #007aff 75%,
+    #5856d6 75%,
+    #7b00ff 87%,
+    #3105fd 87%,
+    #5856d6 100%,
+    #63e6e2 100%
+  );
+}*/
+/*=================================================*/
 /*小字号测试*/
 .card2-fontsize {
 	display: flex;
