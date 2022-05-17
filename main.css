@@ -28,9 +28,9 @@
 }
 /*========================================================================================================================================*/
 body {
-	box-sizing: border-box;
 	font-size: 16px;
 	background: #DFE3EB;
+	box-sizing: border-box;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 /*========================================================================================================================================*/
@@ -613,9 +613,19 @@ body {
 .card5-colorscheme:hover {
 	box-shadow: var(--hovershadow2);
 }
-
+/*----------------------------*/
 .card5-colorscheme:hover .sun {
-	transform: rotate(45deg);
+	animation: hoversunspinning 10s infinite linear;
+	animation-play-state: running;
+}
+
+@keyframes hoversunspinning{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
 }
 
 .moon {
@@ -639,6 +649,8 @@ body {
 	height: 100px;
 	position: absolute;
 	filter: blur(0);
+	animation: hoversunspinning 10s infinite linear;
+	animation-play-state: paused;
 	/*background: gray;*/
 }
 
