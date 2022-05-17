@@ -183,8 +183,8 @@ body {
 }
 
 .pt1 {
-	background: color(display-p3 0 0.394 1);
 	background: #00A7FF;
+	background: color(display-p3 0 0.394 1);
 	border-radius: 20px 0px 0px 0px;
 }
 
