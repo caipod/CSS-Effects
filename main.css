@@ -68,6 +68,7 @@ body {
 	font-family: var(--SFRFontFamily);
 	animation-name: card1sfrmaintitle_back;
 	animation-duration: 300ms;
+	animation-timing-function: ease-in-out;
 }
 
 .cardlogotext
@@ -81,15 +82,18 @@ body {
 	color: #FFFFFF;
 	text-align: center;
 	animation: card1textmaintitle_back 250ms;
+	animation-timing-function: ease-in-out;
 }
 /*------------------------------------*/
 .card1-logo:hover .cardlogosfr {
-	animation: card1sfrmaintitle 500ms forwards;
+	animation: card1sfrmaintitle 350ms forwards;
+	animation-timing-function: ease-in-out;
 }
 
 .card1-logo:hover .cardlogotext {
-	animation: card1textmaintitle 500ms forwards;
+	animation: card1textmaintitle 350ms forwards;
 	animation-delay: 200ms;
+	animation-timing-function: ease-in-out;
 }
 /*--------------------------*/
 @keyframes card1sfrmaintitle
