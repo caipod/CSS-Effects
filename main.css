@@ -1,5 +1,6 @@
 :root
 {
+	accent-color: #00A7FF;
 	/*亮色，默认，鼠标悬浮在卡片上的样式*/
 	--hovershadow2: none;
 	/*默认，卡片圆角*/
@@ -32,12 +33,26 @@ body {
 	background: #DFE3EB;
 	box-sizing: border-box;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	overflow-y: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.cardwarp{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 /*========================================================================================================================================*/
 /*卡片基础设置*/
 .cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(310px, auto));
 	grid-auto-rows: minmax(360px, auto);
 	grid-gap: 0.625em;
 	animation-name: websitemainanimation;
@@ -744,7 +759,9 @@ body {
 /*----------------------------------------*/
 .srgb,
 .p3,
-.rec2020{
+.rec2020,
+.hdr
+{
 	background: #F2F5F7;
 	border: 1px solid #F8FCFF;
 	box-shadow: inset 0 0 5px 0 #DAE4EA;
@@ -771,6 +788,11 @@ body {
 {
 	border-radius: 2px 11px 11px 2px;
 }
+
+.hdr{
+	border-radius: 11px;
+	margin-left: 4px;
+}
 /*----------------------------------------*/
 .card7-gamutcheck:hover {
 	box-shadow: var(--hovershadow2);
@@ -778,7 +800,8 @@ body {
 /*-----------------------------------------*/
 .srgb:hover::after,
 .p3:hover::after,
-.rec2020:hover::after
+.rec2020:hover::after,
+.hdr:hover::after
 {
 	display: block;
 	position: absolute;
@@ -807,6 +830,10 @@ body {
 .card7-gamutcheck .rec2020:hover::after
 {
 	content: "@media\00a0(color⎼gamut:\00a0rec2020) ";
+}
+.card7-gamutcheck .hdr:hover::after
+{
+	content: "@media\00a0(video-dynamic-range:\00a0high) ";
 }
 /*========================================================================================================================================*/
 /*测试设备是否支持 Display P3 色域的代码显示。*/
@@ -1576,6 +1603,22 @@ body {
 		transition: all 150ms;
 	}
 	.rec2020:hover{
+		background: #79C8FF;
+		border: 1px solid #5AACE3;
+		box-shadow: inset 0 0 5px 0 #33A5F2;
+		color: white;
+		text-shadow: none;
+	}
+}
+@media (video-dynamic-range: high) {
+	.hdr{
+		background: #D7EFFF;
+		border: 1px solid #BAE3FF;
+		box-shadow: inset 0 0 5px 0 #9DD2F6;
+		color: #1C3250;
+		transition: all 150ms;
+	}
+	.hdr:hover{
 		background: #79C8FF;
 		border: 1px solid #5AACE3;
 		box-shadow: inset 0 0 5px 0 #33A5F2;
