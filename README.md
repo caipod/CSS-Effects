@@ -1,6 +1,6 @@
 [👉🏻访问网站](https://alpha.caipod.site)
 
-![IMG_2846](https://user-images.githubusercontent.com/4744513/168286987-585b75e9-ccb4-44fb-a242-7a989bbe62a3.jpeg)
+![编组](https://user-images.githubusercontent.com/4744513/168945592-33eaf8f3-037c-46d6-9a79-a923b0ca3d7a.png)
 
 # 关于项目/About
 
