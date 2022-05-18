@@ -833,7 +833,7 @@ body::-webkit-scrollbar {
 }
 .card7-gamutcheck .hdr:hover::after
 {
-	content: "@media\00a0(video-dynamic-range:\00a0high) ";
+	content: "@media\00a0(dynamic-range:\00a0high) ";
 }
 /*========================================================================================================================================*/
 /*测试设备是否支持 Display P3 色域的代码显示。*/
@@ -1610,7 +1610,7 @@ body::-webkit-scrollbar {
 		text-shadow: none;
 	}
 }
-@media (video-dynamic-range: high) {
+@media (dynamic-range: high) {
 	.hdr{
 		background: #D7EFFF;
 		border: 1px solid #BAE3FF;
