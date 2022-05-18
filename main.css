@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
 /*卡片基础设置*/
 .cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 	grid-auto-rows: minmax(360px, auto);
 	grid-gap: 0.625em;
 	animation-name: websitemainanimation;
@@ -746,7 +746,6 @@ body::-webkit-scrollbar {
 .card7-gamutcheck {
 	transition: var(--cardmainani);
 	display: flex;
-	grid-gap: 2px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -755,6 +754,14 @@ body::-webkit-scrollbar {
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
 	position: relative;
+}
+
+.mediawarp{
+	width: 180px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
 }
 /*----------------------------------------*/
 .srgb,
@@ -768,30 +775,22 @@ body::-webkit-scrollbar {
 	font-size: 12px;
 	color: #5C6B74;
 	text-shadow: 0 2px 3px #BDC4C8;
-	min-width: 70px;
-	/*上面这一行代码会导致网页在macOS Safari显示有问题，暂时不知道为什么*/
 	height: 22px;
 	line-height: 22px;
-}
-/*----------------------------------------*/
-.srgb
-{
-	border-radius: 11px 2px 2px 11px;
-}
-/*----------------------------------------*/
-.p3 
-{
-	border-radius: 2px;
-}
-/*----------------------------------------*/
-.rec2020
-{
-	border-radius: 2px 11px 11px 2px;
+	border-radius: 11px;
 }
 
+.srgb,
+.rec2020
+{
+	min-width: 70px;
+	/*minwidth如果改成width会导致网页在macOS Safari显示有问题，暂时不知道为什么*/
+}
+
+.p3,
 .hdr{
-	border-radius: 11px;
-	margin-left: 4px;
+	min-width: 90px;
+	/*minwidth如果改成width会导致网页在macOS Safari显示有问题，暂时不知道为什么*/
 }
 /*----------------------------------------*/
 .card7-gamutcheck:hover {
