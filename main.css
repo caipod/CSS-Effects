@@ -101,7 +101,7 @@ body::-webkit-scrollbar {
 }
 /*------------------------------------*/
 .card1-logo:hover .cardlogosfr {
-	animation: card1sfrmaintitle 350ms forwards;
+	animation: card1sfrmaintitle 250ms forwards;
 	animation-timing-function: ease-in-out;
 }
 
@@ -119,7 +119,7 @@ body::-webkit-scrollbar {
 	}
 	100%{
 		opacity: 0;
-		transform: scale3d(1.0, 0.7, 0.9);
+		transform: scale3d(0.9, 0.7, 0.9);
 	}
 }
 
@@ -219,7 +219,7 @@ body::-webkit-scrollbar {
 }
 
 .pt4 {
-	background: #00e2db;
+	background: #00fff7;
 	background: color(display-p3 0.053 0.955 0.829);
 	border-radius: 0px 0px 20px 0px;
 	right: 0;
@@ -231,7 +231,7 @@ body::-webkit-scrollbar {
 	color: rgba(255, 255, 255, 0.67);
 	position: absolute;
 	bottom: 20px;
-	/*font-family: var(--SFRFontFamily);*/
+	font-family: var(--SFRFontFamily);
 }
 /*========================================================================================================================================*/
 /*.hidden{
