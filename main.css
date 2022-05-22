@@ -119,7 +119,7 @@ body::-webkit-scrollbar {
 	}
 	100%{
 		opacity: 0;
-		transform: scale3d(0.9, 0.7, 0.9);
+		transform: scale3d(0.9, 0.2, 0);
 	}
 }
 
@@ -139,7 +139,7 @@ body::-webkit-scrollbar {
 {
 	from{
 		opacity: 0;
-		transform: scale3d(1.0, 0.7, 0.9);
+		transform: scale3d(1.0, 0.2, 0.5);
 	}
 	to{
 		opacity: 0.95;
@@ -1223,7 +1223,7 @@ body::-webkit-scrollbar {
 		filter: blur(20px);
 	}
 	to{
-		background-image: radial-gradient(circle at 50% 50%, #7991CF 0%, #FFFFFF 80%);
+		background-image: radial-gradient(circle at 50% 50%, #7991CF 0%, #FFFFFF 50%);
 		background-clip: text;
 		-webkit-background-clip: text;
 		color: transparent;
