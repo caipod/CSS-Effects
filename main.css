@@ -655,8 +655,6 @@ body::-webkit-scrollbar {
 }
 /*----------------------------*/
 .card5-colorscheme:hover .theray {
-	-webkit-animation: hoversunspinning 10s infinite linear;
-	-webkit-animation-play-state: running;
 	animation: hoversunspinning 10s infinite linear;
 	animation-play-state: running;
 }
@@ -696,6 +694,7 @@ body::-webkit-scrollbar {
 
 .lights1,
 .lights2 {
+	transition: all 800ms;
 	width: 4px;
 	height: 15px;
 	background: rgb(255, 215, 110);
@@ -1630,8 +1629,10 @@ body::-webkit-scrollbar {
 		background: #22252B;
 	}
 
-	.theray{
-		filter: opacity(0) blur(20px);		
+	.lights1,
+	.lights2 {
+		height: 0;
+		filter: blur(10px);
 	}
 
 	.card5-colorscheme:hover .core {
