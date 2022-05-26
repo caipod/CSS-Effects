@@ -631,8 +631,8 @@ body::-webkit-scrollbar {
 .ball:hover{
 	width: 120px;
 	height: 120px;
-	backdrop-filter: blur(1px);
-	-webkit-backdrop-filter: blur(1px);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
 }
 /*========================================================================================================================================*/
 /*测试操作系统是否支持亮暗色切换。*/
@@ -686,8 +686,9 @@ body::-webkit-scrollbar {
 	transition: all 600ms;
 	width: 50px;
 	height: 50px;
-	background: #FBC02E;
-	background: color(display-p3 1 0.788 0.285);
+	box-shadow: inset 50px 0 0 0;
+	color: #FBC02E;
+	color: color(display-p3 1 0.788 0.285);
 	border-radius: 50%;
 	z-index: 2;
 }
@@ -1620,6 +1621,7 @@ body::-webkit-scrollbar {
 	}
 
 	.core{
+		transition: all 600ms;
 		width: 80px;
 		height: 80px;
 		border-radius: 50%;
@@ -1631,6 +1633,7 @@ body::-webkit-scrollbar {
 
 	.lights1,
 	.lights2 {
+		transition: all 800ms;
 		height: 0;
 		filter: blur(10px);
 	}
