@@ -80,6 +80,6 @@
 - [MDN](https://developer.mozilla.org/zh-CN/)
 - [W3C Schools](https://www.w3schools.com/)
 
-网站的交互与视觉设计、HTML、CSS代码都由我完成。JS代码中那一段判断屏幕比例的功能是复制别人的代码。
+使用 Sketch 设计，Sublime 编码，其中HTML与CSS代码都由我完成，Javascript中那一段判断屏幕比例的功能是复制别人的代码。
 
 [👉🏻访问网站](https://alpha.caipod.site)
