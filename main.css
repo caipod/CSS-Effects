@@ -48,6 +48,7 @@ body::-webkit-scrollbar {
 	flex-direction: column;
 	justify-content: space-between;
 }
+
 /*========================================================================================================================================*/
 /*卡片基础设置*/
 .cards {
@@ -640,9 +641,12 @@ body::-webkit-scrollbar {
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
-	display: grid;
+	/*-------------*/
+	display: flex;
 	align-items: center;
-	justify-items: center;
+    justify-content: center;
+    align-content: center;
+	/*--------*/
 	position: relative;
 }
 
@@ -650,7 +654,9 @@ body::-webkit-scrollbar {
 	box-shadow: var(--hovershadow2);
 }
 /*----------------------------*/
-.card5-colorscheme:hover .sun {
+.card5-colorscheme:hover .theray {
+	-webkit-animation: hoversunspinning 10s infinite linear;
+	-webkit-animation-play-state: running;
 	animation: hoversunspinning 10s infinite linear;
 	animation-play-state: running;
 }
@@ -664,42 +670,28 @@ body::-webkit-scrollbar {
 	}
 }
 
-.moon {
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	box-shadow: inset 0 0 0 0;
-	color: #9083F3;
-	color: color(display-p3 0.449 0.385 1);
-	z-index: 10;
-	opacity: 0;
-	position: absolute;
-	transform: scale(0);
-	filter: blur(5px);
-	/*background: black;*/
-}
-
 .sun {
+	display: flex;
+	align-content: center;
+    justify-content: center;
+    align-items: center;
+	/*------*/
 	transition: all 500ms;
 	width: 100px;
 	height: 100px;
 	position: absolute;
 	filter: blur(0);
-	animation: hoversunspinning 10s infinite linear;
-	animation-play-state: paused;
 	/*background: gray;*/
 }
 
 .core {
+	transition: all 600ms;
 	width: 50px;
 	height: 50px;
 	background: #FBC02E;
 	background: color(display-p3 1 0.788 0.285);
 	border-radius: 50%;
 	z-index: 2;
-	position: absolute;
-	top: 25px;
-	left: 25px;
 }
 
 .lights1,
@@ -736,8 +728,12 @@ body::-webkit-scrollbar {
 }
 
 .theray {
-	top: 0;
-	left: 48px;
+	animation: hoversunspinning 10s infinite linear;
+	animation-play-state: paused;
+	display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 	position: absolute;
 }
 /*========================================================================================================================================*/
@@ -1116,6 +1112,7 @@ body::-webkit-scrollbar {
 	height: 190px;
 	border-radius: 50%;
 	background-image: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #F6FCFF 35%, #EBF5FF 50%);
+	/*background-image: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #FFFFFF 26%, #EBF5FF 50%);*/
 	border: 1px solid #F3F4FD;
 	filter: blur(12px);
 	/*组内定位*/
@@ -1219,7 +1216,7 @@ body::-webkit-scrollbar {
 	from{
 		filter: blur(5px);
 		opacity: 0;
-		transform: scale(0.8);
+		transform: scale(0.9);
 	}
 	to{
 		filter: blur(0);
@@ -1623,22 +1620,21 @@ body::-webkit-scrollbar {
 		box-shadow: var(--cardboxshadow-Dark);
 	}
 
-	.sun {
-		transition: all 600ms;
-		transform: scale(0);
-		opacity: 0;
-		filter: blur(10px);
-	}
-
-	.moon {
+	.core{
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
 		box-shadow: inset 20px -20px 0 0;
-		transition: all 600ms;
-		opacity: 1.0;
-		transform: scale(1.0);
-		filter: blur(0);
+		color: #9083F3;
+		color: color(display-p3 0.449 0.385 1);
+		background: #22252B;
 	}
 
-	.card5-colorscheme:hover .moon {
+	.theray{
+		filter: opacity(0) blur(20px);		
+	}
+
+	.card5-colorscheme:hover .core {
 		box-shadow: inset 40px -20px 0 0;
 	}
 }
