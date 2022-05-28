@@ -674,7 +674,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
 	/*------*/
-	transition: all 500ms;
+	transition: all 1000ms;
 	width: 100px;
 	height: 100px;
 	position: absolute;
@@ -683,7 +683,7 @@ body::-webkit-scrollbar {
 }
 
 .core {
-	transition: all 600ms;
+	transition: all 1000ms;
 	width: 50px;
 	height: 50px;
 	box-shadow: inset 50px 0 0 0;
@@ -695,7 +695,7 @@ body::-webkit-scrollbar {
 
 .lights1,
 .lights2 {
-	transition: all 800ms;
+	transition: all 1000ms;
 	width: 4px;
 	height: 15px;
 	background: rgb(255, 215, 110);
@@ -1544,7 +1544,7 @@ body::-webkit-scrollbar {
 .mylinks {
 	padding-bottom: 10px;
 }
-/*========================================================================================================================================*/
+/*=================色域、HDR检测的媒介查询=======================================*/
 @media (color-gamut: srgb) {
 	.srgb {
 		background: #D7EFFF;
@@ -1612,7 +1612,7 @@ body::-webkit-scrollbar {
 		text-shadow: none;
 	}
 }
-/*===========================================================================*/
+/*======暗色模式配置============================*/
 @media (prefers-color-scheme: dark) {
 	.card5-colorscheme {
 		background: #22252B;
@@ -1621,7 +1621,7 @@ body::-webkit-scrollbar {
 	}
 
 	.core{
-		transition: all 600ms;
+		transition: all 1000ms;
 		width: 80px;
 		height: 80px;
 		border-radius: 50%;
@@ -1629,11 +1629,12 @@ body::-webkit-scrollbar {
 		color: #9083F3;
 		color: color(display-p3 0.449 0.385 1);
 		background: #22252B;
+		z-index: 2;
 	}
 
 	.lights1,
 	.lights2 {
-		transition: all 800ms;
+		transition: all 1000ms;
 		height: 0;
 		filter: blur(10px);
 	}
@@ -1642,7 +1643,7 @@ body::-webkit-scrollbar {
 		box-shadow: inset 40px -20px 0 0;
 	}
 }
-/*====================================*/
+/*========网站加载动画===============*/
 @keyframes websitemainanimation {
 	0% {
 		filter: opacity(0) blur(20px) grayscale(100%);
@@ -1652,7 +1653,7 @@ body::-webkit-scrollbar {
 		filter: opacity(100%) blur(0) grayscale(0);
 	}
 }
-/*================================*/
+/*=======自定义字体==========*/
 @font-face{
 	font-family: sfr;
 	src: url(R/SansForgetica-Regular.otf);
