@@ -1628,13 +1628,12 @@ body::-webkit-scrollbar {
 		box-shadow: inset 20px -20px 0 0;
 		color: #9083F3;
 		color: color(display-p3 0.449 0.385 1);
-		background: #22252B;
 		z-index: 2;
 	}
 
 	.lights1,
 	.lights2 {
-		transition: all 1000ms;
+		transition: all 500ms;
 		height: 0;
 		filter: blur(10px);
 	}
