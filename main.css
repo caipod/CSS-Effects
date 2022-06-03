@@ -67,6 +67,7 @@ body::-webkit-scrollbar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: all 800ms;
 }
 .c1bg
 {
@@ -110,6 +111,9 @@ body::-webkit-scrollbar {
 	animation: card1textmaintitle 350ms forwards;
 	animation-delay: 200ms;
 	animation-timing-function: ease-in-out;
+}
+.card1-logo:hover{
+	filter: grayscale(100%);
 }
 /*--------------------------*/
 @keyframes card1sfrmaintitle
@@ -338,7 +342,7 @@ body::-webkit-scrollbar {
 .l12x10,
 .l12x8
 {
-	transition: all 200ms;
+	transition: all 500ms;
 }
 
 .lorem12,
@@ -469,7 +473,7 @@ body::-webkit-scrollbar {
 .fontweight3,
 .fontweight2,
 .fontweight1 {
-	transition: all 0.2s;
+	transition: all 500ms;
 	line-height: initial;
 	font-size: 12px;
 }
