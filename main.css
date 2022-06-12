@@ -846,6 +846,11 @@ body::-webkit-scrollbar {
     /*-------*/
 	position: relative;
 }
+
+.card-hascheck:hover {
+	box-shadow: var(--hovershadow2);
+}
+/*-----*/
 .n1,
 .n2,
 .n3
@@ -875,7 +880,6 @@ div:has( > .faken3){
 	border: none;
 }
 /*-----------*/
-
 .card-hascheck div:hover::after{
 	position: absolute;
 	content: ":has()";
