@@ -905,8 +905,8 @@ div:has( > .faken3){
 .card-hascheck div:hover + div,
 .card-hascheck div:has(+ div:hover)
 {
-	width: 30px;
-	height: 30px;
+	width: 34px;
+	height: 34px;
 }
 /*-----------*/
 .card-hascheck div:hover::after{
