@@ -842,7 +842,7 @@ body::-webkit-scrollbar {
     align-content: center;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
     /*-------*/
 	position: relative;
 }
@@ -855,29 +855,58 @@ body::-webkit-scrollbar {
 .n2,
 .n3
 {
-	transition: all 300ms;
-	width: 30px;
-	height: 30px;
+	transition: all 200ms;
+	width: 26px;
+	height: 26px;
 	border-radius: 50%;
-	background-image: conic-gradient(at 50% 50%, #F8FAFF, #DFE3EB);
+}
+.n1{
+	border: 3px solid #00FF05;
+}
+.n1:hover{
+	background: rgba(111,255,0,0.10);
+}
+.n2{
+	border: 3px solid #00A7FF;
+}
+.n2:hover{
+	background: rgba(0,167,255,0.10);
+}
+.n3{
+	border: 3px solid #2D00FF;
+}
+.n3:hover{
+	background: rgba(0,65,255,0.10);
 }
 
-div:has( + .n3){
-	background-image: conic-gradient(at 50% 50%, #00ff5e, #00a1df);
+
+/*---has----*/
+div:has( + .n3),
+div:has( + .n2),
+div:has( > .faken3)
+{
 	border: none;
+}
+div:has( + .n3){
+	background-image: conic-gradient(from 0deg at 50% 50%, #00A7FF, #00FF05);
 }
 
 div:has( + .n2){
-	background-image: conic-gradient(at 50% 50%, #fff200, #80d200);
-	border: none;
+	background-image: conic-gradient(from 0deg at 50% 50%, #00FF05, #FAFF00);
 }
 
-/*div:hover:has( + .n2)*/
-
 div:has( > .faken3){
-	/*blue*/
-	background-image: conic-gradient(at 50% 50%, #0091ff, #1000c0);
-	border: none;
+	background-image: conic-gradient(from 0deg at 50% 50%, #2D00FF, #00A7FF);
+}
+.card-hascheck div:hover{
+	width: 42px;
+	height: 42px;
+}
+.card-hascheck div:hover + div,
+.card-hascheck div:has(+ div:hover)
+{
+	width: 30px;
+	height: 30px;
 }
 /*-----------*/
 .card-hascheck div:hover::after{
