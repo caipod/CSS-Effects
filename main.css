@@ -79,6 +79,8 @@ body::-webkit-scrollbar {
 .cardlogosfr
 {
 	z-index: 2;
+	width: 100%;
+	text-align: center;
 	font-size: 30px;
 	color: #FFFFFF;
 	position: absolute;
@@ -103,12 +105,12 @@ body::-webkit-scrollbar {
 }
 /*------------------------------------*/
 .card1-logo:hover .cardlogosfr {
-	animation: card1sfrmaintitle 250ms forwards;
+	animation: card1sfrmaintitle 350ms forwards;
 	animation-timing-function: ease-in-out;
 }
 
 .card1-logo:hover .cardlogotext {
-	animation: card1textmaintitle 350ms forwards;
+	animation: card1textmaintitle 450ms forwards;
 	animation-delay: 200ms;
 	animation-timing-function: ease-in-out;
 }
@@ -233,37 +235,16 @@ body::-webkit-scrollbar {
 	position: absolute;
 	bottom: 20px;
 }
-/*========================================================================================================================================*/
-/*.hidden{
-	border-radius: var(--cardR);
-	background-image: conic-gradient(
-    from 1.5708rad at 50% 50%,
-    #00acd2 12%,
-    #0feac2 12%,
-    #009db6 25%,
-    #00ff8f 25%,
-    #59e303 38%,
-    #009e40 38%,
-    #31d200 50%,
-    #007aff 50%,
-    #0019ff 63%,
-    #004dff 63%,
-    #007aff 75%,
-    #5856d6 75%,
-    #7b00ff 87%,
-    #3105fd 87%,
-    #5856d6 100%,
-    #63e6e2 100%
-  );
-}*/
+
 /*=================================================*/
 /*小字号测试*/
 .card2-fontsize {
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	grid-gap: 10px;
+	align-content: center;
 	justify-content: center;
 	align-items: center;
+	justify-items: center;
 	background: #FFFFFF;
 	border-radius: var(--cardR);
 	border: var(--cardborder);
@@ -278,58 +259,100 @@ body::-webkit-scrollbar {
 
 .card2warp,
 .card2warp-pt2,
-.card2warp-pt3
+.card2scaledtext
 {
 	display: flex;
 	grid-gap: 10px;
 	align-items: flex-end;
 }
 
+.card2warp-pt2{
+	font-size: 12px;
+}
+
 .l12x8,
 .l12x10
 {
-	font-size: 12px;
-	display: block;
 	color: var(--card2a3textcolor);
+}
+/*Chrome仅支持使用scale的方式将字号变小于12px。*/
+.l12x8{
+	font-size: 66.7%;
+}
+
+.l12x10{
+	font-size: 83.3%;
+}
+
+.l12x8:hover,
+.l12x10:hover
+{
+	font-size: 100%;
+}
+
+.l12x8:hover:after{
+	content: "font-size: 66.7%;";
+}
+
+.l12x10:hover:after{
+	content: "font-size: 83.3%;";
+}
+
+.l12x8:hover:after,
+.l12x10:hover:after
+{
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	color: var(--hintextcolor);
+	font-family: var(--codefont);
+	font-size: 12px;
+	text-align: center;
+	width: 100%;
+	left: 0;
 }
 
 .zhongwen {
 	text-align: right;
 }
+
 .yingwen{
 	text-align: left;
 }
 
-.zhongwen > .l12x8,
-.yingwen > .l12x8
+.card2scaledtext p{
+	transition: all 300ms;
+	line-height: 0;
+	font-size: 12px;
+}
+.card2scaledtext div{
+	display: block;
+	position: absolute;
+	opacity: 0;
+	color: var(--hintextcolor);
+	font-family: var(--codefont);
+	font-size: 12px;
+	bottom: 20px;
+}
+
+.card2scaledtext p:hover ~ .hint{
+	opacity: 1;
+}
+
+.card2scaledtext p:first-child:hover,
+.card2scaledtext p:nth-child(2):hover
 {
-	line-height: 11px;
+	transform: scale(1.0);
 }
 
-.zhongwen > .l12x10,
-.yingwen > .l12x10
-{
-	line-height: 14px;
+.card2scaledtext p:first-child{
+	text-align: left;
+	transform: scale(0.667) translateX(10px) translateY(-10px);
 }
 
-.zhongwen > .l12x8{
-
-	transform: scale(0.667) translateX(19%) translateY(20%);
-}
-
-.zhongwen > .l12x10{
-
-	transform: scale(0.833) translateX(5%) translateY(7%);
-}
-
-.yingwen > .l12x8{
-
-	transform: scale(0.667) translateX(-28%) translateY(15%);
-}
-
-.yingwen > .l12x10{
-
-	transform: scale(0.833) translateX(-13%) translateY(10%);
+.card2scaledtext p:nth-child(2){
+	text-align: right;
+	transform: scale(0.667) translateX(-33px) translateY(-10px);
 }
 
 .lorem12,
@@ -342,7 +365,9 @@ body::-webkit-scrollbar {
 }
 
 .lorem12,
-.lorem10 {
+.lorem10,
+p
+{
 
 	color: var(--card2a3textcolor);
 }
@@ -384,12 +409,6 @@ body::-webkit-scrollbar {
 .yingwen .lorem8:hover:after
 {
 	content: "font-size: 8px;";
-}
-
-.l12x8:hover,
-.l12x10:hover{
-
-	transform: scale(1.0);
 }
 
 .zhongwen .lorem12:hover:after,
@@ -597,35 +616,50 @@ body::-webkit-scrollbar {
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
 	transition: var(--cardmainani);
-	display: flex;
+	display: grid;
 	justify-content: center;
 	align-items: center;
+	justify-items: center;
+	align-content: center;
+	gap: 10px;
 	position: relative;
 }
 
 .card4-blur:hover {
 	box-shadow: var(--hovershadow2);
 }
-
 .card4text{
 	z-index: 1;
 	font-size: 20px;
 	color: #1B1D1F;
 	text-align: center;
 	font-family: var(--SFRFontFamily);
+	line-height: 0;
+}
+.card4text:hover::after{
+	content: "font-family: SansForgetica;";
+	display: block;
+	font-family: var(--codefont);
+	color: var(--hintextcolor);
+	font-size: 12px;
+	bottom: 20px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	left: 0;
 }
 .ball{
 	position: absolute;
 	transition: all 350ms;
 	z-index: 2;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	width: 100px;
 	height: 100px;
 	background-image: radial-gradient(circle at 18% 17%, rgba(255,255,255,0.33) 0%, rgba(244,247,255,0.35) 21%, rgba(190,197,212,0.37) 44%, rgba(115,122,136,0.39) 64%, rgba(95,109,140,0.28) 83%, rgba(177,181,197,0.37) 98%);
 	box-shadow: 32px 19px 31px 0 rgba(96,101,120,0.32);
 	border-radius: 50%;
-	backdrop-filter: blur(8px);
-	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
 }
 
 .ball:hover{
@@ -1625,7 +1659,7 @@ div:has( > .faken3){
 
 /*========================================================================================================================================*/
 .siteinfo {
-	padding: 30px;
+	padding: 30px 30px 5px 30px;
 	animation-name: websitemainanimation;
 	animation-duration: 1500ms;
 	text-align: center;
