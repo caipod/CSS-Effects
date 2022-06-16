@@ -238,68 +238,127 @@ body::-webkit-scrollbar {
 
 /*=================================================*/
 /*小字号测试*/
-.card2-fontsize {
-	display: grid;
-	grid-gap: 10px;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
-	justify-items: center;
+.card-fontsize
+{
+    position: relative;
+	display: flex;
+	gap: 10px;
 	background: #FFFFFF;
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
 	transition: var(--cardmainani);
-	position: relative;
+	font-size: 12px;
+	align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.card2-fontsize:hover {
+.card-fontsize:hover {
 	box-shadow: var(--hovershadow2);
 }
 
-.card2warp,
-.card2warp-pt2,
-.card2scaledtext
+.left p
 {
-	display: flex;
-	grid-gap: 10px;
-	align-items: flex-end;
+	text-align: right;
+	transition: all 300ms;
+}
+.right p
+{
+	text-align: left;
+	transition: all 300ms;
+}
+.left,
+.right p
+{
+	line-height: 4px;
+	color: var(--card2a3textcolor);
+}
+.left p:nth-child(3),
+.right p:nth-child(3)
+{
+	color: #00A7FF;
+	color: color(display-p3 0 0.394 1);
+}
+/*-----*/
+.left p:first-child,
+.right p:first-child{
+	font-size: 12px;
+}
+.left p:nth-child(2),
+.right p:nth-child(2){
+	font-size: 10px;
+}
+.left p:nth-child(3),
+.right p:nth-child(3){
+	font-size: 8px;
+	padding-bottom: 10px;
+}
+/*------*/
+.left p:nth-child(4),
+.right p:nth-child(4){
+	font-size: 66.7%;
+}
+.left p:nth-child(5),
+.right p:nth-child(5){
+	font-size: 83.3%;
+	padding-bottom: 10px;
+}
+/*-----*/
+.left p:nth-child(6),
+.right p:nth-child(6){
+	transform: scale(0.667);
+}
+.left p:last-child,
+.right p:last-child{
+	transform: scale(0.833);
+}
+/*---------*/
+.left p:nth-child(6)
+{
+	margin-right: -10px;
+}
+.left p:last-child{
+	margin-right: -5px;
+}
+.right p:nth-child(6)
+{
+	margin-left: -25px;
+}
+.right p:last-child{
+	margin-left: -12px;
+}
+/*-------------*/
+.left p:first-child:hover,
+.right p:first-child:hover,
+.left p:nth-child(2):hover,
+.right p:nth-child(2):hover,
+.left p:nth-child(3):hover,
+.right p:nth-child(3):hover
+{
+	font-size: 20px;
 }
 
-.card2warp-pt2{
+.left p:nth-child(4):hover,
+.right p:nth-child(4):hover,
+.left p:nth-child(5):hover,
+.right p:nth-child(5):hover
+{
 	font-size: 12px;
 }
 
-.l12x8,
-.l12x10
+.left p:nth-child(6):hover,
+.left p:last-child:hover,
+.right p:nth-child(6):hover,
+.right p:last-child:hover
 {
-	color: var(--card2a3textcolor);
+	transform: scale(1.0);
+	margin-left: 0;
+	margin-right: 0;
 }
-/*Chrome仅支持使用scale的方式将字号变小于12px。*/
-.l12x8{
-	font-size: 66.7%;
-}
-
-.l12x10{
-	font-size: 83.3%;
-}
-
-.l12x8:hover,
-.l12x10:hover
-{
-	font-size: 100%;
-}
-
-.l12x8:hover:after{
-	content: "font-size: 66.7%;";
-}
-
-.l12x10:hover:after{
-	content: "font-size: 83.3%;";
-}
-
-.l12x8:hover:after,
-.l12x10:hover:after
+/*-----------*/
+.left p:hover:after,
+.right p:hover:after
 {
 	display: block;
 	position: absolute;
@@ -312,121 +371,50 @@ body::-webkit-scrollbar {
 	left: 0;
 }
 
-.zhongwen {
-	text-align: right;
-}
-
-.yingwen{
-	text-align: left;
-}
-
-.card2scaledtext p{
-	transition: all 300ms;
-	line-height: 0;
-	font-size: 12px;
-}
-.card2scaledtext div{
-	display: block;
-	position: absolute;
-	opacity: 0;
-	color: var(--hintextcolor);
-	font-family: var(--codefont);
-	font-size: 12px;
-	bottom: 20px;
-}
-
-.card2scaledtext p:hover ~ .hint{
-	opacity: 1;
-}
-
-.card2scaledtext p:first-child:hover,
-.card2scaledtext p:nth-child(2):hover
-{
-	transform: scale(1.0);
-}
-
-.card2scaledtext p:first-child{
-	text-align: left;
-	transform: scale(0.667) translateX(10px) translateY(-10px);
-}
-
-.card2scaledtext p:nth-child(2){
-	text-align: right;
-	transform: scale(0.667) translateX(-33px) translateY(-10px);
-}
-
-.lorem12,
-.lorem10,
-.lorem8,
-.l12x10,
-.l12x8
-{
-	transition: all 300ms;
-}
-
-.lorem12,
-.lorem10,
-p
-{
-
-	color: var(--card2a3textcolor);
-}
-
-.lorem12 {
-	font-size: 12px;
-}
-
-.lorem10 {
-	font-size: 10px;
-}
-
-.lorem8 {
-	font-size: 8px;
-	color: #00A7FF;
-	color: color(display-p3 0 0.394 1);
-}
-
-.lorem12:hover,
-.lorem10:hover,
-.lorem8:hover
-{
-	font-size: 20px;
-}
-
-.zhongwen .lorem12:hover:after,
-.yingwen .lorem12:hover:after  
+.left p:first-child:hover:after,
+.right p:first-child:hover:after
 {
 	content: "font-size: 12px;";
 }
 
-.zhongwen .lorem10:hover:after,
-.yingwen .lorem10:hover:after
+.left p:nth-child(2):hover:after,
+.right p:nth-child(2):hover:after
 {
 	content: "font-size: 10px;";
 }
 
-.zhongwen .lorem8:hover:after,
-.yingwen .lorem8:hover:after
+.left p:nth-child(3):hover:after,
+.right p:nth-child(3):hover:after
 {
-	content: "font-size: 8px;";
+	content: "font-size: 10px;";
 }
 
-.zhongwen .lorem12:hover:after,
-.yingwen .lorem12:hover:after,
-.zhongwen .lorem10:hover:after,
-.yingwen .lorem10:hover:after,
-.zhongwen .lorem8:hover:after,
-.yingwen .lorem8:hover:after
+.left p:nth-child(4):hover:after,
+.right p:nth-child(4):hover:after
 {
-	font-family: var(--codefont);
-	width: 100%;
-	bottom: 20px;
-	left: 0;
-	position: absolute;
-	color: var(--hintextcolor);
-	text-align: center;	
-	font-size: 12px;
+	content: "font-size: 66.7%;";
 }
+
+.left p:nth-child(5):hover:after,
+.right p:nth-child(5):hover:after
+{
+	content: "font-size: 83.3%;";
+}
+
+/*问题在此⬇️*/
+/*.left p:nth-child(6):hover:after,
+.right p:nth-child(6):hover:after
+{
+	content: "transform: scale(0.667);";
+	transform: none;
+}
+
+.left p:last-child:hover:after,
+.right p:last-child:hover:after
+{
+	content: "transform: scale(0.833);";
+	transform: none;
+}*/
 
 /*========================================================================================================================================*/
 /*字重测试*/
