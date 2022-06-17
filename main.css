@@ -30,6 +30,7 @@
 /*========================================================================================================================================*/
 body {
 	font-size: 16px;
+	margin: 0;
 	background: #DFE3EB;
 	box-sizing: border-box;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -43,6 +44,7 @@ body::-webkit-scrollbar {
 }
 
 .cardwarp{
+	/*background: black;*/
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -56,6 +58,7 @@ body::-webkit-scrollbar {
 	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 	grid-auto-rows: minmax(360px, auto);
 	grid-gap: 0.625em;
+	padding: 0.625em;
 	animation-name: websitemainanimation;
 	animation-duration: 1000ms;
 }
