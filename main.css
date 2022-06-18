@@ -1649,7 +1649,7 @@ div:has( > .faken3){
 
 /*========================================================================================================================================*/
 .siteinfo {
-	padding: 30px 30px 5px 30px;
+	padding: 30px 30px 20px 30px;
 	animation-name: websitemainanimation;
 	animation-duration: 1500ms;
 	text-align: center;
