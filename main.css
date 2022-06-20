@@ -315,21 +315,18 @@ body::-webkit-scrollbar {
 .right p:last-child{
 	transform: scale(0.833);
 }
-/*---------*/
-.left p:nth-child(6)
+
+.right p:nth-child(6),
+.right p:last-child
 {
-	margin-right: -10px;
+	transform-origin: top left;
 }
-.left p:last-child{
-	margin-right: -5px;
-}
-.right p:nth-child(6)
+.left p:nth-child(6),
+.left p:last-child
 {
-	margin-left: -25px;
+	transform-origin: top right;
 }
-.right p:last-child{
-	margin-left: -12px;
-}
+
 /*-------------*/
 .left p:first-child:hover,
 .right p:first-child:hover,
@@ -355,8 +352,6 @@ body::-webkit-scrollbar {
 .right p:last-child:hover
 {
 	transform: scale(1.0);
-	margin-left: 0;
-	margin-right: 0;
 }
 /*-----------*/
 .left p:hover:after,
@@ -408,16 +403,14 @@ body::-webkit-scrollbar {
 .right p:nth-child(6):hover:after
 {
 	content: "transform: scale(0.667);";
-	transform: none;
 }
 
 .left p:last-child:hover:after,
 .right p:last-child:hover:after
 {
 	content: "transform: scale(0.833);";
-	transform: none;
-}*/
-
+}
+*/
 /*========================================================================================================================================*/
 /*字重测试*/
 .card3-fontweight {
