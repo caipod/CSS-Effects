@@ -1,0 +1,90 @@
+.card-hascheck{
+	background: #FFFFFF;
+	border-radius: var(--cardR);
+	border: var(--cardborder);
+	box-shadow: var(--cardboxshadow);
+	transition: var(--cardmainani);
+	/*------*/
+	display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    /*-------*/
+	position: relative;
+}
+
+.card-hascheck:hover {
+	box-shadow: var(--hovershadow2);
+}
+/*-----*/
+.n1,
+.n2,
+.n3
+{
+	transition: all 200ms;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+}
+.n1{
+	border: 3px solid #00FF05;
+}
+.n1:hover{
+	background: rgba(111,255,0,0.10);
+}
+.n2{
+	border: 3px solid #00A7FF;
+}
+.n2:hover{
+	background: rgba(0,167,255,0.10);
+}
+.n3{
+	border: 3px solid #2D00FF;
+}
+.n3:hover{
+	background: rgba(0,65,255,0.10);
+}
+
+
+/*---has----*/
+div:has( + .n3),
+div:has( + .n2),
+div:has( > .faken3)
+{
+	border: none;
+}
+div:has( + .n3){
+	background-image: conic-gradient(from 0deg at 50% 50%, #00A7FF, #00FF05);
+}
+
+div:has( + .n2){
+	background-image: conic-gradient(from 0deg at 50% 50%, #00FF05, #FAFF00);
+}
+
+div:has( > .faken3){
+	background-image: conic-gradient(from 0deg at 50% 50%, #2D00FF, #00A7FF);
+}
+.card-hascheck div:hover{
+	width: 42px;
+	height: 42px;
+}
+.card-hascheck div:hover + div,
+.card-hascheck div:has(+ div:hover)
+{
+	width: 34px;
+	height: 34px;
+}
+/*-----------*/
+.card-hascheck div:hover::after{
+	position: absolute;
+	content: ":has()";
+	display: block;
+	font-family: var(--codefont);
+	color: var(--hintextcolor);
+	font-size: 12px;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	left: 0;
+}
