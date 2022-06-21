@@ -1,16 +1,16 @@
 .card-hascheck
 {
+	display: flex;
+	position: relative;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
 	background: #FFFFFF;
 	border-radius: var(--cardR);
 	border: var(--cardborder);
 	box-shadow: var(--cardboxshadow);
 	transition: var(--cardmainani);
-	display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-	position: relative;
 }
 
 .card-hascheck:hover
