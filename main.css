@@ -638,6 +638,18 @@ body::-webkit-scrollbar {
 .card5-colorscheme:hover {
 	box-shadow: var(--hovershadow2);
 }
+.card5-colorscheme:hover::after{
+	content: "prefers-color-scheme";
+	display: block;
+	font-family: var(--codefont);
+	color: var(--hintextcolor);
+	font-size: 12px;
+	bottom: 20px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	left: 0;
+}
 /*----------------------------*/
 .card5-colorscheme:hover .theray {
 	animation: hoversunspinning 10s infinite linear;
