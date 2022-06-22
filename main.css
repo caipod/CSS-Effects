@@ -633,6 +633,7 @@ body::-webkit-scrollbar {
     align-content: center;
 	/*--------*/
 	position: relative;
+	transition: var(--cardmainani);
 }
 
 .card5-colorscheme:hover {
@@ -1260,7 +1261,7 @@ body::-webkit-scrollbar {
 }
 
 #screenpixel:hover:after {
-	content: "Rendered at · 渲染分辨率";
+	content: "Render Resolution · 渲染分辨率";
 	opacity: 0;
 }
 
