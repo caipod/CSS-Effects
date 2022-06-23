@@ -1555,6 +1555,7 @@ body::-webkit-scrollbar {
 		background: #22252B;
 		border: var(--cardborder-Dark);
 		box-shadow: var(--cardboxshadow-Dark);
+		transition: var(--cardmainani);
 	}
 	.card5-colorscheme:hover::after{
 		content: "@media (prefers-color-scheme: dark)";
