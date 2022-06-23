@@ -1,0 +1,109 @@
+@media (color-gamut: srgb) {
+	.srgb {
+		background: #D7EFFF;
+		border: 1px solid #BAE3FF;
+		box-shadow: inset 0 0 5px 0 #9DD2F6;
+		color: #1C3250;
+		transition: all 150ms;
+	}
+	.srgb:hover{
+		background: #79C8FF;
+		border: 1px solid #5AACE3;
+		box-shadow: inset 0 0 5px 0 #33A5F2;
+		color: white;
+		text-shadow: none;
+	}
+}
+
+@media (color-gamut: p3) {
+
+	.p3 {
+		background: #D7EFFF;
+		border: 1px solid #BAE3FF;
+		box-shadow: inset 0 0 5px 0 #9DD2F6;
+		color: #1C3250;
+		transition: all 150ms;
+	}
+	.p3:hover{
+		background: #79C8FF;
+		border: 1px solid #5AACE3;
+		box-shadow: inset 0 0 5px 0 #33A5F2;
+		color: white;
+		text-shadow: none;
+	}
+}
+
+@media (color-gamut: rec2020) {
+	.rec2020 {
+		background: #D7EFFF;
+		border: 1px solid #BAE3FF;
+		box-shadow: inset 0 0 5px 0 #9DD2F6;
+		color: #1C3250;
+		transition: all 150ms;
+	}
+	.rec2020:hover{
+		background: #79C8FF;
+		border: 1px solid #5AACE3;
+		box-shadow: inset 0 0 5px 0 #33A5F2;
+		color: white;
+		text-shadow: none;
+	}
+}
+@media (dynamic-range: high) {
+	.hdr{
+		background: #D7EFFF;
+		border: 1px solid #BAE3FF;
+		box-shadow: inset 0 0 5px 0 #9DD2F6;
+		color: #1C3250;
+		transition: all 150ms;
+	}
+	.hdr:hover{
+		background: #79C8FF;
+		border: 1px solid #5AACE3;
+		box-shadow: inset 0 0 5px 0 #33A5F2;
+		color: white;
+		text-shadow: none;
+	}
+}
+/*======暗色模式配置============================*/
+@media (prefers-color-scheme: dark) {
+	.card5-colorscheme {
+		background: #22252B;
+		border: var(--cardborder-Dark);
+		box-shadow: var(--cardboxshadow-Dark);
+		transition: var(--cardmainani);
+	}
+	.card5-colorscheme:hover::after{
+		content: "@media (prefers-color-scheme: dark)";
+		display: block;
+		font-family: var(--codefont);
+		color: rgb(103, 100, 113);
+		font-size: 12px;
+		bottom: 20px;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		left: 0;
+	}
+
+	.lights1,
+	.lights2 {
+		transition: all 500ms;
+		height: 0;
+		filter: blur(10px) opacity(0);
+	}
+
+	.card5-colorscheme:hover .core {
+		box-shadow: inset 40px -20px 0 0;
+	}
+	.core{
+		transition: all 1000ms;
+		width: 80px;
+		height: 80px;
+		box-shadow: inset 20px -20px 0 0;
+		color: #9083F3;
+		color: color(display-p3 0.449 0.385 1);
+		border-radius: 50%;
+		z-index: 2;
+	}
+}

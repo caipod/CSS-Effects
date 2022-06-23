@@ -1,0 +1,95 @@
+.card5-colorscheme {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    align-content: center;
+	/*--------*/
+	position: relative;
+}
+
+.card5-colorscheme:hover::after{
+	content: "prefers-color-scheme";
+	display: block;
+	font-family: var(--codefont);
+	color: var(--hintextcolor);
+	font-size: 12px;
+	bottom: 20px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	left: 0;
+}
+/*----------------------------*/
+.card5-colorscheme:hover .theray {
+	animation: hoversunspinning 10s infinite linear;
+	animation-play-state: running;
+}
+
+.sun {
+	display: flex;
+	align-content: center;
+    justify-content: center;
+    align-items: center;
+	/*------*/
+	/*transition: all 1000ms;*/
+	/*width: 100px;*/
+	/*height: 100px;*/
+	position: absolute;
+	/*filter: blur(0);*/
+	/*background: gray;*/
+}
+
+.core {
+	transition: all 1000ms;
+	width: 50px;
+	height: 50px;
+	box-shadow: inset 50px 0 0 0;
+	color: #FBC02E;
+	color: color(display-p3 1 0.788 0.285);
+	border-radius: 50%;
+	z-index: 2;
+}
+
+.lights1,
+.lights2 {
+	transition: all 1000ms;
+	width: 6px;
+	height: 14px;
+	background: rgb(255, 215, 110);
+	background: color(display-p3 1 0.85 0.495);
+	border-radius: 2px;
+	box-shadow: 0 0 10px 0 #FFD263;
+}
+
+.lights1 {
+	margin-bottom: 70px;
+}
+
+.ray {
+	position: absolute;
+}
+
+.ray2 {
+	position: absolute;
+	transform: rotate(45deg);
+}
+
+.ray3 {
+	position: absolute;
+	transform: rotate(90deg);
+}
+
+.ray4 {
+	position: absolute;
+	transform: rotate(135deg);
+}
+
+.theray {
+	animation: hoversunspinning 10s infinite linear;
+	animation-play-state: paused;
+	display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+	position: absolute;
+}

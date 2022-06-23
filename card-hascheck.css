@@ -6,17 +6,8 @@
 	justify-content: center;
 	align-items: center;
 	gap: 12px;
-	background: #FFFFFF;
-	border-radius: var(--cardR);
-	border: var(--cardborder);
-	box-shadow: var(--cardboxshadow);
-	transition: var(--cardmainani);
 }
 
-.card-hascheck:hover
-{
-	box-shadow: var(--hovershadow2);
-}
 
 .n1,
 .n2,

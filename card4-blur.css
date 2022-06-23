@@ -1,0 +1,65 @@
+.card4-blur{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	position: relative;
+}
+
+.card4text{
+	font-size: 20px;
+	color: #1B1D1F;
+	text-align: center;
+	font-family: var(--SFRFontFamily);
+	line-height: 0;
+}
+.ballcover{
+	display: flex;
+	align-content: center;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+}
+.ball{
+	position: absolute;
+	transition: all 350ms;
+	z-index: 2;
+	width: 100px;
+	height: 100px;
+	background-image: radial-gradient(circle at 18% 17%, rgba(255,255,255,0.33) 0%, rgba(244,247,255,0.35) 21%, rgba(190,197,212,0.37) 44%, rgba(115,122,136,0.39) 64%, rgba(95,109,140,0.28) 83%, rgba(177,181,197,0.37) 98%);
+	box-shadow: 32px 19px 31px 0 rgba(96,101,120,0.32);
+	border-radius: 50%;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+}
+
+.ball:hover{
+	width: 120px;
+	height: 120px;
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+}
+.card4text:hover::after{
+	content: "font-family: SansForgetica;";
+	display: block;
+	font-family: var(--codefont);
+	color: var(--hintextcolor);
+	font-size: 12px;
+	bottom: 20px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	left: 0;
+}
+.ballcover:hover::after{
+	content: "backdrop-filter: blur(12px);";
+	display: block;
+	font-family: var(--codefont);
+	color: var(--hintextcolor);
+	font-size: 12px;
+	bottom: -160px;
+	position: absolute;
+	text-align: center;
+	width: max-content;
+}

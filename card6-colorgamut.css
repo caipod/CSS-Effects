@@ -1,0 +1,169 @@
+.card6-colorgamut {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 12px;
+}
+/*------------------------------------------------*/
+.purple,.blue,.yellow,.red,.green{
+	display: flex;
+}
+/*------------------------------------------------*/
+.purplesrgb,.bluesrgb,.yellowsrgb,.redsrgb{
+	transition: all 200ms;
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
+}
+.purplep3,.bluep3,.yellowp3,.redp3{
+	transition: all 200ms;
+	transform: scaleX(-1);
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
+}
+/*------------------------------------------------*/
+.greensrgb,.greenp3{
+	transition: all 250ms;
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
+}
+.greenp3{
+	transform: scaleX(-1);
+}
+/*------------------------------------------------*/
+/*sRGB颜色*/
+.purplesrgb{
+	background: #2D00FF;
+}
+.bluesrgb{
+	background: #00BAFF;
+}
+.greensrgb{
+	background: #00FF05;
+}
+.yellowsrgb{
+	background: #FFBB00;
+}
+.redsrgb{
+	background: #FF0021;
+}
+/*------------------------------------------------*/
+/*DisplayP3颜色*/
+.purplep3{
+	background: #2D00FF;
+	background: color(display-p3 0.153 0 1);
+}
+.bluep3{
+	background: #00BAFF;
+	background: color(display-p3 0 0.602 1);
+}
+.greenp3{
+	background: #D1FFD2;
+	background: color(display-p3 0.23 1 0);
+}
+.yellowp3{
+	background: #FFBB00;
+	background: color(display-p3 1 0.694 0);
+}
+.redp3{
+	background: #FF0021;
+	background: color(display-p3 1 0.011 0);
+}
+/*------------------------------------------------*/
+.purple:hover .purplesrgb{
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
+}
+.purple:hover .purplep3{
+	background: #DDD6FF;
+	background: color(display-p3 0.153 0 1);
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
+}
+.purple:hover ~ .green > .greensrgb {
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
+}
+.purple:hover ~ .green > .greenp3 {
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
+	background: #00FF05;
+}
+/*------------------------------------------------*/
+.blue:hover .bluesrgb{
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
+}
+.blue:hover .bluep3{
+	background: #CDF1FF;
+	background: color(display-p3 0 0.602 1);
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
+}
+.blue:hover ~ .green > .greensrgb {
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
+}
+.blue:hover ~ .green > .greenp3 {
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
+	background: #00FF05;
+}
+/*------------------------------------------------*/
+.yellow:hover .yellowsrgb{
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
+}
+.yellow:hover .yellowp3{
+	background: #FFF0C9;
+	background: color(display-p3 1 0.694 0);
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
+}
+.yellow:hover ~ .green > .greensrgb {
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
+}
+.yellow:hover ~ .green > .greenp3 {
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
+	background: #00FF05;
+}
+/*------------------------------------------------*/
+.red:hover .redsrgb{
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
+}
+.red:hover .redp3{
+	background: #FFD1D7;
+	background: color(display-p3 1 0.011 0);
+	width: 34px;
+	height: 24px;
+	border-radius: 12px 0 0 12px;
+}
+.red:hover ~ .green > .greensrgb {
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
+}
+.red:hover ~ .green > .greenp3 {
+	width: 8px;
+	height: 16px;
+	border-radius: 8px 0 0 8px;
+	background: #00FF05;
+}

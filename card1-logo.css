@@ -1,0 +1,128 @@
+.card1-logo 
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*transition: all 800ms;*/
+}
+.c1bg
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+/*---------------------------------*/
+.cardlogosfr
+{
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	color: #FFFFFF;
+	position: absolute;
+	font-family: var(--SFRFontFamily);
+	animation-name: card1sfrmaintitle_back;
+	animation-duration: 300ms;
+	animation-timing-function: ease-in-out;
+}
+
+.cardlogotext
+{
+	opacity: 0;
+	z-index: 3;
+	font-weight: 800;
+	font-size: 30px;
+	width: 100%;
+	position: absolute;
+	color: #FFFFFF;
+	text-align: center;
+	animation: card1textmaintitle_back 250ms;
+	animation-timing-function: ease-in-out;
+}
+/*------------------------------------*/
+.card1-logo:hover .cardlogosfr {
+	animation: card1sfrmaintitle 250ms forwards;
+	animation-timing-function: ease-in-out;
+}
+
+.card1-logo:hover .cardlogotext {
+	animation: card1textmaintitle 250ms forwards;
+	animation-delay: 200ms;
+	animation-timing-function: ease-in-out;
+}
+
+/*---------------------------------*/
+.cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: var(--cardR);
+	backdrop-filter: saturate(100%) blur(80px);
+	-webkit-backdrop-filter: saturate(100%) blur(80px);
+}
+
+.flash {
+	z-index: 1;
+	transition: all 550ms;
+	width: 90%;
+	height: 90%;
+	border-radius: var(--cardR);
+	clip-path: polygon(0 0, 0% 100%, 100% 0);
+	background-image: linear-gradient(182deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 75%);
+	opacity: 0;
+	filter: blur(50px);
+}
+
+.card1-logo:hover .c1bg > .flash
+{
+	width: 100%;
+	height: 100%;
+	opacity: 0.2;
+	filter: blur(0px);
+}
+
+.pt1,
+.pt2,
+.pt3,
+.pt4 {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+}
+
+.pt1 {
+	background: #00A7FF;
+	background: color(display-p3 0 0.394 1);
+	border-radius: 20px 0px 0px 0px;
+}
+
+.pt2 {
+	background: #3d3aff;
+	background: color(display-p3 0.383 0 1);
+	border-radius: 0px 20px 0px 0px;
+	right: 0;
+}
+
+.pt3 {
+	background: #00c732;
+	background: color(display-p3 0.074 0.92 0.223);
+	border-radius: 0px 0px 0px 20px;
+	left: 0;
+	bottom: 0;
+}
+
+.pt4 {
+	background: #00fff7;
+	background: color(display-p3 0.053 0.955 0.829);
+	border-radius: 0px 0px 20px 0px;
+	right: 0;
+	bottom: 0;
+}
+
+.card1-logo p {
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.67);
+	position: absolute;
+	bottom: 20px;
+}

@@ -1,0 +1,89 @@
+.card10-nextstep {
+	/*组内对齐*/
+	display: grid;
+	align-content: center;
+	/*组内定位*/
+	position: relative;
+}
+
+.bubble {
+	/*基础样式*/
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	background-image: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #F6FCFF 35%, #EBF5FF 50%);
+	/*background-image: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #FFFFFF 26%, #EBF5FF 50%);*/
+	border: 1px solid #F3F4FD;
+	filter: blur(12px);
+	/*组内定位*/
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.nextstep-warp {
+	/*组内定位*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 1;
+
+}
+
+.ns-text{
+	/*next-step*/
+	transition: all 300ms;
+	font-size: 20px;
+	font-family: var(--SFRFontFamily);
+	/*这两行代码是为了保证文字完整显示而不被bg-clip属性切割*/
+	width: 100%;
+	text-align: center;
+	/*---------------------------*/
+	/*文字的渐变效果*/
+	background-image: radial-gradient(circle at 50% 50%, #95B5E4 0%, #D2E2F9 30%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	/*--------------------------------*/
+}
+
+.solgan {
+	/*what will your verse be?*/
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	background-image: radial-gradient(circle at 50% 50%, #7991CF 0%, #FFFFFF 60%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	opacity: 0;
+}
+/*圆环动画*/
+.card10-nextstep:hover .bubble {
+	animation: showbubble 500ms forwards;
+}
+
+/*圆环回退动画*/
+.card10-nextstep .bubble {
+	animation: r-showbubble 500ms forwards;
+}
+
+/*主文字动画*/
+.card10-nextstep:hover .ns-text {
+	font-size: 30px;
+}
+
+/*slogan动画*/
+.card10-nextstep:hover .solgan {
+	animation: showtext forwards;
+	animation-duration: 1000ms;
+	animation-delay: 150ms;
+}
+
+.card10-nextstep .solgan{
+	animation: hidetext 800ms forwards;
+}

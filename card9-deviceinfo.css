@@ -1,0 +1,270 @@
+.card9-deviceinfo {
+	/*组内定位*/
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 4px;
+}
+
+.siteinfocardwarp {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 10px;
+}
+
+.infogroup {
+	color: #878E9A;
+	font-size: 12px;
+	display: flex;
+	grid-gap: 6px;
+}
+
+/*图标区*/
+
+/*基础设置*/
+.screenpoint,
+.scale,
+.screenpixel,
+.windowpoint,
+.aspect,
+.colorDepth {
+	transition: all 100ms;
+	position: relative;
+	width: 14px;
+	height: 14px;
+	background: transparent;
+}
+
+#screenpoint::after,
+#scale::after,
+#screenpixel::after,
+#windowpoint::after,
+#aspect::after,
+#colorDepth::after {
+	transition: all 100ms;
+	width: 100%;
+	bottom: 20px;
+	left: 0;
+	position: absolute;
+	color: var(--hintextcolor);
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+}
+
+#screenpoint:hover:after {
+	content: "Device Resolution · 设备逻辑分辨率";
+	opacity: 0;
+}
+
+#scale:hover:after {
+	content: "Pixel Ratio · 缩放倍率";
+	opacity: 0;
+}
+
+#screenpixel:hover:after {
+	content: "Render Resolution · 渲染分辨率";
+	opacity: 0;
+}
+
+#windowpoint:hover:after {
+	content: "Window Resolution · 窗口逻辑分辨率";
+	opacity: 0;
+}
+
+#aspect:hover:after {
+	content: "Aspect Ratio · 屏幕比例";
+	opacity: 0;
+}
+
+#colorDepth:hover:after {
+	content: "Browser Color Depth · 浏览器色深";
+	opacity: 0;
+}
+
+#screenpoint:hover:after,
+#scale:hover:after,
+#screenpixel:hover:after,
+#windowpoint:hover:after,
+#aspect:hover:after,
+#colorDepth:hover:after {
+	opacity: 1.0;
+}
+
+
+/*=========================================================
+	用代码画icon
+	=========================================================*/
+
+/*逻辑分辨率图标*/
+
+.top {
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 1px;
+	top: 0;
+	right: 0;
+	background: #0039FF;
+	background: color(display-p3 0 0.156 1);
+}
+
+.top::after {
+	content: "";
+	position: absolute;
+	border-radius: 1px;
+	width: 7px;
+	height: 7px;
+	bottom: -7px;
+	left: -7px;
+	background: #00A7FF;
+}
+
+/*缩放倍率图标*/
+
+.arrowhead,
+.arrowline {
+	position: absolute;
+}
+
+.arrowhead {
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 16px;
+	height: 16px;
+	clip-path: polygon(100% 0, 88% 74%, 68% 37%, 26% 16%);
+	background: #0039FF;
+	background: color(display-p3 0 0.156 1);
+}
+
+.arrowline {
+	bottom: 0;
+	left: 0;
+	width: 14px;
+	height: 14px;
+	clip-path: polygon(59% 12%, 0% 100%, 90% 44%);
+	background: #00A7FF;
+}
+
+/*渲染分辨率图标*/
+.topsmall,
+.bottomsmall {
+	position: absolute;
+	opacity: 0.3;
+	width: 5px;
+	height: 5px;
+	border-radius: 1px;
+}
+
+.topsmall {
+	top: 0px;
+	left: 0px;
+	background: #0039FF;
+	background: color(display-p3 0 0.156 1);
+}
+
+.bottomsmall {
+	bottom: 0px;
+	right: 0px;
+	background: #00A7FF;
+}
+
+/*窗口分辨率图标*/
+.topline,
+.bottomline,
+.upcover {
+	position: absolute;
+}
+
+.topline,
+.bottomline {
+	width: 7px;
+	height: 7px;
+}
+
+.topline {
+	right: 0;
+	top: 0;
+	background: #0039FF;
+	background: color(display-p3 0 0.156 1);
+	border-radius: 0 2px 0 0;
+}
+
+.bottomline {
+	bottom: 0;
+	left: 0;
+	background: #00A7FF;
+	border-radius: 0 0 0 2px;
+}
+
+.upcover {
+	z-index: 1;
+	width: 10px;
+	height: 10px;
+	border-radius: 0.5px;
+	background: white;
+	left: 2px;
+	top: 2px;
+}
+
+/*窗口比例图标*/
+.longline {
+	position: absolute;
+	height: 2px;
+	width: 16.5px;
+	background: #0039FF;
+	background: color(display-p3 0 0.156 1);
+	transform: rotate(-45deg);
+	top: 6px;
+	left: -1px;
+}
+
+.shortup,
+.shortdown {
+	position: absolute;
+	z-index: 1;
+	width: 2px;
+	height: 8px;
+	background: #00A7FF;
+}
+
+.shortup {
+	top: 0;
+	right: 0;
+}
+
+.shortdown {
+	left: 0;
+	bottom: 0;
+}
+
+/*色深图标*/
+.secondblock::before {
+	content: "";
+	position: absolute;
+	width: 14px;
+	top: -6px;
+	height: 4px;
+	background: #0039FF;
+	background: color(display-p3 0 0.156 1);
+	border-radius: 1px;
+}
+
+.secondblock {
+	background: #00A7FF;
+	position: absolute;
+	height: 2px;
+	bottom: 4px;
+	width: 14px;
+}
+
+.secondblock::after {
+	content: "";
+	position: absolute;
+	width: 14px;
+	background: #00A7FF;
+	height: 1px;
+	bottom: -3px;
+}

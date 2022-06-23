@@ -46,7 +46,8 @@
 	}
 }
 
-@keyframes hoversunspinning{
+@keyframes hoversunspinning
+{
 	from{
 		transform: rotate(0);
 	}
@@ -55,7 +56,8 @@
 	}
 }
 
-@keyframes showbubble {
+@keyframes showbubble
+{
 	from {
 		width: 190px;
 		height: 190px;
@@ -69,7 +71,8 @@
 	}
 }
 
-@keyframes r-showbubble {
+@keyframes r-showbubble
+{
 	from {
 		width: 250px;
 		height: 250px;
@@ -83,7 +86,8 @@
 	}
 }
 
-@keyframes showtext{
+@keyframes showtext
+{
 	from{
 		filter: blur(5px);
 		opacity: 0;
@@ -96,7 +100,8 @@
 	}
 }
 
-@keyframes hidetext{
+@keyframes hidetext
+{
 	from{
 		filter: blur(0);
 		opacity: 1;
@@ -109,7 +114,8 @@
 	}
 }
 
-@keyframes websitemainanimation {
+@keyframes websitemainanimation
+{
 	0% {
 		filter: opacity(0) blur(20px) grayscale(100%);
 	}

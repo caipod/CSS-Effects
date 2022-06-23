@@ -1,0 +1,23 @@
+.siteinfo {
+	padding: 30px 30px 20px 30px;
+	animation-name: websitemainanimation;
+	animation-duration: 1500ms;
+	text-align: center;
+	color: #c3cad6;
+	font-size: 12px;
+}
+
+.mylinks {
+	padding-bottom: 10px;
+}
+
+.cardlink {
+	text-decoration: none;
+	padding: 10px;
+	color: #878E9A;
+	font-size: 12px;
+}
+
+.cardlink:hover {
+	color: #5f646d;
+}
