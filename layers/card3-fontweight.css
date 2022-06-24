@@ -7,14 +7,8 @@
 
 .cardTwarp {
 	display: flex;
+	grid-gap: 10px;
 	align-items: flex-end;
-	grid-gap: 10px;
-}
-
-.textgroupleft,
-.textgroupright {
-	display: grid;
-	grid-gap: 10px;
 }
 
 .textgroupleft {
@@ -25,98 +19,92 @@
 	text-align: left;
 }
 
-.fontweightbold,
-.fontweight9,
-.fontweight8,
-.fontweight7,
-.fontweight6,
-.fontweight5,
-.fontweight3,
-.fontweight2,
-.fontweight1 {
+.card3-fontweight p
+{
 	color: var(--card2a3textcolor);
-}
-
-.fontweightbold,
-.fontweight9,
-.fontweight8,
-.fontweight7,
-.fontweight6,
-.fontweight5,
-.fontweight4,
-.fontweight3,
-.fontweight2,
-.fontweight1 {
 	transition: all 300ms;
-	line-height: initial;
+	line-height: 4px;
 	font-size: 12px;
 }
-
-.fontweightbold {
-	font-weight: bold;
+.card3-fontweight p:hover{
+	font-size: 20px;
 }
 
-.fontweight9 {
+.textgroupright p:first-child
+{
 	font-weight: 900;
 }
 
-.fontweight8 {
+.textgroupright p:nth-child(2)
+{
 	font-weight: 800;
 }
 
-.fontweight7 {
+.textgroupright p:nth-child(3)
+{
 	font-weight: 700;
 }
 
-.fontweight6 {
+.textgroupleft p:first-child,
+.textgroupright p:nth-child(4)
+{
 	font-weight: 600;
 }
 
-.fontweight5 {
+.textgroupleft p:nth-child(2),
+.textgroupright p:nth-child(5)
+{
 	font-weight: 500;
 }
 
-.fontweight4 {
+.textgroupleft p:nth-child(3),
+.textgroupright p:nth-child(6)
+{
 	color: #00A7FF;
 	color: color(display-p3 0 0.394 1);
 	font-weight: 400;
 }
 
-.fontweight3 {
+.textgroupleft p:nth-child(4),
+.textgroupright p:nth-child(7)
+{
 	font-weight: 300;
 }
 
-.fontweight2 {
+.textgroupleft p:nth-child(5),
+.textgroupright p:nth-child(8)
+{
 	font-weight: 200;
 }
 
-.fontweight1 {
+.textgroupleft p:nth-child(6),
+.textgroupright p:nth-child(9)
+{
 	font-weight: 100;
+	padding-bottom: 10px;
 }
 
-.fontweightbold:hover,
-.fontweight9:hover,
-.fontweight8:hover,
-.fontweight7:hover,
-.fontweight6:hover,
-.fontweight5:hover,
-.fontweight4:hover,
-.fontweight3:hover,
-.fontweight2:hover,
-.fontweight1:hover {
-	font-size: 20px;
+.textgroupleft p:nth-child(7),
+.textgroupright p:nth-child(10)
+{
+	font-weight: bolder;
 }
 
-.fontweightbold:hover:after,
-.fontweight9:hover:after,
-.fontweight8:hover:after,
-.fontweight7:hover:after,
-.fontweight6:hover:after,
-.fontweight5:hover:after,
-.fontweight4:hover:after,
-.fontweight3:hover:after,
-.fontweight2:hover:after,
-.fontweight1:hover:after {
+.textgroupleft p:nth-child(8),
+.textgroupright p:nth-child(11)
+{
+	font-weight: bold;
+}
+
+.textgroupleft p:last-child,
+.textgroupright p:last-child
+{
+	font-weight: lighter;
+}
+
+.textgroupleft p:hover::after,
+.textgroupright p:hover::after
+{
 	width: 100%;
 	bottom: 20px;
 	left: 0;
@@ -128,42 +116,62 @@
 	font-family: var(--codefont);
 }
 
-.fontweightbold:hover:after {
-	content: "font-weight: Bold;";
-}
-
-.fontweight9:hover:after {
+.textgroupright p:first-child:hover:after {
 	content: "font-weight: 900;";
 }
 
-.fontweight8:hover:after {
+.textgroupright p:nth-child(2):hover:after {
 	content: "font-weight: 800;";
 }
 
-.fontweight7:hover:after {
+.textgroupright p:nth-child(3):hover:after {
 	content: "font-weight: 700;";
 }
 
-.fontweight6:hover:after {
+.textgroupleft p:first-child:hover:after,
+.textgroupright p:nth-child(4):hover:after {
 	content: "font-weight: 600;";
 }
 
-.fontweight5:hover:after {
+.textgroupleft p:nth-child(2):hover:after,
+.textgroupright p:nth-child(5):hover:after {
 	content: "font-weight: 500;";
 }
 
-.fontweight4:hover:after {
+.textgroupleft p:nth-child(3):hover:after,
+.textgroupright p:nth-child(6):hover:after {
 	content: "font-weight: 400;";
 }
 
-.fontweight3:hover:after {
+.textgroupleft p:nth-child(4):hover:after,
+.textgroupright p:nth-child(7):hover:after {
 	content: "font-weight: 300;";
 }
 
-.fontweight2:hover:after {
+.textgroupleft p:nth-child(5):hover:after,
+.textgroupright p:nth-child(8):hover:after {
 	content: "font-weight: 200;";
 }
 
-.fontweight1:hover:after {
+.textgroupleft p:nth-child(6):hover:after,
+.textgroupright p:nth-child(9):hover:after {
 	content: "font-weight: 100;";
+}
+
+.textgroupleft p:nth-child(7):hover:after,
+.textgroupright p:nth-child(10):hover:after
+{
+	content: "font-weight: bolder;";
+}
+
+.textgroupleft p:nth-child(8):hover:after,
+.textgroupright p:nth-child(11):hover:after
+{
+	content: "font-weight: bold;";
+}
+
+.textgroupleft p:last-child:hover:after,
+.textgroupright p:last-child:hover:after
+{
+	content: "font-weight: lighter;";
 }
