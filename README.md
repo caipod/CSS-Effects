@@ -1,6 +1,6 @@
 [👉🏻访问网站](https://alpha.caipod.site)
 
-<img width="1792" alt="effects0630" src="https://user-images.githubusercontent.com/4744513/176571998-9d4be822-2210-4541-b6e1-5e2c2f101d24.png">
+![0703](https://user-images.githubusercontent.com/4744513/177009768-0cc57d0d-59ab-47e4-b130-5a2cebf6bbf9.png)
 
 # 关于/About
 
