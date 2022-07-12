@@ -2,11 +2,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	grid-gap: 12px;
 }
 /*------------------------------------------------*/
 .purple,.blue,.yellow,.red,.green{
 	display: flex;
+}
+.purple,.blue,.yellow,.red{
+	margin-right: 12px;
 }
 /*------------------------------------------------*/
 .purplesrgb,.bluesrgb,.yellowsrgb,.redsrgb{

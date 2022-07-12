@@ -2,13 +2,14 @@
 {
     position: relative;
 	display: flex;
-	gap: 10px;
 	font-size: 12px;
 	align-content: center;
     justify-content: center;
     align-items: center;
 }
-
+.left{
+	padding-right: 10px;
+}
 .left p
 {
 	text-align: right;

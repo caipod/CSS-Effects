@@ -1,0 +1,124 @@
+.card-flexgap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.greenleaf div
+{
+	filter: blur(1px);
+	width: 30px;
+	height: 30px;
+	background-image: linear-gradient(134deg, rgba(255, 255, 255, 1.0) 0%, rgba(0, 255, 3, 1.0) 80%);
+	border-radius: 0 100px 0 100px;
+}
+.blueleaf div
+{
+	width: 30px;
+	height: 30px;
+	background-image: linear-gradient(134deg,rgba(255, 255, 255, 1.0) 10%, rgba(0, 255, 175, 1.0) 100%);
+	border-radius: 0 100px 0 100px;
+	filter: blur(2px);
+}
+.hide div
+{
+	width: 30px;
+	height: 30px;
+	background-image: linear-gradient(134deg, rgba(255, 255, 255, 1.0) 20%, rgba(0, 255, 245, 1.0) 100%);
+	border-radius: 0 100px 0 100px;
+	filter: blur(4px);
+}
+.center
+{
+	transition: all 1000ms;
+	width: 10px;
+	height: 10px;
+	background: #FFFFFF;
+	border: 2px solid #7BDEC3;
+	border-radius: 50%;
+	z-index: 3;
+	position: absolute;
+}
+/*----------*/
+
+.greenleaf,
+.blueleaf,
+.hide
+{
+	transition: all 1000ms;
+	position: absolute;
+	width: 80px;
+	height: auto;
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.greenleaf{
+	z-index: 2;
+}
+.blueleaf
+{
+	transform: rotate(45deg);
+	z-index: 1;
+}
+
+.blueleaf div:nth-child(2),
+.hide div:nth-child(2),
+.greenleaf div:nth-child(2)
+{
+	transform: rotate(90deg);
+}
+.blueleaf div:nth-child(3),
+.hide div:nth-child(3),
+.greenleaf div:nth-child(3)
+{
+	transform: rotate(-90deg);
+}
+.blueleaf div:nth-child(4),
+.hide div:nth-child(4),
+.greenleaf div:last-child
+{
+	transform: rotate(180deg);
+}
+
+.hide{
+
+	z-index: 0;
+	transform: rotate(0deg);
+	opacity: 0;
+}
+
+.card-flexgap:hover .greenleaf{
+	transform: rotate(30deg) scale(1.1);
+	gap: 20px;
+}
+
+.card-flexgap:hover .blueleaf{
+	transform: rotate(50deg) scale(1.1);
+	gap: 20px;
+}
+.card-flexgap:hover .hide{
+	transform: rotate(70deg) scale(1.1);
+	gap: 20px;
+	opacity: 1;
+}
+.card-flexgap:hover .center{
+	filter: blur(5px);
+	width: 20px;
+	height: 20px;
+}
+
+.card-flexgap:hover::after{
+	content: "Gap for Flexbox";
+	display: block;
+	font-family: var(--codefont);
+	color: var(--hintextcolor);
+	font-size: 12px;
+	bottom: 20px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	left: 0;
+}

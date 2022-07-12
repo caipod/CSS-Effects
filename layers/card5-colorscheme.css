@@ -30,13 +30,7 @@
 	align-content: center;
     justify-content: center;
     align-items: center;
-	/*------*/
-	/*transition: all 1000ms;*/
-	/*width: 100px;*/
-	/*height: 100px;*/
 	position: absolute;
-	/*filter: blur(0);*/
-	/*background: gray;*/
 }
 
 .core {

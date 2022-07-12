@@ -1,5 +1,7 @@
+/*---------------------------------------基础设置---------------------------------------*/
 :root
 {
+	/*主题颜色*/
 	accent-color: #00A7FF;
 	/*亮色，默认，鼠标悬浮在卡片上的样式*/
 	--hovershadow2: none;
@@ -74,7 +76,8 @@ body::-webkit-scrollbar
 .card8-picompare,
 .card-hascheck,
 .card9-deviceinfo,
-.card10-nextstep
+.card10-nextstep,
+.card-flexgap
 {
 	background: #FFFFFF;
 	border-radius: var(--cardR);
@@ -92,7 +95,8 @@ body::-webkit-scrollbar
 .card8-picompare:hover,
 .card-hascheck:hover,
 .card9-deviceinfo:hover,
-.card10-nextstep:hover
+.card10-nextstep:hover,
+.card-flexgap:hover
 {
 	box-shadow: var(--hovershadow2);
 }

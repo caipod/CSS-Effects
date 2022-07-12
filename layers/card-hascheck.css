@@ -5,9 +5,7 @@
 	align-content: center;
 	justify-content: center;
 	align-items: center;
-	gap: 12px;
 }
-
 
 .n1,
 .n2,
@@ -22,6 +20,7 @@
 .n1
 {
 	border: 3px solid #00FF05;
+	margin-right: 12px;
 }
 
 .n1:hover
@@ -32,6 +31,7 @@
 .n2
 {
 	border: 3px solid #00A7FF;
+	margin-right: 12px;
 }
 
 .n2:hover
