@@ -4,31 +4,30 @@
 	align-items: center;
 	position: relative;
 }
+.greenleaf div,
+.blueleaf div,
+.hide div{
+	width: 30px;
+	height: 30px;
+	border-radius: 0 100px 0 100px;
+}
 
 .greenleaf div
 {
 	filter: blur(1px);
-	width: 30px;
-	height: 30px;
-	background-image: linear-gradient(134deg, rgba(255, 255, 255, 1.0) 0%, rgba(0, 255, 3, 1.0) 80%);
-	border-radius: 0 100px 0 100px;
+	background-image: linear-gradient(134deg, rgba(255, 255, 255, 1.0) 2%, rgba(0, 255, 3, 1.0) 80%);	
 }
 .blueleaf div
 {
-	width: 30px;
-	height: 30px;
 	background-image: linear-gradient(134deg,rgba(255, 255, 255, 1.0) 10%, rgba(0, 255, 175, 1.0) 100%);
-	border-radius: 0 100px 0 100px;
 	filter: blur(2px);
 }
 .hide div
 {
-	width: 30px;
-	height: 30px;
-	background-image: linear-gradient(134deg, rgba(255, 255, 255, 1.0) 20%, rgba(0, 255, 245, 1.0) 100%);
-	border-radius: 0 100px 0 100px;
+	background-image: linear-gradient(134deg, rgba(255, 255, 255, 1.0) 25%, rgba(0, 255, 245, 1.0) 100%);
 	filter: blur(4px);
 }
+
 .center
 {
 	transition: all 1000ms;
@@ -91,7 +90,7 @@
 }
 
 .card-flexgap:hover .greenleaf{
-	transform: rotate(30deg) scale(1.1);
+	transform: rotate(35deg) scale(1.1);
 	gap: 20px;
 }
 
@@ -105,7 +104,7 @@
 	opacity: 1;
 }
 .card-flexgap:hover .center{
-	filter: blur(5px);
+	filter: blur(8px);
 	width: 20px;
 	height: 20px;
 }
