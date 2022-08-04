@@ -40,6 +40,7 @@ body
 	overflow-y: scroll;
 	-ms-overflow-style: none;  /* IE and Edge */
   	scrollbar-width: none;  /* Firefox */
+  	filter: grayscale(100%);
 }
 
 body::-webkit-scrollbar
@@ -77,7 +78,8 @@ body::-webkit-scrollbar
 .card-hascheck,
 .card9-deviceinfo,
 .card10-nextstep,
-.card-flexgap
+.card-flexgap,
+.cardspecial
 {
 	background: #FFFFFF;
 	border-radius: var(--cardR);
@@ -96,7 +98,8 @@ body::-webkit-scrollbar
 .card-hascheck:hover,
 .card9-deviceinfo:hover,
 .card10-nextstep:hover,
-.card-flexgap:hover
+.card-flexgap:hover,
+.cardspecial:hover
 {
 	box-shadow: var(--hovershadow2);
 }
