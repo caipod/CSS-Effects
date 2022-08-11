@@ -40,7 +40,6 @@ body
 	overflow-y: scroll;
 	-ms-overflow-style: none;  /* IE and Edge */
   	scrollbar-width: none;  /* Firefox */
-  	filter: grayscale(100%);
 }
 
 body::-webkit-scrollbar
@@ -79,7 +78,7 @@ body::-webkit-scrollbar
 .card9-deviceinfo,
 .card10-nextstep,
 .card-flexgap,
-.cardspecial
+.card-atlayer
 {
 	background: #FFFFFF;
 	border-radius: var(--cardR);
@@ -99,7 +98,7 @@ body::-webkit-scrollbar
 .card9-deviceinfo:hover,
 .card10-nextstep:hover,
 .card-flexgap:hover,
-.cardspecial:hover
+.card-atlayer:hover
 {
 	box-shadow: var(--hovershadow2);
 }

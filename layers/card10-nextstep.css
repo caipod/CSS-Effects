@@ -64,12 +64,12 @@
 }
 /*圆环动画*/
 .card10-nextstep:hover .bubble {
-	animation: showbubble 500ms forwards;
+	animation: showbubble 1200ms forwards;
 }
 
 /*圆环回退动画*/
 .card10-nextstep .bubble {
-	animation: r-showbubble 500ms forwards;
+	animation: r-showbubble 800ms forwards;
 }
 
 /*主文字动画*/

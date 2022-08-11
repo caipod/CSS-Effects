@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 /*------------------------------------------------*/
 .purple,.blue,.yellow,.red,.green{
@@ -12,13 +13,13 @@
 }
 /*------------------------------------------------*/
 .purplesrgb,.bluesrgb,.yellowsrgb,.redsrgb{
-	transition: all 200ms;
+	transition: all 500ms;
 	width: 8px;
 	height: 16px;
 	border-radius: 8px 0 0 8px;
 }
 .purplep3,.bluep3,.yellowp3,.redp3{
-	transition: all 200ms;
+	transition: all 500ms;
 	transform: scaleX(-1);
 	width: 8px;
 	height: 16px;
@@ -26,7 +27,7 @@
 }
 /*------------------------------------------------*/
 .greensrgb,.greenp3{
-	transition: all 250ms;
+	transition: all 500ms;
 	width: 34px;
 	height: 24px;
 	border-radius: 12px 0 0 12px;
@@ -168,4 +169,17 @@
 	height: 16px;
 	border-radius: 8px 0 0 8px;
 	background: #00FF05;
+}
+
+.card6-colorgamut:hover::after{
+	content: "display-p3";
+	display: block;
+	font-family: var(--codefont);
+	color: var(--hintextcolor);
+	font-size: 12px;
+	bottom: 20px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	left: 0;
 }
