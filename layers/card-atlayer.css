@@ -20,7 +20,7 @@
 		grid-gap: 0;
 	}
 	.earth .up{
-		transition: all 1500ms;
+		transition: all 1200ms;
 		width: 40px;
 		height: 80px;
 		background-image: linear-gradient(to right, rgba(0,167,255,0.05), rgba(0,167,255,0.40));
@@ -47,7 +47,7 @@
 	}
 
 	.earth .down{
-		transition: all 1500ms;
+		transition: all 1300ms;
 		width: 40px;
 		height: 80px;
 		background-image: linear-gradient(to right, rgba(0,167,255,1.0), rgba(0,167,255,0.85));

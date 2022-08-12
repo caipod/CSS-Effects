@@ -13,13 +13,13 @@
 }
 /*------------------------------------------------*/
 .purplesrgb,.bluesrgb,.yellowsrgb,.redsrgb{
-	transition: all 500ms;
+	transition: all 900ms;
 	width: 8px;
 	height: 16px;
 	border-radius: 8px 0 0 8px;
 }
 .purplep3,.bluep3,.yellowp3,.redp3{
-	transition: all 500ms;
+	transition: all 900ms;
 	transform: scaleX(-1);
 	width: 8px;
 	height: 16px;
@@ -27,7 +27,7 @@
 }
 /*------------------------------------------------*/
 .greensrgb,.greenp3{
-	transition: all 500ms;
+	transition: all 900ms;
 	width: 34px;
 	height: 24px;
 	border-radius: 12px 0 0 12px;

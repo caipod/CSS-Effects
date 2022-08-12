@@ -36,7 +36,7 @@
 
 .ns-text{
 	/*next-step*/
-	transition: all 300ms;
+	transition: all 800ms;
 	font-size: 20px;
 	font-family: var(--SFRFontFamily);
 	/*这两行代码是为了保证文字完整显示而不被bg-clip属性切割*/
@@ -69,7 +69,7 @@
 
 /*圆环回退动画*/
 .card10-nextstep .bubble {
-	animation: r-showbubble 800ms forwards;
+	animation: r-showbubble 1000ms forwards;
 }
 
 /*主文字动画*/
@@ -80,10 +80,10 @@
 /*slogan动画*/
 .card10-nextstep:hover .solgan {
 	animation: showtext forwards;
-	animation-duration: 1000ms;
+	animation-duration: 1500ms;
 	animation-delay: 150ms;
 }
 
 .card10-nextstep .solgan{
-	animation: hidetext 800ms forwards;
+	animation: hidetext 1200ms forwards;
 }
