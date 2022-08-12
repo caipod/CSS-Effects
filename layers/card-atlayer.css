@@ -55,10 +55,10 @@
 @layer third{
 
 	.card-atlayer .star{
-		transition: all 1500ms;
+		transition: all 2000ms;
 		position: absolute;
 		transform: translate(20px, -54px) scale(1.0);
-		filter: blur(0px);
+		filter: blur(0px) opacity(1.0);
 		transition-timing-function: cubic-bezier(0.39, 0.27, 0.58, 0.57);
 	}
 
@@ -66,7 +66,7 @@
 		width: 20px;
 		height: 20px;
 		background: rgb(255, 188, 62);
-		background: color(display-p3 0.995 0.75 0.348);
+		background: color(display-p3 1 0.618 0);
 		position: absolute;
 	}
 
@@ -100,7 +100,7 @@
 
 	.card-atlayer:hover .star{
 		transform: translate(20px, -54px) scale(0);
-		filter: blur(50px);
+		filter: blur(50px) opacity(0);
 	}
 }
 
@@ -117,6 +117,7 @@
 	transform: scale(0);
 	transform-origin: top right;
 	transition: all 1000ms;
+	transition-delay: 100ms;
 	position: absolute;
 }
 
@@ -129,8 +130,8 @@
 }
 
 .earth .up{
-	transition: all 1500ms;
-	transition-delay: 300ms;
+	transition: all 1600ms;
+	transition-delay: 100ms;
 	width: 40px;
 	height: 80px;
 	filter: blur(0);
@@ -141,11 +142,11 @@
 	transform: translateX(77px) scale(1.0);
 }
 .earth .orbit{
-	transition: all 1600ms;
-	transition-delay: 200ms;
+	transition: all 2400ms;
+	transition-delay: 100ms;
 	width: 150px;
 	height: 150px;
-	transform: rotate3d(0, 1, 0, 99deg);
+	transform: rotate3d(0, 1, 0, 99deg) translate3d(0px, 0px, 0px);
 	background: rgba(0, 156, 255, 0.1);
 	background: color(display-p3 0 0.475 1 / 0.1);
 	border: 2px solid rgba(255,255,255,0.30);
@@ -155,7 +156,8 @@
 }
 
 .earth .down{
-	transition: all 800ms;
+	transition: all 900ms;
+	transition-delay: 100ms;
 	width: 40px;
 	height: 80px;
 	background-image: linear-gradient(to right, rgba(0,167,255,1.0), rgba(0,167,255,0.85));
@@ -165,7 +167,7 @@
 }
 /*-----------------------------------*/
 .card-atlayer:hover .orbit{
-	transform: rotate3d(0, 0, 0, 180deg);
+	transform: rotate3d(30, 10, 0, 180deg) translate3d(0px, 0px, 140px);
 	backdrop-filter: blur(0px);
 	-webkit-backdrop-filter: blur(0px);
 }
@@ -181,9 +183,7 @@
 }
 
 
-
 .card-atlayer:hover p{
-	transition-delay: 300ms;
 	font-size: 60px;
 	transform: scale(1);
 }
