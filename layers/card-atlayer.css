@@ -7,7 +7,6 @@
 		position: absolute;
 		transform: translate(20px, -54px) scale(1.0);
 		filter: blur(0px);
-		transition-timing-function: cubic-bezier(1, 0.05, 0.72, 1.15);
 	}
 
 	.starbg{
@@ -135,7 +134,7 @@
 	width: 40px;
 	height: 80px;
 	filter: blur(0);
-	background-image: linear-gradient(to right, rgba(0,167,255,0.05), rgba(0,167,255,0.40));
+	background-image: linear-gradient(to right, rgba(0, 167, 255, 0.05), rgba(0, 165, 255, 0.4));
 	border-radius: 100px 0 0 100px;
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
@@ -160,7 +159,7 @@
 	transition-delay: 100ms;
 	width: 40px;
 	height: 80px;
-	background-image: linear-gradient(to right, rgba(0,167,255,1.0), rgba(0,167,255,0.85));
+	background-image: linear-gradient(to right, rgba(0, 167, 255, 1), rgba(0, 165, 255, 0.85));
 	box-shadow: 11px 0 30px 0 #BBCED7;
 	border-radius: 0 100px 100px 0;
 	transform: translateX(-77px) scale(1.0);
