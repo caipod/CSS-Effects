@@ -145,7 +145,7 @@
 	transition-delay: 100ms;
 	width: 150px;
 	height: 150px;
-	transform: rotate3d(0, 1, 0, 99deg) translate3d(0px, 0px, 0px);
+	transform: rotate3d(0, 1, 0, 99deg) translate3d(0px, 0px, 0px) skew(0deg);
 	background: rgba(0, 156, 255, 0.1);
 	background: color(display-p3 0 0.475 1 / 0.1);
 	border: 2px solid rgba(255,255,255,0.30);
@@ -166,7 +166,7 @@
 }
 /*-----------------------------------*/
 .card-atlayer:hover .orbit{
-	transform: rotate3d(30, 10, 0, 180deg) translate3d(0px, 0px, 140px);
+	transform: rotate3d(30, 10, 0, 180deg) translate3d(0px, 0px, 140px) skew(10deg);
 	backdrop-filter: blur(0px);
 	-webkit-backdrop-filter: blur(0px);
 }
