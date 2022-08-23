@@ -79,7 +79,7 @@
 🧩**兼容性问题**
 
 目前发现网站对于 Firefox 浏览器兼容性不太好，很多特性都不支持，例如 z-index 与背景高斯模糊。
-整体显示效果最好的浏览器是Safari，其次是Chrome。如果你的设备不能正确显示某些效果，不一定代表浏览器不支持，也可能是我没优化到位😃。有问题请通过邮箱联系我。
+整体显示效果最好的浏览器是Safari，其次是Chrome。如果你的设备不能正确显示某些效果，不一定代表浏览器不支持，也可能是我没优化到位。😃有问题请通过邮箱联系我。
 
 # 资源/Handy recourses
 - [Sans Forgetica 字体](https://sansforgetica.rmit.edu.au/)
@@ -90,6 +90,7 @@
 - [MDN](https://developer.mozilla.org/zh-CN/)
 - [W3C Schools](https://www.w3schools.com/)
 - [TinyPNG](https://tinypng.com/)
+- [Can I Use ?](https://caniuse.com/)
 
 网站使用 Sketch 设计，Sublime 编码，其中HTML与CSS代码都由我完成，Javascript中那一段判断屏幕比例的功能是复制别人的代码。
 
