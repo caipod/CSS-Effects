@@ -78,7 +78,8 @@ body::-webkit-scrollbar
 .card9-deviceinfo,
 .card10-nextstep,
 .card-flexgap,
-.card-atlayer
+.card-atlayer,
+.card-colormix
 {
 	background: #FFFFFF;
 	border-radius: var(--cardR);
@@ -98,7 +99,8 @@ body::-webkit-scrollbar
 .card9-deviceinfo:hover,
 .card10-nextstep:hover,
 .card-flexgap:hover,
-.card-atlayer:hover
+.card-atlayer:hover,
+.card-colormix:hover
 {
 	box-shadow: var(--hovershadow2);
 }

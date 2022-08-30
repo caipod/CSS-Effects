@@ -1,0 +1,76 @@
+.card-colormix{
+	display: flex;
+	align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mixcircle{
+	transition: all 800ms;
+	transition-timing-function: ease-out;
+	width: 35px;
+	height: 35px;
+	transform: rotate(-45deg);
+	background: #DFE3EB;
+	background: color-mix(in srgb, #00A7FF 50%, #00FF05 50%);
+	border: 2px solid rgba(255, 255, 255, 1.0);
+	border-radius: 100px 0 100px 0;
+	position: absolute;
+	z-index: 10;
+}
+
+.mixwarp{
+	display: flex;
+	transition: all 800ms;
+	transition-timing-function: ease-out;
+}
+
+.mixa,
+.mixb{
+	transition: all 800ms;
+	z-index: 1;
+	transition-timing-function: ease-out;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.mixa{
+	background: #00A7FF;
+}
+
+.mixb{
+	background: #00FF05;
+	margin-left: -20px;
+}
+/*-----------------hover effects-----------------------------------*/
+.card-colormix:hover .mixcircle{
+	width: 35px;
+	height: 70px;
+	border: 2px solid rgba(255, 255, 255, 0.0);
+	border: 2px solid color(display-p3 0.348 0.81 0.453);
+	transform: rotate(-85deg);
+	box-shadow: 0 6px 42px -1px #0c225e;
+}
+
+.card-colormix:hover .mixb{
+	margin-left: -35px;
+}
+
+.card-colormix:hover .mixwarp{
+	transform: rotate(-90deg);
+}
+
+.card-colormix:hover:after{
+	content: "color-mix()";
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	color: var(--hintextcolor);
+	font-family: var(--codefont);
+	font-size: 12px;
+	text-align: center;
+	width: 100%;
+	left: 0;
+}
