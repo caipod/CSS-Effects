@@ -21,3 +21,8 @@
 .cardlink:hover {
 	color: #5f646d;
 }
+
+.spotlighthint{
+	padding: 0;
+	margin: 0;
+}
