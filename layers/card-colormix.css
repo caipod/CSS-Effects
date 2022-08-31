@@ -49,7 +49,6 @@
 	width: 35px;
 	height: 70px;
 	border: 2px solid rgba(255, 255, 255, 0.0);
-	border: 2px solid color(display-p3 0.348 0.81 0.453);
 	transform: rotate(-85deg);
 	box-shadow: 0 6px 42px -1px #0c225e;
 }
