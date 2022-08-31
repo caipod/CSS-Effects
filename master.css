@@ -29,9 +29,7 @@
 	/*使用SansForgetica字体*/
 	--SFRFontFamily: sfr, system-ui;
 	/*----------------*/
-
 }
-
 
 body
 {
@@ -106,26 +104,6 @@ body::-webkit-scrollbar
 .card-colormix:hover
 {
 	box-shadow: var(--hovershadow2);
-}
-
-focus-zoom {
-	/*A Pen created on CodePen.io. Original URL: [https://codepen.io/argyleink/pen/gOWQdMP](https://codepen.io/argyleink/pen/gOWQdMP).*/
-  --focal-size: 100%;
-  --mouse-x: center;
-  --mouse-y: center;
-  --backdrop-color: hsl(200 50% 0% / 70%); /* can't be opaque */
-  --backdrop-blur-strength: 10px;
-  
-  pointer-events: none;
-  z-index: 50;
-  position: fixed;
-  touch-action: none;
-  inset: 0;
-  background-color: var(--backdrop-color);
-  -webkit-backdrop-filter: blur(var(--backdrop-blur-strength));
-          backdrop-filter: blur(var(--backdrop-blur-strength));
-  -webkit-mask-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), transparent 0%, transparent var(--focal-size), black 0%);
-          mask-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), transparent 0%, transparent var(--focal-size), black 0%);
 }
 
 @font-face{
