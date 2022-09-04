@@ -11,7 +11,8 @@
 .n2,
 .n3
 {
-	transition: all 200ms;
+	transition: all 400ms;
+	transition-timing-function: ease-in-out;
 	width: 26px;
 	height: 26px;
 	border-radius: 50%;
@@ -56,16 +57,37 @@ div:has( > .faken3)
 }
 
 div:has( + .n3)
+/*n2*/
+{
+	background-image: conic-gradient(from 0deg at 50% 50%, #00A7FF, #00FF05);
+}
+
+div:has( + .n3):hover
+/*n2*/
 {
 	background-image: conic-gradient(from 0deg at 50% 50%, #00A7FF, #00FF05);
 }
 
 div:has( + .n2)
+/*n1*/
+{
+	background-image: conic-gradient(from 0deg at 50% 50%, #00FF05, #FAFF00);
+}
+
+div:has( + .n2):hover
+/*n1*/
 {
 	background-image: conic-gradient(from 0deg at 50% 50%, #00FF05, #FAFF00);
 }
 
 div:has( > .faken3)
+/*n3*/
+{
+	background-image: conic-gradient(from 0deg at 50% 50%, #2D00FF, #00A7FF);
+}
+
+div:has( > .faken3):hover
+/*n3*/
 {
 	background-image: conic-gradient(from 0deg at 50% 50%, #2D00FF, #00A7FF);
 }
