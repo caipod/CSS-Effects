@@ -13,23 +13,24 @@
 
 .vs{
 	display: grid;
-	grid-gap: 6px;
+	grid-gap: 10px;
 	align-content: center;
 }
 
 .pill div{
 	width: 10px;
-	height: 50px;	
 }
 
 .pillup{
+	height: 80px;
 	background: #00A7FF;
 	background: color(display-p3 0 0.394 1);
-	border-radius: 100px 100px 0 0;
+	border-radius: 0 0 100px 100px;
 }
 
 .pilldown{
-	border-radius: 0 0 100px 100px;
+	height: 40px;
+	border-radius: 100px 100px 0 0;
 	background: #59c6ff;
 	background: color-contrast(#00A7FF vs #3d3aff , #00c732 , #00fff7);
 	background: color-contrast(
