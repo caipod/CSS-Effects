@@ -8,7 +8,7 @@
 }
 
 .card4text{
-	transition: all 350ms;
+	transition: all 550ms;
 	transition-timing-function: ease-in-out;
 	font-size: 30px;
 	color: #1B1D1F;
@@ -25,7 +25,7 @@
 }
 .ball{
 	position: absolute;
-	transition: all 550ms;
+	transition: all 950ms;
 	transition-timing-function: ease-in-out;
 	z-index: 2;
 	width: 100px;
@@ -40,16 +40,15 @@
 .card4-blur:hover .ball{
 	width: 120px;
 	height: 120px;
-	backdrop-filter: blur(2px);
-	-webkit-backdrop-filter: blur(2px);
 }
 
 .card4-blur:hover .card4text{
-	font-size: 25px;
+	font-size: 12px;
+	filter: blur(20px);
 }
 
-.card4text:hover::after{
-	content: "font-family: SansForgetica;";
+.card4-blur:hover::after{
+	content: "backdrop-filter: ";
 	display: block;
 	font-family: var(--codefont);
 	color: var(--hintextcolor);
@@ -59,15 +58,4 @@
 	text-align: center;
 	width: 100%;
 	left: 0;
-}
-.ballcover:hover::after{
-	content: "backdrop-filter: blur(12px);";
-	display: block;
-	font-family: var(--codefont);
-	color: var(--hintextcolor);
-	font-size: 12px;
-	bottom: -160px;
-	position: absolute;
-	text-align: center;
-	width: max-content;
 }
