@@ -32,6 +32,7 @@
 	height: 40px;
 	border-radius: 100px 100px 0 0;
 	background: #59c6ff;
+	background: color(display-p3 0.085 0.626 1);
 	background: color-contrast(#00A7FF vs #3d3aff , #00c732 , #00fff7);
 	background: color-contrast(
 		color(display-p3 0 0.394 1) vs
