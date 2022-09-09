@@ -34,6 +34,7 @@
 }
 
 .core {
+	transition-timing-function: ease-in-out;
 	transition: all 1000ms;
 	width: 50px;
 	height: 50px;
@@ -46,6 +47,7 @@
 
 .lights1,
 .lights2 {
+	transition-timing-function: ease-in-out;
 	transition: all 1000ms;
 	width: 6px;
 	height: 14px;

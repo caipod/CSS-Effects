@@ -6,13 +6,19 @@
 
 .gtest-l,
 .gtest-r {
+	transition-timing-function: ease-in-out;
 	transition: all 500ms;
 	height: 100px;
 	width: auto;
 	z-index: 1;
 }
 
+.gtest-r{
+	transition-delay: 150ms;
+}
+
 .names {
+	transition-timing-function: ease-in-out;
 	transition: all 500ms;
 	display: flex;
 	position: absolute;

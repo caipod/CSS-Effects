@@ -4,7 +4,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*transition: all 800ms;*/
 }
 .c1bg
 {
@@ -40,6 +39,25 @@
 	animation: card1textmaintitle_back 250ms;
 	animation-timing-function: ease-in-out;
 }
+
+.cardlogotext::before,
+.cardlogotext::after{
+	display: block;
+	opacity: 0.9;
+	font-weight: initial;
+}
+
+.cardlogotext::after{
+	content: "alpha.caipod.site";
+	padding-top: 4px;
+	font-size: 12px;
+}
+
+.cardlogotext::before{
+	content: "CSS 效果";
+	font-size: 20px;
+}
+
 /*------------------------------------*/
 .card1-logo:hover .cardlogosfr {
 	animation: card1sfrmaintitle 250ms forwards;
@@ -64,7 +82,8 @@
 
 .flash {
 	z-index: 1;
-	transition: all 550ms;
+	transition: all 850ms;
+	transition-timing-function: ease-in-out;
 	width: 90%;
 	height: 90%;
 	border-radius: var(--cardR);
@@ -89,6 +108,10 @@
 	position: absolute;
 	width: 50%;
 	height: 50%;
+	transition-timing-function: linear;
+	transition-property: background;
+	transition-delay: 0;
+	transition-duration: 1500ms;
 }
 
 .pt1 {
@@ -125,4 +148,29 @@
 	color: rgba(255, 255, 255, 0.67);
 	position: absolute;
 	bottom: 20px;
+}
+
+.card1-logo svg > path{
+	d: path("M125,0 L125,25 L124.586579,25.0033493 C111.106307,25.2219114 100.219667,36.1099044 100.003283,49.5907056 L100,50 C100,77.3380951 78.0597142,99.5517619 50.8268414,99.9933014 L50,100 C22.3857625,100 0,77.6142375 0,50 C0,22.6619049 21.9402858,0.448238098 49.1731586,0.00669857146 L50,0 L50,25 L49.5865793,25.0033493 C35.9701429,25.224119 25,36.3309524 25,50 C25,63.6690476 35.9701429,74.775881 49.5865793,74.9966507 L50,75 L50.4134207,74.9966507 C63.8936927,74.7780886 74.7803325,63.8900956 74.9967173,50.4092944 L75,50 C75,22.6619049 96.9402858,0.448238098 124.173159,0.00669857146 L125,0 Z");
+	fill: white;
+	stroke: none;
+	fill-rule: nonzero;
+	transform: scale(0.2);
+}
+
+.card1-logo svg{
+	transition: all 2000ms;
+	transition-timing-function: cubic-bezier(0, 0.91, 0.4, 1.22);
+	opacity: 0.2;
+	position: absolute;
+	width: 25px;
+	height: 20px;
+	top: 70px;
+	transform: rotate(-15deg) translate(-10px,90px) scale(0);
+	opacity: 0;
+}
+
+.card1-logo:hover svg{
+	opacity: 0.9;
+	transform: rotate(0deg) translate(0px,0px) scale(1.5);
 }

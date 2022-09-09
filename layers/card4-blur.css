@@ -8,9 +8,10 @@
 }
 
 .card4text{
-	transition: all 550ms;
-	transition-timing-function: ease-in-out;
+	transition: all 450ms;
+	transition-timing-function: ease-in;
 	font-size: 30px;
+	transform: rotate(0deg);
 	color: #1B1D1F;
 	text-align: center;
 	font-family: var(--SFRFontFamily);
@@ -26,7 +27,7 @@
 .ball{
 	position: absolute;
 	transition: all 950ms;
-	transition-timing-function: ease-in-out;
+	transition-timing-function: ease-out;
 	z-index: 2;
 	width: 100px;
 	height: 100px;
@@ -43,8 +44,9 @@
 }
 
 .card4-blur:hover .card4text{
-	font-size: 12px;
 	filter: blur(20px);
+	font-size: 12px;
+	transform: rotate(10deg);
 }
 
 .card4-blur:hover::after{
