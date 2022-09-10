@@ -36,7 +36,7 @@
 	position: absolute;
 	color: #FFFFFF;
 	text-align: center;
-	animation: card1textmaintitle_back 250ms;
+	animation: card1textmaintitle_back 350ms;
 	animation-timing-function: ease-in-out;
 }
 
@@ -60,14 +60,14 @@
 
 /*------------------------------------*/
 .card1-logo:hover .cardlogosfr {
-	animation: card1sfrmaintitle 250ms forwards;
-	animation-timing-function: ease-in-out;
+	animation: card1sfrmaintitle 450ms forwards;
+	animation-timing-function: ease-out;
 }
 
 .card1-logo:hover .cardlogotext {
-	animation: card1textmaintitle 250ms forwards;
-	animation-delay: 200ms;
-	animation-timing-function: ease-in-out;
+	animation: card1textmaintitle 550ms forwards;
+	animation-delay: 400ms;
+	animation-timing-function: ease-out;
 }
 
 /*---------------------------------*/
@@ -159,18 +159,18 @@
 }
 
 .card1-logo svg{
-	transition: all 2000ms;
-	transition-timing-function: cubic-bezier(0, 0.91, 0.4, 1.22);
-	opacity: 0.2;
+	transition: all 400ms;
+	transition-delay: 200ms;
+	transition-timing-function: linear;
 	position: absolute;
 	width: 25px;
 	height: 20px;
 	top: 70px;
-	transform: rotate(-15deg) translate(-10px,90px) scale(0);
 	opacity: 0;
+	transform: scale(1.4) translateY(4px);
 }
 
 .card1-logo:hover svg{
 	opacity: 0.9;
-	transform: rotate(0deg) translate(0px,0px) scale(1.5);
+	transform: scale(1.5) translateY(0px);
 }
