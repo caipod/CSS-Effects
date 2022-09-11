@@ -22,7 +22,7 @@
 	position: absolute;
 	font-family: var(--SFRFontFamily);
 	animation-name: card1sfrmaintitle_back;
-	animation-duration: 300ms;
+	animation-duration: 550ms;
 	animation-timing-function: ease-in-out;
 }
 
@@ -36,7 +36,7 @@
 	position: absolute;
 	color: #FFFFFF;
 	text-align: center;
-	animation: card1textmaintitle_back 350ms;
+	animation: card1textmaintitle_back 250ms;
 	animation-timing-function: ease-in-out;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .cardlogotext::before{
-	content: "CSS 效果";
+	content: "层叠样式表效果";
 	font-size: 20px;
 }
 
@@ -66,7 +66,7 @@
 
 .card1-logo:hover .cardlogotext {
 	animation: card1textmaintitle 550ms forwards;
-	animation-delay: 400ms;
+	animation-delay: 350ms;
 	animation-timing-function: ease-out;
 }
 
