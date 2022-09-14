@@ -34,6 +34,7 @@
 }
 
 .core {
+	will-change: width,height,box-shadow,color,border-radius;
 	transition-timing-function: ease-in-out;
 	transition: all 1000ms;
 	width: 50px;
@@ -47,6 +48,7 @@
 
 .lights1,
 .lights2 {
+	will-change: width,height,background,border-radius,box-shadow;
 	transition-timing-function: ease-in-out;
 	transition: all 1000ms;
 	width: 6px;

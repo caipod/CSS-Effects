@@ -46,6 +46,28 @@
 	}
 }
 
+@keyframes card1svg{
+	0%{
+		opacity: 0;
+		transform: scale(1.4) translateY(4px);
+	}
+	100%{
+		opacity: 0.9;
+		transform: scale(1.5) translateY(0px);	
+	}
+}
+
+@keyframes card1svg_back{
+	0%{
+		opacity: 0.9;
+		transform: scale(1.5) translateY(0px);		
+	}
+	100%{
+		opacity: 0;
+		transform: scale(1.4) translateY(4px);		
+	}
+}
+
 @keyframes hoversunspinning
 {
 	from{

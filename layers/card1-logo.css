@@ -159,18 +159,14 @@
 }
 
 .card1-logo svg{
-	transition: all 400ms;
-	transition-delay: 200ms;
-	transition-timing-function: linear;
+	animation: card1svg_back 250ms forwards;
 	position: absolute;
 	width: 25px;
 	height: 20px;
 	top: 70px;
 	opacity: 0;
-	transform: scale(1.4) translateY(4px);
 }
 
 .card1-logo:hover svg{
-	opacity: 0.9;
-	transform: scale(1.5) translateY(0px);
+	animation: card1svg 550ms forwards;
 }
