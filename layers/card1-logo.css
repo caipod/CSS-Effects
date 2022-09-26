@@ -43,12 +43,12 @@
 .cardlogotext::before,
 .cardlogotext::after{
 	display: block;
-	opacity: 0.9;
+	opacity: 0.8;
 	font-weight: initial;
 }
 
 .cardlogotext::after{
-	content: "alpha.caipod.site";
+	/*content: "How well does your browser doing?";*/
 	padding-top: 4px;
 	font-size: 12px;
 }
@@ -56,6 +56,8 @@
 .cardlogotext::before{
 	content: "层叠样式表效果";
 	font-size: 20px;
+	letter-spacing: 5px;
+	transform: translateX(4px);
 }
 
 /*------------------------------------*/
@@ -160,6 +162,7 @@
 
 .card1-logo svg{
 	animation: card1svg_back 250ms forwards;
+	animation-timing-function: ease-in-out;
 	position: absolute;
 	width: 25px;
 	height: 20px;
@@ -168,5 +171,6 @@
 }
 
 .card1-logo:hover svg{
-	animation: card1svg 850ms forwards;
+	animation: card1svg 1050ms forwards;
+	animation-timing-function: ease-in-out;
 }
