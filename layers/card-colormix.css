@@ -7,7 +7,8 @@
 }
 
 .mixcircle{
-	transition: all 800ms;
+	will-change: transfrom;
+	transition: all 400ms;
 	transition-timing-function: ease-out;
 	width: 35px;
 	height: 35px;
@@ -21,14 +22,16 @@
 }
 
 .mixwarp{
+	will-change: transfrom;
 	display: flex;
-	transition: all 800ms;
+	transition: all 400ms;
 	transition-timing-function: ease-out;
 }
 
 .mixa,
 .mixb{
-	transition: all 800ms;
+	will-change: transfrom;
+	transition: all 400ms;
 	z-index: 1;
 	transition-timing-function: ease-out;
 	width: 70px;

@@ -12,11 +12,17 @@
 
 @keyframes card1sfrmaintitle_back
 {
-	from{
+	0%{
 		opacity: 0;
 		transform: scale3d(0.9, 0.7, 0.9);
 	}
-	to{
+
+	50%{
+		opacity: 0.95;
+		transform: scale3d(1.1, 1.1, 1.0);
+	}
+
+	100%{
 		opacity: 0.95;
 		transform: scale3d(1.0, 1.0, 1.0);
 	}
@@ -24,12 +30,18 @@
 
 @keyframes card1textmaintitle
 {
-	from{
+	0%{
 		opacity: 0;
 		filter: blur(10px);
 		transform: scale3d(1.0, 0.2, 0.5);
 	}
-	to{
+
+	50%{
+		opacity: 0.95;
+		filter: blur(0);
+		transform:  scale3d(1.1, 1.0, 1.1);
+	}
+	100%{
 		opacity: 0.95;
 		filter: blur(0);
 		transform: scale3d(1.0, 1.0, 1.0);
@@ -56,12 +68,19 @@
 		transform: scale(1.4) translateY(4px);
 		filter: blur(4px);
 	}
+	
+	50%{
+		opacity: 0.9;
+		transform: scale(1.6) translateY(-1px);
+		filter: blur(2px);
+	}
 
 	100%{
 		opacity: 0.9;
 		transform: scale(1.5) translateY(0px);	
 		filter: blur(0);
 	}
+
 }
 
 @keyframes card1svg_back{
@@ -87,13 +106,19 @@
 
 @keyframes showbubble
 {
-	from {
+	0% {
 		width: 190px;
 		height: 190px;
 		filter: blur(12px);
 	}
 
-	to {
+	50%{
+		width: 260px;
+		height: 260px;
+		filter: none;
+	}
+
+	100% {
 		width: 250px;
 		height: 250px;
 		filter: none;
