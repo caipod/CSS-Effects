@@ -252,6 +252,9 @@
 	0%{
 		transform: translateY(0);
 	}
+	40%{
+		transform: translateY(-5px);
+	}
 	80%{
 		transform: translateY(30px);
 	}
@@ -263,6 +266,9 @@
 @keyframes card8-picture-right{
 	0%{
 		transform: translateY(0);
+	}
+	40%{
+		transform: translateY(5px);
 	}
 	80%{
 		transform: translateY(-30px);
