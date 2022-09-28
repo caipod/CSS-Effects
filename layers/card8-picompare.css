@@ -13,13 +13,22 @@
 	z-index: 1;
 }
 
+.gtest-l{
+	animation: card8-picture-left-back 300ms ease-in-out forwards;
+}
+
 .gtest-r{
-	transition-delay: 150ms;
+	animation: card8-picture-right-back 300ms ease-in-out forwards;
+}
+
+.card8-picompare:hover .gtest-l{
+	animation: card8-picture-left 700ms ease-in-out forwards;
+}
+.card8-picompare:hover .gtest-r{
+	animation: card8-picture-right 700ms ease-in-out forwards;
 }
 
 .names {
-	transition-timing-function: ease-in-out;
-	transition: all 500ms;
 	display: flex;
 	position: absolute;
 	color: #1B1D1F;
@@ -28,6 +37,7 @@
 	align-items: center;
 	opacity: 0;
 	transform: scale(0);
+	animation: card8-name-back 300ms ease-in-out forwards;
 }
 
 .nameleft {
@@ -42,23 +52,7 @@
 	transform: translateX(18px);
 }
 
-.card8-picompare:hover .nameleft {
-	align-self: flex-start;
-}
-
-.card8-picompare:hover .nameright {
-	align-self: flex-end;
-}
-
 .card8-picompare:hover .names {
-	opacity: 1;
-	transform: scale(1);
-}
-
-.card8-picompare:hover .gtest-l {
-	transform: translateY(20px);
-}
-
-.card8-picompare:hover .gtest-r {
-	transform: translateY(-20px);
+	animation: card8-name 500ms ease-in-out forwards;
+	animation-delay: 500ms;
 }

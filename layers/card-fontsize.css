@@ -25,6 +25,7 @@
 {
 	line-height: 4px;
 	color: var(--card2a3textcolor);
+	will-change: transfrom;
 }
 .left p:nth-child(3),
 .right p:nth-child(3)
@@ -78,29 +79,8 @@
 }
 
 /*-------------*/
-.left p:first-child:hover,
-.right p:first-child:hover,
-.left p:nth-child(2):hover,
-.right p:nth-child(2):hover,
-.left p:nth-child(3):hover,
-.right p:nth-child(3):hover
-{
-	font-size: 20px;
-}
-.left p:nth-child(4):hover,
-.right p:nth-child(4):hover,
-.left p:nth-child(5):hover,
-.right p:nth-child(5):hover
-{
-	font-size: 12px;
-}
-
-.left p:nth-child(6):hover,
-.left p:last-child:hover,
-.right p:nth-child(6):hover,
-.right p:last-child:hover
-{
-	transform: scale(1.0);
+.card-fontsize p:hover{
+	color: #c3cad6;
 }
 /*-----------*/
 .left p:hover:after,
@@ -148,7 +128,7 @@
 }
 
 /*问题在此⬇️*/
-/*.left p:nth-child(6):hover:after,
+.left p:nth-child(6):hover:after,
 .right p:nth-child(6):hover:after
 {
 	content: "transform: scale(0.667);";
@@ -158,4 +138,43 @@
 .right p:last-child:hover:after
 {
 	content: "transform: scale(0.833);";
-}*/
+}
+/*----------------------*/
+.right p:last-child:hover:after
+{
+    transform: translate(-80px,140px);
+    width: max-content;
+    font-size: 14px !important;
+}
+
+.right p:nth-child(6):hover:after
+{
+    transform: translate(-100px,200px);
+    width: max-content;
+    font-size: 18px !important;
+}
+
+.left p:last-child:hover:after
+{
+    transform: translate(-10px,140px);
+    width: max-content;
+    font-size: 14px !important;
+}
+
+.left p:nth-child(6):hover:after
+{
+    transform: translate(-30px,200px);
+    width: max-content;
+    font-size: 18px !important;
+}
+
+
+
+
+
+
+
+
+
+
+

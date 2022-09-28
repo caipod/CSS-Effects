@@ -22,12 +22,11 @@
 .card3-fontweight p
 {
 	color: var(--card2a3textcolor);
-	transition: all 300ms;
+	animation-timing-function: ease-in-out;
 	line-height: 4px;
 	font-size: 12px;
-}
-.card3-fontweight p:hover{
-	font-size: 20px;
+	will-change: transfrom;
+	animation: fontweight-back 200ms forwards;
 }
 
 .textgroupright p:first-child
@@ -174,4 +173,8 @@
 .textgroupright p:last-child:hover:after
 {
 	content: "font-weight: lighter;";
+}
+
+.card3-fontweight p:hover{
+	color: #c3cad6;
 }

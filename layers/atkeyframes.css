@@ -39,7 +39,7 @@
 	50%{
 		opacity: 0.95;
 		filter: blur(0);
-		transform:  scale3d(1.1, 1.0, 1.1);
+		transform:  scale3d(1.0, 1.2, 1.1);
 	}
 	100%{
 		opacity: 0.95;
@@ -178,3 +178,147 @@
 		filter: opacity(100%) blur(0) grayscale(0);
 	}
 }
+
+
+@keyframes text-blur{
+	0%{
+		font-size: 30px;
+		transform: rotate(0deg);
+		filter: blur(0px);
+	}
+
+	20%{
+		font-size: 31px;
+		transform: rotate(0deg);
+		filter: blur(1px);
+	}
+
+	100%{
+		filter: blur(20px);
+		font-size: 12px;
+		transform: rotate(10deg);		
+	}
+}
+
+@keyframes ball-blur{
+	0%{
+		width: 100px;
+		height: 100px;
+	}
+	50%{
+		width: 126px;
+		height: 126px;
+	}
+	100%{
+		width: 120px;
+		height: 120px;
+	}
+}
+
+@keyframes text-blur-back{
+	0%{
+		filter: blur(20px);
+		font-size: 12px;
+		transform: rotate(10deg);			
+	}
+	80%{
+		font-size: 31px;
+		transform: rotate(0deg);
+		filter: blur(1px);		
+	}
+	100%{
+		font-size: 30px;
+		transform: rotate(0deg);
+		filter: blur(0px);		
+	}
+}
+
+@keyframes ball-blur-back{
+	0%{
+		width: 120px;
+		height: 120px;		
+	}
+	50%{
+		width: 126px;
+		height: 126px;		
+	}
+	100%{
+		width: 100px;
+		height: 100px;		
+	}
+}
+
+@keyframes card8-picture-left{
+	0%{
+		transform: translateY(0);
+	}
+	80%{
+		transform: translateY(30px);
+	}
+	100%{
+		transform: translateY(20px);
+	}
+}
+
+@keyframes card8-picture-right{
+	0%{
+		transform: translateY(0);
+	}
+	80%{
+		transform: translateY(-30px);
+	}
+	100%{
+		transform: translateY(-20px);
+	}
+}
+
+@keyframes card8-picture-left-back{
+	0%{
+		transform: translateY(20px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+
+@keyframes card8-picture-right-back{
+	0%{
+		transform: translateY(-20px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+
+@keyframes card8-name{
+	0%{
+		opacity: 0;
+		transform: scale(0);
+	}
+	50%{
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1.0);
+	}
+}
+
+@keyframes card8-name-back{
+	0%{
+		opacity: 1;
+		transform: scale(1.0);
+	}
+	100%{
+		opacity: 0;
+		transform: scale(0);
+	}
+}
+
+
+
+
+
+
+

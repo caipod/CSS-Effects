@@ -8,8 +8,9 @@
 }
 
 .card4text{
+	will-change: transfrom;
 	transition: all 450ms;
-	transition-timing-function: ease-in;
+	animation: text-blur-back 800ms forwards ease-in-out;
 	font-size: 30px;
 	transform: rotate(0deg);
 	color: #1B1D1F;
@@ -25,9 +26,10 @@
 	position: relative;
 }
 .ball{
+	will-change: transfrom;
 	position: absolute;
 	transition: all 950ms;
-	transition-timing-function: ease-out;
+	animation: ball-blur-back 800ms forwards ease-in-out;
 	z-index: 2;
 	width: 100px;
 	height: 100px;
@@ -39,14 +41,13 @@
 }
 
 .card4-blur:hover .ball{
-	width: 120px;
-	height: 120px;
+	animation: ball-blur 1050ms forwards;
+	animation-timing-function: ease-in-out;
 }
 
 .card4-blur:hover .card4text{
-	filter: blur(20px);
-	font-size: 12px;
-	transform: rotate(10deg);
+	animation: text-blur 950ms forwards;
+	animation-timing-function: ease-in-out;
 }
 
 .card4-blur:hover::after{
