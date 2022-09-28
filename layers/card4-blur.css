@@ -47,6 +47,7 @@
 
 .card4-blur:hover .card4text{
 	animation: text-blur 950ms forwards;
+	animation-delay: 200ms;
 	animation-timing-function: ease-in-out;
 }
 
