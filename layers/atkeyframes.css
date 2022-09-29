@@ -17,9 +17,24 @@
 		transform: scale3d(0.9, 0.7, 0.9);
 	}
 
-	50%{
-		opacity: 0.95;
-		transform: scale3d(1.1, 1.1, 1.0);
+	20%{
+		opacity: 0.55;
+		transform: scale3d(1.0, 1.0, 1.0);
+	}
+
+	40%{
+		opacity: 0.65;
+		transform: scale3d(1.08, 1.08, 1.08);
+	}
+
+	60%{
+		opacity: 0.75;
+		transform: scale3d(1.0, 1.0, 1.0);
+	}
+
+	80%{
+		opacity: 0.85;
+		transform: scale3d(1.02, 1.02, 1.02);
 	}
 
 	100%{
@@ -36,11 +51,30 @@
 		transform: scale3d(1.0, 0.2, 0.5);
 	}
 
-	50%{
+	20%{
 		opacity: 0.95;
 		filter: blur(0);
-		transform:  scale3d(1.0, 1.2, 1.1);
+		transform:  scale3d(1.0, 1.0, 1.0);	
 	}
+
+	40%{
+		opacity: 0.95;
+		filter: blur(0);
+		transform:  scale3d(1.08, 1.08, 1.08);	
+	}
+
+	60%{
+		opacity: 0.95;
+		filter: blur(0);
+		transform:  scale3d(1.0, 1.0, 1.0);	
+	}
+
+	80%{
+		opacity: 0.95;
+		filter: blur(0);
+		transform:  scale3d(1.02, 1.02, 1.02);		
+	}
+
 	100%{
 		opacity: 0.95;
 		filter: blur(0);
