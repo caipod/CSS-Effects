@@ -67,12 +67,7 @@
 }
 /*======暗色模式配置============================*/
 @media (prefers-color-scheme: dark) {
-	.card5-colorscheme {
-		background: #22252B;
-		border: var(--cardborder-Dark);
-		box-shadow: var(--cardboxshadow-Dark);
-		transition: var(--cardmainani);
-	}
+
 	.card5-colorscheme:hover::after{
 		content: "@media (prefers-color-scheme: dark)";
 		display: block;
@@ -88,16 +83,16 @@
 
 	.lights1,
 	.lights2 {
+		will-change: height,filter;
 		transition: all 500ms;
 		height: 0;
 		filter: blur(10px) opacity(0);
 	}
 
-	.card5-colorscheme:hover .core {
-		box-shadow: inset 40px -20px 0 0;
-	}
 	.core{
+		will-change: width,height,box-shadow,color,border-radius;
 		transition: all 1000ms;
+		transition-timing-function: ease-in-out;
 		width: 80px;
 		height: 80px;
 		box-shadow: inset 20px -20px 0 0;
@@ -105,5 +100,16 @@
 		color: color(display-p3 0.449 0.385 1);
 		border-radius: 50%;
 		z-index: 2;
+	}
+
+	.card5-colorscheme:hover .core {
+		will-change: box-shadow;
+		box-shadow: inset 40px -20px 0 0;
+	}
+
+	.card5-bg{
+		animation: card5-bg-light-switch-dark 1000ms ease-in-out forwards;
+		border: var(--cardborder-Dark);
+		box-shadow: var(--cardboxshadow-Dark);
 	}
 }

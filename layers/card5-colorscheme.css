@@ -3,7 +3,6 @@
 	align-items: center;
     justify-content: center;
     align-content: center;
-	/*--------*/
 	position: relative;
 }
 
@@ -90,4 +89,10 @@
     align-content: center;
     justify-content: center;
 	position: absolute;
+}
+
+.card5-bg{
+	width: 100%;
+	height: 100%;
+	animation: card5-bg-dark-switch-light 1000ms ease-in-out forwards;
 }

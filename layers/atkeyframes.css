@@ -366,6 +366,72 @@
 	}
 }
 
+@keyframes card5-bg-light-switch-dark{
+	0%{
+		background: rgba(255, 255, 255, 1.0);
+		filter: blur(0);
+		transform: scale(1.0);
+	}
+	20%{
+		background: rgba(255, 255, 255, 0.0);
+		filter: blur(20px);
+		transform: scale(1.0);
+	}
+	40%{
+		background: rgba(34, 37, 43, 0.0);
+		filter: blur(20px);
+		transform: scale(0.7);
+	}
+	100%{
+		background: rgba(34, 37, 43, 1.0);
+		filter: blur(0px);
+		transform: scale(1.0);		
+	}
+}
+
+@keyframes card5-bg-dark-switch-light{
+	0%{
+		background: rgba(34, 37, 43, 1.0);
+		filter: blur(0px);
+		transform: scale(1.0);	
+	}
+	20%{
+		background: rgba(34, 37, 43, 0.0);
+		filter: blur(20px);
+		transform: scale(1.0);
+	}
+	40%{
+		background: rgba(255, 255, 255, 0.0);
+		filter: blur(20px);
+		transform: scale(0.7);
+	}
+	100%{
+		background: rgba(255, 255, 255, 1.0);
+		filter: blur(0);
+		transform: scale(1.0);	
+	}
+}
+
+/*@keyframes animation-name{
+	0%{
+
+	}
+	20%{
+
+	}
+	40%{
+
+	}
+	60%{
+
+	}
+	80%{
+
+	}
+	100%{
+		
+	}
+}*/
 
 
 
