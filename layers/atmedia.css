@@ -1,3 +1,4 @@
+/*=======================药丸配置========================*/
 @media (color-gamut: srgb) {
 	.srgb {
 		background: #D7EFFF;
@@ -65,7 +66,7 @@
 		text-shadow: none;
 	}
 }
-/*======暗色模式配置============================*/
+/*======================暗色模式配置============================*/
 @media (prefers-color-scheme: dark) {
 
 	.card5-colorscheme:hover::after{
@@ -108,7 +109,14 @@
 	}
 
 	.card5-bg{
+		transition: all 1000ms;
 		animation: card5-bg-light-switch-dark 1000ms ease-in-out forwards;
+		background: rgba(34, 37, 43, 1.0);
+		box-shadow: inset 0 0 20px 0 rgba(97, 101, 110, 1.0);
 		/*此处使用forwards是为了保持卡片的暗色样式*/
+	}
+
+	.card5-colorscheme:hover .card5-bg{
+		box-shadow: none;
 	}
 }

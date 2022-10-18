@@ -92,7 +92,10 @@
 }
 
 .card5-bg{
+	transition: all 1000ms;
 	width: 100%;
 	height: 100%;
-	animation: card5-bg-dark-switch-light 1000ms ease-in-out;
+	background: rgba(255, 255, 255, 1.0);
+	box-shadow: inset 0 0 20px 0 rgba(226, 234, 250, 1.0);
+	animation: card5-bg-dark-switch-light 1000ms ease-in-out forwards;
 }

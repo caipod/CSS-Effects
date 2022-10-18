@@ -367,64 +367,51 @@
 }
 
 @keyframes card5-bg-light-switch-dark{
+	/*亮色*/
 	0%{
-		background: rgba(255, 255, 255, 1.0);
 		transform: scale(1.0);
-		box-shadow: inset 0 0 20px 0 rgba(226, 234, 250, 1.0);
 		border: 1px solid rgba(188, 196, 223, 0.50);
 	}
 
 	40%{
-		background: rgba(255, 255, 255, 0.0);
 		transform: scale(0.9);
-		box-shadow: inset 0 0 20px 0 rgba(226, 234, 250, 0.0);
 		border: 1px solid rgba(188, 196, 223, 0.0);
 	}
 
 	50%{
-		background: rgba(34, 37, 43, 0.0);
 		transform: scale(0.9);
-		box-shadow: inset 0 0 20px 0 rgba(97, 101, 110, 0.0);
 		border: 1px solid rgba(103, 109, 128, 0.0);
 	}
-
+	
 	100%{
-		background: rgba(34, 37, 43, 1.0);
-		transform: scale(1.0);	
-		box-shadow: inset 0 0 20px 0 rgba(97, 101, 110, 1.0);
+		transform: scale(1.0);
 		border: 1px solid rgba(103, 109, 128, 0.50);	
 	}
 }
 
 @keyframes card5-bg-dark-switch-light{
+	/*暗色*/
 	0%{
-		background: rgba(34, 37, 43, 1.0);
-		transform: scale(1.0);	
-		box-shadow: inset 0 0 20px 0 rgba(97, 101, 110, 1.0);
+		transform: scale(1.0);
 		border: 1px solid rgba(103, 109, 128, 0.50);
 	}
 
 	40%{
-		background: rgba(34, 37, 43, 0.0);
 		transform: scale(0.9);
-		box-shadow: inset 0 0 20px 0 rgba(97, 101, 110, 0.0);
 		border: 1px solid rgba(103, 109, 128, 0.0);
 	}
 
 	50%{
-		background: rgba(255, 255, 255, 0.0);
 		transform: scale(0.9);
-		box-shadow: inset 0 0 20px 0 rgba(226, 234, 250, 0.0);
 		border: 1px solid rgba(188, 196, 223, 0.0);
 	}
 
 	100%{
-		background: rgba(255, 255, 255, 1.0);
 		transform: scale(1.0);
-		box-shadow: inset 0 0 20px 0 rgba(226, 234, 250, 1.0);
 		border: 1px solid rgba(188, 196, 223, 0.50);
 	}
 }
+
 
 /*@keyframes animation-name{
 	0%{
