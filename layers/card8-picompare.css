@@ -4,8 +4,8 @@
 	align-items: center;
 }
 
-.gtest-l,
-.gtest-r {
+#gtest-l,
+#gtest-r {
 	transition-timing-function: ease-in-out;
 	transition: all 500ms;
 	height: 100px;
@@ -13,18 +13,18 @@
 	z-index: 1;
 }
 
-.gtest-l{
+#gtest-l{
 	animation: card8-picture-left-back 300ms ease-in-out forwards;
 }
 
-.gtest-r{
+#gtest-r{
 	animation: card8-picture-right-back 300ms ease-in-out forwards;
 }
 
-.card8-picompare:hover .gtest-l{
+.card8-picompare:hover #gtest-l{
 	animation: card8-picture-left 700ms ease-in-out forwards;
 }
-.card8-picompare:hover .gtest-r{
+.card8-picompare:hover #gtest-r{
 	animation: card8-picture-right 700ms ease-in-out forwards;
 }
 
@@ -40,13 +40,13 @@
 	animation: card8-name-back 300ms ease-in-out forwards;
 }
 
-.nameleft {
+#nameleft {
 	align-self: flex-start;
 	font-size: 12px;
 	transform: translateX(10px);
 }
 
-.nameright {
+#nameright {
 	align-self: flex-end;
 	font-size: 12px;
 	transform: translateX(18px);
