@@ -4,6 +4,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-radius: var(--cardR);
+	transition: all 800ms;
 }
 .c1bg
 {

@@ -3,14 +3,14 @@
 {
 	/*主题颜色*/
 	accent-color: #00A7FF;
-	/*亮色，默认，鼠标悬浮在卡片上的样式*/
-	--hovershadow2: none;
+	/*亮色，默认，鼠标悬浮卡片样式*/
+	--hovershadow2: inset 0 0 20px 0 rgba(226, 234, 250, 0),0px 10px 30px rgba(55, 82, 122, 0.2);
 	/*默认，卡片圆角*/
 	--cardR: 16px;
 	/*默认，卡片描边*/
 	--cardborder: 1px solid rgba(188, 196, 223, 0.50);
-	/*默认，卡片内阴影*/
-	--cardboxshadow: inset 0 0 20px 0 #E2EAFA;
+	/*默认，鼠标在卡片外*/
+	--cardboxshadow: inset 0 0 20px 0 rgba(226, 234, 250, 1),0px 10px 30px rgba(55, 82, 122, 0);
 	/*------------------------------------------------------*/
 	/*暗色，卡片描边*/
 	--cardborder-Dark: 1px solid rgba(103, 109, 128, 0.50);
@@ -90,6 +90,7 @@ body::-webkit-scrollbar
 	transition: var(--cardmainani);
 }
 
+.card1-logo:hover,
 .card-fontsize:hover,
 .card3-fontweight:hover,
 .card4-blur:hover,
