@@ -3,13 +3,15 @@
 {
 	/*主题颜色*/
 	accent-color: #00A7FF;
-	/*亮色，默认，鼠标悬浮卡片样式*/
+	/*亮色，悬浮，卡片样式*/
 	--hovershadow2: inset 0 0 20px 0 rgba(226, 234, 250, 0),0px 10px 30px rgba(55, 82, 122, 0.2);
 	/*默认，卡片圆角*/
 	--cardR: 16px;
 	/*默认，卡片描边*/
 	--cardborder: 1px solid rgba(188, 196, 223, 0.50);
-	/*默认，鼠标在卡片外*/
+	/*悬浮，卡片描边*/
+	--cardborderwhenhover: 1px solid rgba(188, 196, 223, 0);
+	/*默认，卡片填充样式*/
 	--cardboxshadow: inset 0 0 20px 0 rgba(226, 234, 250, 1),0px 10px 30px rgba(55, 82, 122, 0);
 	/*------------------------------------------------------*/
 	/*暗色，卡片描边*/
@@ -107,6 +109,7 @@ body::-webkit-scrollbar
 .card-colorcontrast:hover
 {
 	box-shadow: var(--hovershadow2);
+	border: var(--cardborderwhenhover);
 }
 
 @font-face{
