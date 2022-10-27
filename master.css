@@ -69,7 +69,7 @@ body::-webkit-scrollbar
 	animation-name: websitemainanimation;
 	animation-duration: 1000ms;
 }
-
+/*卡片基本样式设置*/
 .card-fontsize,
 .card3-fontweight,
 .card4-blur,
@@ -91,8 +91,11 @@ body::-webkit-scrollbar
 	box-shadow: var(--cardboxshadow);
 	transition: var(--cardmainani);
 }
+/*卡片悬浮样式设置*/
+.card1-logo:hover{
+	box-shadow: var(--hovershadow2);
+}
 
-.card1-logo:hover,
 .card-fontsize:hover,
 .card3-fontweight:hover,
 .card4-blur:hover,
@@ -112,6 +115,7 @@ body::-webkit-scrollbar
 	border: var(--cardborderwhenhover);
 }
 
+/*自定义字体*/
 @font-face{
 	font-family: sfr;
 	src: url(resources/SansForgetica-Regular.otf);
