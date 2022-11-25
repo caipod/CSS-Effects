@@ -8,11 +8,10 @@
 
 .bubble {
 	/*基础样式*/
-	width: 190px;
-	height: 190px;
+	width: 50%;
+	aspect-ratio: 1/1;
 	border-radius: 50%;
 	background-image: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #F6FCFF 35%, #EBF5FF 50%);
-	/*background-image: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #FFFFFF 26%, #EBF5FF 50%);*/
 	border: 1px solid #F3F4FD;
 	filter: blur(12px);
 	/*组内定位*/
@@ -37,6 +36,7 @@
 .ns-text{
 	/*next-step*/
 	transition: all 800ms;
+	transition-timing-function: ease-in-out;
 	font-size: 20px;
 	font-family: var(--SFRFontFamily);
 	/*这两行代码是为了保证文字完整显示而不被bg-clip属性切割*/
@@ -65,11 +65,13 @@
 /*圆环动画*/
 .card10-nextstep:hover .bubble {
 	animation: showbubble 1200ms forwards;
+	animation-timing-function: ease-in-out;
 }
 
 /*圆环回退动画*/
 .card10-nextstep .bubble {
 	animation: r-showbubble 1000ms forwards;
+	animation-timing-function: ease-in-out;
 }
 
 /*主文字动画*/
@@ -82,8 +84,10 @@
 	animation: showtext forwards;
 	animation-duration: 1500ms;
 	animation-delay: 150ms;
+	animation-timing-function: ease-in-out;
 }
 
 .card10-nextstep .solgan{
 	animation: hidetext 1200ms forwards;
+	animation-timing-function: ease-in-out;
 }
