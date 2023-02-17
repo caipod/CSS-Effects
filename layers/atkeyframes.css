@@ -414,7 +414,7 @@
 
 @keyframes core-change-light2dark{
 	0%{
-		box-shadow: inset 50px 0 0 0;
+		box-shadow: inset 40px -10px 0 0;
 	}
 	40%{
 		box-shadow: inset 14px -14px 0 0;
@@ -446,8 +446,9 @@
 	0%{
 		box-shadow: inset 20px -20px 0 0;
 	}
+
 	100%{
-		box-shadow: inset 40px -20px 0 0;
+		box-shadow: inset 40px -10px 0 0;
 	}
 }
 

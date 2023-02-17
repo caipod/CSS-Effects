@@ -90,10 +90,6 @@
 		filter: blur(10px) opacity(0);
 	}
 
-	.card5-colorscheme:hover .core {
-		box-shadow: inset 40px -20px 0 0;
-	}
-
 	.core{
 		will-change: width,height,box-shadow,color,border-radius;
 		width: 80px;
@@ -103,10 +99,12 @@
 		color: color(display-p3 0.449 0.385 1);
 		border-radius: 50%;
 		z-index: 2;
-		animation: core-change-light2dark 1400ms ease-in-out;
+		animation: core-change-light2dark 1400ms ease-in-out forwards;
 	}
 
-
+	.card5-colorscheme:hover .core {
+		animation: core-moon-change 500ms forwards;
+	}
 
 	.card5-bg{
 		transition: all 1000ms;
