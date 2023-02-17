@@ -412,6 +412,44 @@
 	}
 }
 
+@keyframes core-change-light2dark{
+	0%{
+		box-shadow: inset 50px 0 0 0;
+	}
+	40%{
+		box-shadow: inset 14px -14px 0 0;
+	}
+	60%{
+		box-shadow: inset 20px -20px 0 0;
+	}
+	80%{
+		box-shadow: inset 18px -18px 0 0;
+	}
+	100%{
+		box-shadow: inset 20px -20px 0 0;
+	}	
+}
+
+@keyframes core-change-dark2light{
+	0%{
+		box-shadow: inset 20px -20px 0 0;
+	}
+	20%{
+		box-shadow: inset 15px -15px 0 0;
+	}
+	100%{
+		box-shadow: inset 50px 0 0 0;
+	}	
+}
+
+@keyframes core-moon-change{
+	0%{
+		box-shadow: inset 20px -20px 0 0;
+	}
+	100%{
+		box-shadow: inset 40px -20px 0 0;
+	}
+}
 
 /*@keyframes animation-name{
 	0%{

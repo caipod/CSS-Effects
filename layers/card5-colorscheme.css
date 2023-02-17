@@ -39,11 +39,12 @@
 	transition: all 1000ms;
 	width: 50px;
 	height: 50px;
-	box-shadow: inset 50px 0 0 0;
 	color: #FBC02E;
 	color: color(display-p3 1 0.788 0.285);
 	border-radius: 50%;
 	z-index: 2;
+	animation: core-change-dark2light 1400ms ease-in-out forwards;
+
 }
 
 .lights1,

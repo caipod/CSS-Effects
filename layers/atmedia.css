@@ -90,10 +90,12 @@
 		filter: blur(10px) opacity(0);
 	}
 
+	.card5-colorscheme:hover .core {
+		box-shadow: inset 40px -20px 0 0;
+	}
+
 	.core{
 		will-change: width,height,box-shadow,color,border-radius;
-		transition: all 1000ms;
-		transition-timing-function: ease-in-out;
 		width: 80px;
 		height: 80px;
 		box-shadow: inset 20px -20px 0 0;
@@ -101,12 +103,10 @@
 		color: color(display-p3 0.449 0.385 1);
 		border-radius: 50%;
 		z-index: 2;
+		animation: core-change-light2dark 1400ms ease-in-out;
 	}
 
-	.card5-colorscheme:hover .core {
-		will-change: box-shadow;
-		box-shadow: inset 40px -20px 0 0;
-	}
+
 
 	.card5-bg{
 		transition: all 1000ms;
