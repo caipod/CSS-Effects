@@ -216,7 +216,7 @@
 
 @keyframes text-blur{
 	0%{
-		font-size: 30px;
+		font-size: 20px;
 		transform: rotate(0deg);
 		filter: blur(0px);
 	}
@@ -265,13 +265,13 @@
 		font-size: 12px;
 		transform: rotate(10deg);			
 	}
-	80%{
-		font-size: 31px;
+	60%{
+		font-size: 21px;
 		transform: rotate(0deg);
-		filter: blur(1px);		
+		filter: blur(2px);		
 	}
 	100%{
-		font-size: 30px;
+		font-size: 20px;
 		transform: rotate(0deg);
 		filter: blur(0px);		
 	}
@@ -452,6 +452,50 @@
 	}
 }
 
+@keyframes displaydetailwarp{
+	0%{
+		transform: scale(0.8);
+		visibility: hidden;
+		max-height: 0;
+	}
+
+	33%{
+		transform: scale(1);
+		visibility: visible;
+		max-height: 15px;		
+	}
+
+
+	66%{
+		transform: scale(0.9);
+		visibility: visible;
+		max-height: 15px;	
+	}		
+
+	100%{
+		transform: scale(1);
+		visibility: visible;
+		max-height: 15px;		
+	}
+}
+
+@keyframes displaydetailwarp-back{
+	0%{
+		transform: scale(1);
+		visibility: visible;
+		max-height: 15px;
+		opacity: 1;
+	}
+
+	100%{
+		transform: scale(0.8);
+		opacity: 0;
+		visibility: hidden;
+		max-height: 0;		
+	}
+
+}
+
 /*@keyframes animation-name{
 	0%{
 
@@ -472,7 +516,6 @@
 		
 	}
 }*/
-
 
 
 

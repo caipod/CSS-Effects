@@ -35,7 +35,7 @@
 
 body
 {
-	font-size: 16px;
+	font-size: 1em;
 	margin: 0;
 	background: #DFE3EB;
 	box-sizing: border-box;
@@ -62,14 +62,15 @@ body::-webkit-scrollbar
 .cards
 {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-	grid-auto-rows: minmax(360px, auto);
+	grid-template-columns: repeat(auto-fit, minmax(18.75rem, auto));
+	grid-auto-rows: minmax(22.5rem, auto);
 	grid-gap: 0.625em;
 	padding: 0.625em;
 	animation-name: websitemainanimation;
 	animation-duration: 1000ms;
 }
 /*卡片基本样式设置*/
+.card-guide,
 .card-fontsize,
 .card3-fontweight,
 .card4-blur,
@@ -95,7 +96,7 @@ body::-webkit-scrollbar
 .card1-logo:hover{
 	box-shadow: var(--hovershadow2);
 }
-
+.card-guide:hover,
 .card-fontsize:hover,
 .card3-fontweight:hover,
 .card4-blur:hover,

@@ -11,7 +11,7 @@
 	will-change: transfrom;
 	transition: all 450ms;
 	animation: text-blur-back 800ms forwards ease-in-out;
-	font-size: 30px;
+	font-size: 20px;
 	transform: rotate(0deg);
 	color: #1B1D1F;
 	text-align: center;
